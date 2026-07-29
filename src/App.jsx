@@ -20,7 +20,7 @@ const QUIZ = [
   { q: "What is your CKD stage?", opts: ["Stage 2", "Stage 3a", "Stage 3b", "Stage 4", "Not sure"], key: "stage" },
   { q: "Do you also have diabetes?", opts: ["Yes — Type 1", "Yes — Type 2", "No", "Pre-diabetic"], key: "diabetes" },
   { q: "What is your biological sex?", opts: ["Female", "Male"], key: "sex" },
-  { q: "What is your age range?", opts: ["50–55", "56–60", "61–65", "66–70", "71+"], key: "age" },
+  { q: "What is your age range?", opts: ["18–39", "40–54", "55–64", "65+"], key: "age" },
   { q: "Current activity level?", opts: ["Sedentary (little to no exercise)", "Light (walks, light chores)", "Moderate (some regular activity)", "Active (exercise 3+ times/week)"], key: "activity" },
   { q: "Any injuries or limitations?", opts: ["Knee issues", "Back pain", "Shoulder problems", "Balance concerns", "None of these"], key: "injuries", multi: true },
   { q: "What matters most to you?", opts: ["Slow my CKD progression", "Build strength & muscle tone", "Lose body fat", "Have more energy", "All of the above"], key: "goal" },
@@ -89,7 +89,7 @@ const MEALS_CKD = [
       { type: "Dinner", name: "Baked Cod with Arugula Salad", items: "3 oz baked cod, 2 cups arugula, ½ cucumber sliced, lemon juice + olive oil dressing. Side of steamed zucchini.", order: "Protein and vegetables — no starch needed at dinner.", k: "low", p: "low", na: "low" },
     ]},
     { day: "Tuesday", meals: [
-      { type: "Breakfast", name: "Turkey Sausage with Onion Scramble", items: "2 oz turkey sausage (low-sodium), ½ cup sautéed onions, 1 egg white. Side of white toast with thin spread of cream cheese.", order: "Eat the sausage and onions first, toast last.", k: "low", p: "low", na: "low" },
+      { type: "Breakfast", name: "Homemade Turkey Patties with Onion Scramble", items: "2 oz ground turkey formed into small patties with garlic powder, sage, thyme, black pepper. Cook in olive oil with ½ cup sautéed onions. 1 egg white. Side of white toast with Tillamook cream cheese.", order: "Eat the patties and onions first, toast last.", k: "low", p: "low", na: "low" },
       { type: "Lunch", name: "Chicken Stir-Fry with Green Beans & Rice", items: "3 oz chicken thigh, 1 cup green beans, ½ cup white rice. Cook in olive oil with garlic, ginger, black pepper.", order: "Eat chicken and green beans first, rice last.", k: "low", p: "low", na: "low" },
       { type: "Dinner", name: "Tilapia with Cabbage Slaw", items: "3 oz baked tilapia with lemon, 1.5 cups shredded cabbage with apple cider vinegar dressing, dill.", order: "Light dinner — all protein and vegetables.", k: "low", p: "low", na: "low" },
     ]},
@@ -104,13 +104,13 @@ const MEALS_CKD = [
       { type: "Dinner", name: "Garlic Shrimp over Arugula", items: "3 oz shrimp sautéed in olive oil and fresh garlic. 2 cups arugula with lemon juice dressing. ½ cup roasted cauliflower.", order: "Protein and vegetables only — light evening meal.", k: "low", p: "low", na: "low" },
     ]},
     { day: "Friday", meals: [
-      { type: "Breakfast", name: "Cream Cheese Toast with Berries", items: "2 slices white bread with thin spread of cream cheese. ½ cup fresh blueberries on the side. 1 hard-boiled egg.", order: "Eat the egg first, then toast and berries.", k: "low", p: "low", na: "low" },
+      { type: "Breakfast", name: "Cream Cheese Toast with Berries", items: "2 slices white bread with thin spread of cream cheese (Tillamook or Organic Valley — no gums, no additives). ½ cup fresh blueberries on the side. 1 hard-boiled egg.", order: "Eat the egg first, then toast and berries.", k: "low", p: "low", na: "low" },
       { type: "Lunch", name: "Turkey Burger Patty with Roasted Vegetables", items: "3 oz ground turkey patty seasoned with cumin, paprika, garlic. 1 cup roasted bell peppers and zucchini. Side of couscous.", order: "Eat the patty and roasted veggies first, couscous last.", k: "low", p: "low", na: "low" },
       { type: "Dinner", name: "Baked Cod with Cucumber Dill Salad", items: "3 oz baked cod with lemon and dill. 1 cup cucumber slices with olive oil, dill, and apple cider vinegar. Steamed cabbage.", order: "All protein and vegetables.", k: "low", p: "low", na: "low" },
     ]},
     { day: "Saturday", meals: [
       { type: "Breakfast", name: "Weekend Veggie Omelet", items: "2 egg whites + 1 whole egg, ½ cup bell peppers, ¼ cup onions, fresh basil. Side of white toast with olive oil.", order: "Eat the omelet first, toast last.", k: "low", p: "low", na: "low" },
-      { type: "Lunch", name: "Grilled Chicken Salad Bowl", items: "3 oz grilled chicken over 2 cups chopped romaine, cucumber, unsalted croutons. Olive oil, lemon juice, garlic dressing.", order: "Eat chicken and greens first, croutons last.", k: "low", p: "low", na: "low" },
+      { type: "Lunch", name: "Grilled Chicken Salad Bowl", items: "3 oz grilled chicken over 2 cups chopped romaine, cucumber, homemade croutons (cube white bread, toss in olive oil and garlic powder, toast in pan 2 min). Olive oil, lemon juice, garlic dressing.", order: "Eat chicken and greens first, croutons last.", k: "low", p: "low", na: "low" },
       { type: "Dinner", name: "Sautéed Tilapia with Garlic Cabbage", items: "3 oz tilapia in olive oil with garlic and paprika. 1.5 cups sautéed cabbage with onions. Lemon wedge.", order: "Light, clean, kidney-friendly dinner.", k: "low", p: "low", na: "low" },
     ]},
     { day: "Sunday", meals: [
@@ -131,23 +131,23 @@ const MEALS_CKD = [
       { type: "Dinner", name: "Garlic Shrimp & Arugula Salad", items: "3 oz shrimp sautéed in olive oil with garlic and paprika. 2 cups arugula, ½ cup cucumber, lemon dressing.", order: "All protein and greens.", k: "low", p: "low", na: "low" },
     ]},
     { day: "Wednesday", meals: [
-      { type: "Breakfast", name: "Cucumber Cream Cheese Toast", items: "2 slices white bread with cream cheese and sliced cucumber. Dill and black pepper. 1 egg white on the side.", order: "Eat the egg white first, toast second.", k: "low", p: "low", na: "low" },
+      { type: "Breakfast", name: "Cucumber Cream Cheese Toast", items: "2 slices white bread with cream cheese (Tillamook or Organic Valley) and sliced cucumber. Dill and black pepper. 1 egg white on the side.", order: "Eat the egg white first, toast second.", k: "low", p: "low", na: "low" },
       { type: "Lunch", name: "Turmeric Chicken with Cauliflower & Rice", items: "3 oz chicken with turmeric, cumin, garlic, olive oil. 1 cup roasted cauliflower. ½ cup white rice.", order: "Eat chicken and cauliflower first, rice last.", k: "low", p: "low", na: "low" },
       { type: "Dinner", name: "Baked Tilapia with Roasted Radishes", items: "3 oz tilapia with lemon and rosemary. 1 cup roasted radishes with olive oil. Side of arugula.", order: "Protein and vegetables — light and clean.", k: "low", p: "low", na: "low" },
     ]},
     { day: "Thursday", meals: [
-      { type: "Breakfast", name: "Egg & Bell Pepper Wrap", items: "1 whole egg + 1 egg white with ½ cup bell peppers and onion in a small white flour tortilla.", order: "Protein and veggies wrapped with the carb — eat slowly.", k: "low", p: "low", na: "low" },
+      { type: "Breakfast", name: "Egg & Bell Pepper Wrap", items: "1 whole egg + 1 egg white with ½ cup bell peppers and onion in a small white flour tortilla (Rise & Puff or Tortillaland — 4-5 ingredients only).", order: "Protein and veggies wrapped with the carb — eat slowly.", k: "low", p: "low", na: "low" },
       { type: "Lunch", name: "Ground Turkey Taco Bowl", items: "3 oz ground turkey with cumin, chili powder, garlic over shredded lettuce, cucumber. Side of white rice.", order: "Eat turkey and vegetables first, rice last.", k: "low", p: "low", na: "low" },
       { type: "Dinner", name: "Cod with Steamed Green Beans", items: "3 oz cod baked with lemon, thyme, garlic. 1 cup steamed green beans with olive oil.", order: "Simple protein and vegetables.", k: "low", p: "low", na: "low" },
     ]},
     { day: "Friday", meals: [
-      { type: "Breakfast", name: "Pineapple Cream Cheese Toast", items: "2 slices white toast with cream cheese and ¼ cup diced pineapple. 1 hard-boiled egg.", order: "Eat the egg first, toast second.", k: "low", p: "low", na: "low" },
+      { type: "Breakfast", name: "Pineapple Cream Cheese Toast", items: "2 slices white toast with cream cheese (Tillamook or Organic Valley) and ¼ cup diced pineapple. 1 hard-boiled egg.", order: "Eat the egg first, toast second.", k: "low", p: "low", na: "low" },
       { type: "Lunch", name: "Rosemary Chicken with Cauliflower & Rice", items: "3 oz chicken with rosemary, garlic, olive oil. 1 cup roasted cauliflower. ½ cup white rice.", order: "Eat chicken and cauliflower first, rice last.", k: "low", p: "low", na: "low" },
       { type: "Dinner", name: "Arugula Salad with Grilled Chicken", items: "3 oz grilled chicken over 2 cups arugula, cucumber, radishes. Olive oil and lemon dressing.", order: "All protein and vegetables — light Friday dinner.", k: "low", p: "low", na: "low" },
     ]},
     { day: "Saturday", meals: [
       { type: "Breakfast", name: "Weekend Herb Scramble", items: "2 egg whites + 1 egg with fresh basil, parsley, diced onion. White toast with olive oil.", order: "Eat the scramble first, toast last.", k: "low", p: "low", na: "low" },
-      { type: "Lunch", name: "Fish Tacos (Kidney-Safe)", items: "3 oz baked cod in white tortillas with shredded cabbage, cucumber, lime. No cheese.", order: "Fish and cabbage first, tortilla is the carb.", k: "low", p: "low", na: "low" },
+      { type: "Lunch", name: "Fish Tacos (Kidney-Safe)", items: "3 oz baked cod in clean tortillas (Rise & Puff or Tortillaland) (Rise & Puff or Tortillaland) with shredded cabbage, cucumber, lime. No cheese.", order: "Fish and cabbage first, tortilla is the carb.", k: "low", p: "low", na: "low" },
       { type: "Dinner", name: "Turkey Patty with Roasted Zucchini", items: "3 oz ground turkey patty with oregano, garlic. 1.5 cups roasted zucchini with olive oil.", order: "Protein and vegetables.", k: "low", p: "low", na: "low" },
     ]},
     { day: "Sunday", meals: [
@@ -163,17 +163,17 @@ const MEALS_CKD = [
       { type: "Dinner", name: "Lemon Garlic Tilapia with Cabbage", items: "3 oz tilapia with garlic, lemon, parsley. 1.5 cups steamed cabbage with olive oil.", order: "Light protein and vegetable dinner.", k: "low", p: "low", na: "low" },
     ]},
     { day: "Tuesday", meals: [
-      { type: "Breakfast", name: "Strawberry Cream Cheese Toast", items: "2 slices white bread with cream cheese and 3-4 sliced strawberries. 1 hard-boiled egg.", order: "Eat the egg first, then toast.", k: "low", p: "low", na: "low" },
+      { type: "Breakfast", name: "Strawberry Cream Cheese Toast", items: "2 slices white bread with cream cheese (Tillamook or Organic Valley) and 3-4 sliced strawberries. 1 hard-boiled egg.", order: "Eat the egg first, then toast.", k: "low", p: "low", na: "low" },
       { type: "Lunch", name: "Turkey & Vegetable Stir-Fry", items: "3 oz turkey strips with 1 cup cabbage, ½ cup green beans, garlic, ginger. Side of couscous.", order: "Eat turkey and vegetables first, couscous last.", k: "low", p: "low", na: "low" },
       { type: "Dinner", name: "Baked Cod with Radish & Arugula Salad", items: "3 oz cod with dill and lemon. 1.5 cups arugula with roasted radishes, olive oil dressing.", order: "All protein and vegetables.", k: "low", p: "low", na: "low" },
     ]},
     { day: "Wednesday", meals: [
       { type: "Breakfast", name: "Garlic Herb Scrambled Eggs", items: "1 whole egg + 2 egg whites with garlic powder, basil, parsley. Side of white toast.", order: "Eat the eggs first, toast last.", k: "low", p: "low", na: "low" },
-      { type: "Lunch", name: "Chicken Bowl with Cauliflower Rice", items: "3 oz grilled chicken over 1 cup riced cauliflower, cucumber, carrots. Olive oil and lemon. Side of crackers.", order: "Eat chicken and cauliflower first, crackers last.", k: "low", p: "low", na: "low" },
+      { type: "Lunch", name: "Chicken Bowl with Cauliflower Rice", items: "3 oz grilled chicken over 1 cup riced cauliflower, cucumber, carrots. Olive oil and lemon. Side of crackers (Premium Unsalted Tops or Lundberg Thin Stackers).", order: "Eat chicken and cauliflower first, crackers last.", k: "low", p: "low", na: "low" },
       { type: "Dinner", name: "Shrimp with Zucchini & Onion Sauté", items: "3 oz shrimp in olive oil with 1 cup zucchini, ½ cup onions, garlic, Italian herbs.", order: "Pure protein and vegetables.", k: "low", p: "low", na: "low" },
     ]},
     { day: "Thursday", meals: [
-      { type: "Breakfast", name: "Apple Slices with Cream Cheese & Egg", items: "½ apple sliced with cream cheese. 2 egg whites scrambled with black pepper.", order: "Eat the egg whites first, apple second.", k: "low", p: "low", na: "low" },
+      { type: "Breakfast", name: "Apple Slices with Cream Cheese & Egg", items: "½ apple sliced with cream cheese (Tillamook or Organic Valley). 2 egg whites scrambled with black pepper.", order: "Eat the egg whites first, apple second.", k: "low", p: "low", na: "low" },
       { type: "Lunch", name: "Herb-Crusted Fish with Green Beans & Pasta", items: "3 oz cod with oregano, thyme, garlic. 1 cup green beans. ½ cup white pasta.", order: "Eat fish and green beans first, pasta last.", k: "low", p: "low", na: "low" },
       { type: "Dinner", name: "Turkey Lettuce Wraps", items: "3 oz ground turkey with cumin, garlic in butter lettuce cups. Diced cucumber and cilantro.", order: "No starch — clean and light.", k: "low", p: "low", na: "low" },
     ]},
@@ -183,7 +183,7 @@ const MEALS_CKD = [
       { type: "Dinner", name: "Baked Sole with Lemon Dill Arugula", items: "3 oz sole with lemon, dill, olive oil. 2 cups arugula with cucumber dressing.", order: "Light fish and salad.", k: "low", p: "low", na: "low" },
     ]},
     { day: "Saturday", meals: [
-      { type: "Breakfast", name: "Blueberry Cream Cheese Toast", items: "2 slices white bread with cream cheese, ½ cup blueberries. 1 hard-boiled egg.", order: "Eat the egg first, toast second.", k: "low", p: "low", na: "low" },
+      { type: "Breakfast", name: "Blueberry Cream Cheese Toast", items: "2 slices white bread with cream cheese (Tillamook or Organic Valley), ½ cup blueberries. 1 hard-boiled egg.", order: "Eat the egg first, toast second.", k: "low", p: "low", na: "low" },
       { type: "Lunch", name: "Ground Turkey with Roasted Cauliflower", items: "3 oz ground turkey with smoked paprika, garlic, cumin. 1 cup roasted cauliflower. ½ cup couscous.", order: "Eat turkey and cauliflower first, couscous last.", k: "low", p: "low", na: "low" },
       { type: "Dinner", name: "Cod with Cabbage & Carrot Slaw", items: "3 oz baked cod with herbs. 1.5 cups cabbage and carrot slaw with apple cider vinegar.", order: "Protein and vegetables.", k: "low", p: "low", na: "low" },
     ]},
@@ -200,12 +200,12 @@ const MEALS_CKD = [
       { type: "Dinner", name: "Tilapia with Cucumber Dill Salad", items: "3 oz baked tilapia with dill and lemon. 1 cup cucumber, arugula, radish salad.", order: "Light protein and fresh vegetables.", k: "low", p: "low", na: "low" },
     ]},
     { day: "Tuesday", meals: [
-      { type: "Breakfast", name: "Turkey Sausage & Egg Scramble", items: "2 oz turkey sausage (low-sodium) with 1 egg white, sautéed onions. White toast.", order: "Eat the sausage and egg first, toast last.", k: "low", p: "low", na: "low" },
+      { type: "Breakfast", name: "Homemade Turkey Patties & Egg Scramble", items: "2 oz ground turkey formed into patties with garlic powder, sage, thyme, black pepper. Cook in olive oil. 1 egg white, sautéed onions. White toast.", order: "Eat the patties and egg first, toast last.", k: "low", p: "low", na: "low" },
       { type: "Lunch", name: "Italian Herb Chicken with Green Beans", items: "3 oz chicken with basil, oregano, garlic. 1 cup green beans. ½ cup white pasta with olive oil.", order: "Eat chicken and green beans first, pasta last.", k: "low", p: "low", na: "low" },
       { type: "Dinner", name: "Cod with Roasted Zucchini & Garlic", items: "3 oz cod with garlic, thyme, lemon. 1.5 cups roasted zucchini with olive oil.", order: "All protein and vegetables.", k: "low", p: "low", na: "low" },
     ]},
     { day: "Wednesday", meals: [
-      { type: "Breakfast", name: "Pineapple Cream Cheese Toast", items: "2 slices white bread with cream cheese and ¼ cup diced pineapple. 1 hard-boiled egg.", order: "Eat the egg first, toast second.", k: "low", p: "low", na: "low" },
+      { type: "Breakfast", name: "Pineapple Cream Cheese Toast", items: "2 slices white bread with cream cheese (Tillamook or Organic Valley) and ¼ cup diced pineapple. 1 hard-boiled egg.", order: "Eat the egg first, toast second.", k: "low", p: "low", na: "low" },
       { type: "Lunch", name: "Turkey Meatloaf Bites with Cauliflower", items: "3 oz ground turkey mini loaf bites with garlic, parsley, oregano. 1 cup cauliflower. ½ cup white rice.", order: "Eat turkey and cauliflower first, rice last.", k: "low", p: "low", na: "low" },
       { type: "Dinner", name: "Shrimp & Arugula Salad", items: "3 oz shrimp in olive oil and garlic. 2 cups arugula, cucumber, lemon dressing.", order: "Protein and greens — light midweek dinner.", k: "low", p: "low", na: "low" },
     ]},
@@ -298,12 +298,14 @@ const EDUCATION = [
     ],
   },
   {
-    id: "bodyafter50", icon: "Heart", title: "Your Body After 50", subtitle: "What changed and why — it's not your fault",
+    id: "bodyafter50", icon: "Heart", title: "Your Changing Body: Perimenopause, Menopause & Beyond", subtitle: "What changed, why, and how to work with your hormones — not against them",
     content: [
       { h: "Estrogen drops, fat relocates", p: "Before menopause, estrogen directs fat to hips, thighs, and butt. When estrogen declines, fat storage shifts to your abdomen. You didn't start eating worse. Your body's fat distribution GPS changed directions." },
       { h: "Two types of belly fat", p: "Subcutaneous fat is the soft, pinchable layer — the 'pouch.' Visceral fat is deeper, wrapping around organs. Visceral fat is metabolically active, produces inflammatory chemicals, and is linked to heart disease, insulin resistance, and CKD progression." },
       { h: "The hormone cascade", p: "Estrogen decline changes WHERE fat goes. Increased insulin resistance changes HOW MUCH gets stored. Rising cortisol (stress hormone) specifically promotes belly fat. Declining muscle mass lowers metabolism. These aren't separate problems — they compound each other." },
       { h: "What actually works", p: "Strength training rebuilds muscle, improves insulin sensitivity, and boosts metabolism. Insulin-smart eating lowers the fat-storage signal. Sleep and stress management lower cortisol. Crunches won't touch belly fat — the fat has to be addressed systemically through muscle building and hormonal rebalancing. That's exactly what this program does." },
+      { h: "Perimenopause: the stage nobody explains", p: "Perimenopause typically starts in your mid-40s and can last through your early-to-mid 50s. Average age of actual menopause is 51. During this time your hormones fluctuate wildly — some days estrogen is high, some days it crashes. This causes unpredictable energy levels, sleep disruption from hot flashes and night sweats, mood shifts that affect motivation, joint inflammation, and the beginning of belly fat redistribution. You're not imagining it. It's real and it's biochemical." },
+      { h: "Low-energy days are normal", p: "Some days during perimenopause you'll feel strong and ready. Other days you'll feel like someone pulled the plug. This program accounts for that. On low-energy days, do the lighter alternative: a gentle walk, the flexibility routine, or the balance training session instead of the full workout. Showing up matters more than intensity. Three light sessions beat zero perfect ones." },
     ],
   },
   {
@@ -326,7 +328,7 @@ const EDUCATION = [
     ],
   },
   {
-    id: "beverages", icon: "Droplets", title: "Beverage Safety Guide", subtitle: "What to drink and what to avoid",
+    id: "beverages", icon: "Droplets", title: "Hydration & CKD: What to Drink, What to Eat", subtitle: "Safe beverages, dangerous drinks, and hydrating foods for kidney health",
     content: [
       { h: "Water — your primary drink", p: "For CKD Stages 2-3a without fluid restrictions, aim for about 1-1.5 liters daily. Sip throughout the day, don't chug. Watch your urine color — straw-colored is the target. Ask your nephrologist for YOUR specific number." },
       { h: "Energy drinks — hard no", p: "High caffeine spikes blood pressure. Sugar spikes insulin. Many contain hidden phosphorus and potassium (up to 580mg per serving). Even sugar-free versions are dangerous. Avoid completely." },
@@ -341,14 +343,14 @@ const EDUCATION = [
     id: "hydration-fruits", icon: "Droplets", title: "Hydrating Fruits & Vegetables", subtitle: "CKD-safe foods that hydrate you from the inside out",
     content: [
       { h: "Why hydrating foods matter for CKD", p: "When your fluid intake may be monitored or limited, getting water through food is a smart strategy. Hydrating fruits and vegetables deliver water along with vitamins, fiber, and antioxidants — without the risk of overloading your kidneys the way drinking large amounts of water can. Think of them as 'eating your water.'" },
-      { h: "The CKD-safe hydrating superstars", p: "Cucumber (96% water) — the safest option. Very low potassium, very low phosphorus. Add slices to water, chop into salads, or eat plain with a squeeze of lemon. Strawberries (91% water) — low potassium, rich in vitamin C and antioxidants. Eat fresh, add to water, or top your breakfast with them. Cauliflower (92% water) — surprisingly hydrating. Low potassium, versatile. Roast it, steam it, or rice it. Cabbage (92% water) — extremely kidney-friendly. Use in slaws, stir-fries, or soups. Radishes (95% water) — low potassium, great roasted as a potato substitute. Bell peppers (92% water) — low potassium, high vitamin C. Eat raw with cream cheese or roast them. Pineapple (86% water) — one of the safest tropical fruits for CKD. Blueberries (84% water) — antioxidant powerhouse, low potassium. Cranberries (87% water) — beneficial for urinary tract health." },
+      { h: "The CKD-safe hydrating superstars", p: "Cucumber (96% water) — the safest option. Very low potassium, very low phosphorus. Add slices to water, chop into salads, or eat plain with a squeeze of lemon. Strawberries (91% water) — low potassium, rich in vitamin C and antioxidants. Eat fresh, add to water, or top your breakfast with them. Cauliflower (92% water) — surprisingly hydrating. Low potassium, versatile. Roast it, steam it, or rice it. Cabbage (92% water) — extremely kidney-friendly. Use in slaws, stir-fries, or soups. Radishes (95% water) — low potassium, great roasted as a potato substitute. Bell peppers (92% water) — low potassium, high vitamin C. Eat raw with cream cheese (Tillamook or Organic Valley) or roast them. Pineapple (86% water) — one of the safest tropical fruits for CKD. Blueberries (84% water) — antioxidant powerhouse, low potassium. Cranberries (87% water) — beneficial for urinary tract health." },
       { h: "Caution: hydrating but portion-controlled", p: "Watermelon (92% water) — yes, it's very hydrating, but it's moderate in potassium (~170mg per cup). A small wedge is likely fine for Stages 2-3, but don't eat unlimited amounts. Track your total potassium intake for the day. Grapes (81% water) — moderate potassium. A small handful is fine, not a full bowl. Peaches (89% water) — moderate potassium. Limit to half a peach at a time. Always check with your nephrologist if you're unsure about portions for your specific stage." },
       { h: "How to incorporate these daily", p: "Morning: add blueberries or sliced strawberries to your breakfast. Midday: keep sliced cucumber and bell peppers in the fridge for easy snacking. With meals: include cauliflower, cabbage, or green beans as your vegetable — you're hydrating while eating. Water infusions: add cucumber slices, strawberries, or a few pineapple chunks to a pitcher of water for natural flavor without additives. Frozen treats: freeze blueberries or pineapple chunks for a refreshing, kidney-safe snack." },
       { h: "Avoid these high-potassium 'health' fruits", p: "Oranges, bananas, cantaloupe, honeydew, kiwi, and dried fruits of any kind. These are marketed as healthy hydrating options but are too high in potassium for CKD. The general wellness world doesn't distinguish between kidney-safe and kidney-risky — your app does." },
     ],
   },
   {
-    id: "seasonings", icon: "Shield", title: "Read Your Labels", subtitle: "The 'low sodium' trap and what's really in your seasoning",
+    id: "seasonings", icon: "Shield", title: "Seasonings & Labels: What's Safe, What's Not", subtitle: "The low sodium trap, red flag ingredients, clean brands, and DIY blends",
     content: [
       { h: "The problem with 'low sodium'", p: "Many products swap sodium chloride for potassium chloride — dangerous for CKD patients because impaired kidneys can't clear excess potassium. Elevated potassium causes heart rhythm problems. Morton Salt Substitute, Nu-Salt, and most 'lite salt' products use potassium chloride." },
       { h: "Hidden ingredients to avoid", p: "Maltodextrin (glycemic index higher than sugar), yeast extract and hydrolyzed proteins (hidden MSG), 'natural flavors' (can contain 100+ unknown ingredients), disodium guanylate and disodium inosinate (hidden sodium), corn starch, dextrose, caramel color, soybean/canola oil." },
@@ -649,7 +651,7 @@ function DashboardPage({ user, setPage, setSubPage }) {
 
         {/* Today's Meals */}
         <SectionTitle>Today's Meals</SectionTitle>
-        {(todayMeal?.meals || MEALS_CKD[0][0].meals).slice(0, 2).map((m, i) => (
+        {(todayMeal?.meals || MEALS_CKD[0][0].meals).map((m, i) => (
           <Card key={i} onClick={() => setPage("meals")} style={{ marginBottom: 10 }}>
             <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
               <div style={{ flex: 1 }}>
@@ -1075,30 +1077,42 @@ function LearnPage() {
     );
   }
 
+  const categories = [
+    { name: "Understanding Your Body", modules: EDUCATION.filter(m => ["insulin", "bodyafter50", "symptoms", "sleep"].includes(m.id)) },
+    { name: "Nutrition & Meal Guidance", modules: EDUCATION.filter(m => ["mealorder", "hydration-fruits", "beverages"].includes(m.id)) },
+    { name: "Reading Labels & Food Safety", modules: EDUCATION.filter(m => ["seasonings", "hidden-dangers"].includes(m.id)) },
+    { name: "Exercise & Medical", modules: EDUCATION.filter(m => ["exercise-safety", "labs"].includes(m.id)) },
+  ];
+
   return (
     <div style={{ paddingBottom: 90 }}>
       <TopBar title="Learn" />
       <div style={{ padding: "0 20px 20px" }}>
-        <p style={{ fontSize: 14, color: C.textMid, marginBottom: 16, lineHeight: 1.5 }}>
+        <p style={{ fontSize: 14, color: C.textMid, marginBottom: 20, lineHeight: 1.5 }}>
           Understanding why you're doing what you're doing changes everything. Tap any topic to learn more.
         </p>
-        {EDUCATION.map((mod, i) => {
-          const Icon = iconMap[mod.icon] || BookOpen;
-          return (
-            <Card key={i} onClick={() => setSelectedModule(mod)} style={{ marginBottom: 10 }}>
-              <div style={{ display: "flex", alignItems: "center", gap: 14 }}>
-                <div style={{ width: 40, height: 40, borderRadius: 12, background: C.primaryPale, display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>
-                  <Icon size={20} color={C.primary} />
-                </div>
-                <div style={{ flex: 1 }}>
-                  <p style={{ fontSize: 15, fontWeight: 600, color: C.dark, margin: 0 }}>{mod.title}</p>
-                  <p style={{ fontSize: 12, color: C.textMid, margin: "2px 0 0" }}>{mod.subtitle}</p>
-                </div>
-                <ChevronRight size={18} color={C.textLight} />
-              </div>
-            </Card>
-          );
-        })}
+        {categories.map((cat, ci) => (
+          <div key={ci} style={{ marginBottom: 24 }}>
+            <p style={{ fontSize: 12, fontWeight: 700, color: C.secondary, textTransform: "uppercase", letterSpacing: "0.12em", marginBottom: 10 }}>{cat.name}</p>
+            {cat.modules.map((mod, i) => {
+              const Icon = iconMap[mod.icon] || BookOpen;
+              return (
+                <Card key={i} onClick={() => setSelectedModule(mod)} style={{ marginBottom: 10 }}>
+                  <div style={{ display: "flex", alignItems: "center", gap: 14 }}>
+                    <div style={{ width: 40, height: 40, borderRadius: 12, background: C.primaryPale, display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>
+                      <Icon size={20} color={C.primary} />
+                    </div>
+                    <div style={{ flex: 1 }}>
+                      <p style={{ fontSize: 15, fontWeight: 600, color: C.dark, margin: 0 }}>{mod.title}</p>
+                      <p style={{ fontSize: 12, color: C.textMid, margin: "2px 0 0" }}>{mod.subtitle}</p>
+                    </div>
+                    <ChevronRight size={18} color={C.textLight} />
+                  </div>
+                </Card>
+              );
+            })}
+          </div>
+        ))}
       </div>
     </div>
   );
@@ -1116,6 +1130,7 @@ function TrackPage({ subPage }) {
   ]);
   const [symptoms, setSymptoms] = useState({ energy: 3, sleep: 3, swelling: 1, itching: 1, cramps: 2, mood: 3 });
   const [logged, setLogged] = useState(false);
+  const [showLabInput, setShowLabInput] = useState(false);
 
   const SymptomSlider = ({ label, value, onChange }) => (
     <div style={{ marginBottom: 16 }}>
@@ -1128,9 +1143,14 @@ function TrackPage({ subPage }) {
       <div style={{ display: "flex", gap: 6 }}>
         {[1, 2, 3, 4, 5].map(n => (
           <button key={n} onClick={() => onChange(n)} style={{
-            flex: 1, height: 32, borderRadius: 8, border: "none", cursor: "pointer",
+            flex: 1, height: 40, borderRadius: 8, border: "none", cursor: "pointer",
             background: n <= value ? (value <= 2 ? C.green : value <= 3 ? C.secondary : C.red) + (n === value ? "" : "40") : C.bg,
-          }} />
+            display: "flex", alignItems: "center", justifyContent: "center",
+          }}>
+            <span style={{ fontSize: 9, fontWeight: 600, color: n <= value ? "#FFF" : C.textLight }}>
+              {["", "None", "Mild", "Mod", "Sig", "Severe"][n]}
+            </span>
+          </button>
         ))}
       </div>
     </div>
@@ -1184,7 +1204,33 @@ function TrackPage({ subPage }) {
                 </p>
               </div>
             )}
-            <Btn full secondary style={{ marginTop: 16 }}>Update Lab Results</Btn>
+            <Btn full secondary onClick={() => setShowLabInput(!showLabInput)}>Update Lab Results</Btn>
+            {showLabInput && (
+              <div style={{ marginTop: 14, background: C.card, borderRadius: 12, padding: 20, boxShadow: "0 1px 4px rgba(0,0,0,0.06)" }}>
+                <p style={{ fontFamily: font.display, fontSize: 16, fontWeight: 600, color: C.dark, marginBottom: 12 }}>Enter Your Latest Results</p>
+                <p style={{ fontSize: 12, color: C.textMid, marginBottom: 14 }}>Enter the numbers from your most recent lab work. Leave blank any you don't have.</p>
+                {labs.map((lab, i) => (
+                  <div key={i} style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 10 }}>
+                    <span style={{ fontSize: 13, fontWeight: 600, color: C.dark, width: 90 }}>{lab.label}</span>
+                    <input
+                      type="number"
+                      step="0.1"
+                      placeholder={lab.value}
+                      onChange={e => {
+                        if (e.target.value) {
+                          const updated = [...labs];
+                          updated[i] = { ...updated[i], prev: updated[i].value, value: e.target.value, direction: parseFloat(e.target.value) > parseFloat(updated[i].value) ? "up" : "down" };
+                          setLabs(updated);
+                        }
+                      }}
+                      style={{ flex: 1, padding: "8px 12px", borderRadius: 8, border: `1px solid #E0E8E6`, fontSize: 14, fontFamily: font.body, outline: "none" }}
+                    />
+                    <span style={{ fontSize: 11, color: C.textLight, width: 40 }}>{lab.unit}</span>
+                  </div>
+                ))}
+                <Btn full onClick={() => setShowLabInput(false)} style={{ marginTop: 10 }}>Save Results</Btn>
+              </div>
+            )}
             <Btn full secondary style={{ marginTop: 10 }}>Generate Doctor Sheet</Btn>
           </>
         )}
