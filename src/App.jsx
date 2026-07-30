@@ -44,7 +44,7 @@ const WORKOUTS = {
   days: [
     {
       name: "Upper Body Strength", day: "Monday", phase: "Foundation", week: 1,
-      duration: "25 min", equipment: "3 lb dumbbells",
+      duration: "30 min", equipment: "3 lb dumbbells",
       exercises: [
         { name: "Seated Bicep Curls", sets: 3, reps: 12, breath: "Exhale as you curl up, inhale as you lower.", notes: "Keep elbows pinned to your sides. Slow and controlled — 2 seconds up, 3 seconds down. If 12 feels easy, that's the point right now.", modification: "If shoulders fatigue, rest arms on thighs between sets." },
         { name: "Standing Shoulder Press", sets: 3, reps: 10, breath: "Exhale as you press overhead, inhale as you lower.", notes: "Start with dumbbells at shoulder height, palms forward. Press straight up, don't lock elbows at top.", modification: "Do seated if you feel lightheaded standing." },
@@ -56,7 +56,7 @@ const WORKOUTS = {
     },
     {
       name: "Lower Body & Balance", day: "Wednesday", phase: "Foundation", week: 1,
-      duration: "25 min", equipment: "Chair for balance, 3 lb dumbbells optional",
+      duration: "30 min", equipment: "Chair for balance, 3 lb dumbbells optional",
       exercises: [
         { name: "Chair-Assisted Squats", sets: 3, reps: 12, breath: "Inhale as you lower, exhale as you stand.", notes: "Stand in front of chair, feet hip-width. Lower until you lightly touch the seat, then stand. Don't plop down.", modification: "Place a pillow on the chair to reduce depth if knees are sensitive. Do NOT go past 90 degrees." },
         { name: "Standing Calf Raises", sets: 3, reps: 15, breath: "Exhale as you rise, inhale as you lower.", notes: "Hold chair back for balance. Rise onto toes, hold 1 second at top, lower slowly.", modification: "Do one leg at a time for more challenge, or both for stability." },
@@ -68,7 +68,7 @@ const WORKOUTS = {
     },
     {
       name: "Full Body & Core", day: "Friday", phase: "Foundation", week: 1,
-      duration: "25 min", equipment: "3 lb dumbbells, chair",
+      duration: "30 min", equipment: "3 lb dumbbells, chair",
       exercises: [
         { name: "Dumbbell Deadlift", sets: 3, reps: 10, breath: "Inhale as you hinge down, exhale as you stand.", notes: "Hold dumbbells in front of thighs. Push hips BACK (not down), slight knee bend. Feel hamstrings stretch. Stand tall, squeeze glutes.", modification: "Use chair in front for hand support if balance is a concern." },
         { name: "Standing Chest Press", sets: 3, reps: 12, breath: "Exhale as you press forward, inhale as you pull back.", notes: "Stand with staggered stance, press dumbbells forward from chest height. Squeeze chest at full extension.", modification: "Can also do against a wall for support." },
@@ -128,7 +128,7 @@ const MEALS_CKD = [
     { day: "Tuesday", meals: [
       { type: "Breakfast", name: "Blueberry Rice Bowl with Egg", items: "½ cup white rice, ½ cup blueberries, cinnamon, drizzle of olive oil. 1 hard-boiled egg.", order: "Eat the egg first, then the rice bowl.", k: "low", p: "low", na: "low" },
       { type: "Lunch", name: "Turkey Meatballs with Zucchini & Pasta", items: "3 oz ground turkey meatballs with garlic, oregano, parsley. 1 cup sautéed zucchini. Side of white pasta.", order: "Eat meatballs and zucchini first, pasta last.", k: "low", p: "low", na: "low" },
-      { type: "Dinner", name: "Garlic Shrimp & Arugula Salad", items: "3 oz shrimp sautéed in olive oil with garlic and paprika. 2 cups arugula, ½ cup cucumber, lemon dressing.", order: "All protein and greens.", k: "low", p: "low", na: "low" },
+      { type: "Dinner", name: "Ginger Chicken & Cabbage Bowl", items: "3 oz chicken breast sliced thin with fresh ginger, garlic, black pepper. 1.5 cups sautéed cabbage and onions in olive oil.", order: "Protein and vegetables — warm and satisfying.", k: "low", p: "low", na: "low" },
     ]},
     { day: "Wednesday", meals: [
       { type: "Breakfast", name: "Cucumber Cream Cheese Toast", items: "2 slices white bread with cream cheese (Tillamook or Organic Valley) and sliced cucumber. Dill and black pepper. 1 egg white on the side.", order: "Eat the egg white first, toast second.", k: "low", p: "low", na: "low" },
@@ -180,7 +180,7 @@ const MEALS_CKD = [
     { day: "Friday", meals: [
       { type: "Breakfast", name: "Bell Pepper & Onion Egg Scramble", items: "1 whole egg + 1 egg white with ½ cup bell peppers, ¼ cup onions, paprika. White toast.", order: "Eat the scramble first, toast last.", k: "low", p: "low", na: "low" },
       { type: "Lunch", name: "Chicken & Cabbage Stir-Fry", items: "3 oz chicken with 1 cup cabbage, garlic, ginger, black pepper, olive oil. ½ cup white rice.", order: "Eat chicken and cabbage first, rice last.", k: "low", p: "low", na: "low" },
-      { type: "Dinner", name: "Baked Sole with Lemon Dill Arugula", items: "3 oz sole with lemon, dill, olive oil. 2 cups arugula with cucumber dressing.", order: "Light fish and salad.", k: "low", p: "low", na: "low" },
+      { type: "Dinner", name: "Herb Chicken with Roasted Cauliflower", items: "3 oz chicken breast with rosemary, thyme, garlic. 1 cup roasted cauliflower with olive oil. Side of steamed green beans.", order: "Protein and vegetables — satisfying and clean.", k: "low", p: "low", na: "low" },
     ]},
     { day: "Saturday", meals: [
       { type: "Breakfast", name: "Blueberry Cream Cheese Toast", items: "2 slices white bread with cream cheese (Tillamook or Organic Valley), ½ cup blueberries. 1 hard-boiled egg.", order: "Eat the egg first, toast second.", k: "low", p: "low", na: "low" },
@@ -207,17 +207,17 @@ const MEALS_CKD = [
     { day: "Wednesday", meals: [
       { type: "Breakfast", name: "Pineapple Cream Cheese Toast", items: "2 slices white bread with cream cheese (Tillamook or Organic Valley) and ¼ cup diced pineapple. 1 hard-boiled egg.", order: "Eat the egg first, toast second.", k: "low", p: "low", na: "low" },
       { type: "Lunch", name: "Turkey Meatloaf Bites with Cauliflower", items: "3 oz ground turkey mini loaf bites with garlic, parsley, oregano. 1 cup cauliflower. ½ cup white rice.", order: "Eat turkey and cauliflower first, rice last.", k: "low", p: "low", na: "low" },
-      { type: "Dinner", name: "Shrimp & Arugula Salad", items: "3 oz shrimp in olive oil and garlic. 2 cups arugula, cucumber, lemon dressing.", order: "Protein and greens — light midweek dinner.", k: "low", p: "low", na: "low" },
+      { type: "Dinner", name: "Stuffed Bell Peppers (CKD-Safe)", items: "2 bell peppers stuffed with 3 oz seasoned ground turkey, white rice, diced onion, garlic, cumin, smoked paprika. No cheese. Bake 25 min.", order: "All-in-one meal — protein, veggie, and starch together.", k: "low", p: "low", na: "low" },
     ]},
     { day: "Thursday", meals: [
       { type: "Breakfast", name: "Egg White & Herb Scramble", items: "3 egg whites with dill, parsley, garlic powder, ¼ cup onion. Side of white toast.", order: "Eat the scramble first, toast last.", k: "low", p: "low", na: "low" },
       { type: "Lunch", name: "Cajun Chicken with Cabbage & Couscous", items: "3 oz chicken with smoked paprika, oregano, cayenne, garlic. 1 cup sautéed cabbage. ½ cup couscous.", order: "Eat chicken and cabbage first, couscous last.", k: "low", p: "low", na: "low" },
-      { type: "Dinner", name: "Baked Sole with Steamed Green Beans", items: "3 oz sole with lemon, thyme. 1 cup steamed green beans with olive oil. Fresh parsley.", order: "Simple, clean dinner.", k: "low", p: "low", na: "low" },
+      { type: "Dinner", name: "Egg White Vegetable Frittata", items: "4 egg whites with ½ cup bell peppers, ¼ cup onions, zucchini, fresh basil, black pepper. Cook in olive oil. Side of arugula salad.", order: "Light protein-packed dinner — no starch needed.", k: "low", p: "low", na: "low" },
     ]},
     { day: "Friday", meals: [
       { type: "Breakfast", name: "Blueberry Breakfast Bowl", items: "½ cup white rice with ½ cup blueberries, cinnamon, olive oil. 1 hard-boiled egg.", order: "Eat the egg first, then the bowl.", k: "low", p: "low", na: "low" },
       { type: "Lunch", name: "Chicken Stir-Fry with Bell Peppers", items: "3 oz chicken with 1 cup bell peppers, ½ cup onions, garlic, ginger. ½ cup white rice.", order: "Eat chicken and peppers first, rice last.", k: "low", p: "low", na: "low" },
-      { type: "Dinner", name: "Shrimp with Radish & Cucumber Salad", items: "3 oz grilled shrimp with rosemary. 1.5 cups radish, cucumber, arugula salad. Olive oil and lemon.", order: "End the week light.", k: "low", p: "low", na: "low" },
+      { type: "Dinner", name: "Lemon Pepper Chicken with Roasted Radishes", items: "3 oz chicken breast with lemon, black pepper, oregano. 1 cup roasted radishes, ½ cup steamed green beans. Olive oil drizzle.", order: "End the week light and clean.", k: "low", p: "low", na: "low" },
     ]},
     { day: "Saturday", meals: [
       { type: "Breakfast", name: "Weekend Zucchini Herb Omelet", items: "2 egg whites + 1 egg with ½ cup zucchini, fresh basil, oregano, garlic. White toast.", order: "Eat the omelet first, toast last.", k: "low", p: "low", na: "low" },
@@ -265,6 +265,7 @@ const FOODS = [
   { name: "Potato", k: "high", p: "mod", safe: false, note: "High potassium — avoid or double-leach" },
   { name: "Radishes", k: "low", p: "low", safe: true, note: "Roast them as a potato substitute" },
   { name: "Rice (white)", k: "low", p: "low", safe: true, note: "Safe kidney-friendly starch" },
+  { name: "Rye Bread", k: "mod", p: "mod", safe: "limit", note: "OK occasionally if labs are stable. Check label for sodium and additives. White bread is the safer daily choice." },
   { name: "Salmon", k: "mod", p: "mod", safe: "limit", note: "Good omega-3s but moderate portions only" },
   { name: "Spinach", k: "high", p: "mod", safe: false, note: "Very high potassium — use arugula instead" },
   { name: "Strawberries", k: "low", p: "low", safe: true, note: "Safe and antioxidant-rich" },
@@ -284,7 +285,7 @@ const EDUCATION = [
     content: [
       { h: "What insulin actually does", p: "Insulin is a hormone made by your pancreas. When you eat, blood sugar rises, and insulin shuttles that glucose into your cells for energy. But insulin is also a storage hormone — when it's high, your body prioritizes storing energy as fat and suppresses the breakdown of existing fat. Your body literally cannot efficiently burn fat while insulin is elevated." },
       { h: "The cycle that traps people", p: "Refined carbs and sugar spike insulin hard and fast. Insulin clears sugar quickly — sometimes too quickly, causing a crash. That crash triggers hunger and cravings. You eat again (usually more carbs), insulin spikes again. Fat burning stays suppressed because insulin never drops low enough. This is why someone can eat 1,200 calories of processed food, still feel hungry, and still not lose fat." },
-      { h: "What works", p: "Prioritize protein, healthy fats, and fiber-rich vegetables — these produce gentler insulin responses. Eat protein and vegetables BEFORE carbs in the same meal (studies show this reduces blood sugar spikes by 35-40%). Give your body windows without food so insulin can drop. And build muscle — skeletal muscle is your body's largest glucose sink. More muscle means better insulin sensitivity." },
+      { h: "What works", p: "Prioritize protein, healthy fats, and fiber-rich vegetables — these produce gentler insulin responses. Eat protein and vegetables BEFORE carbs in the same meal (studies show this reduces blood sugar spikes by up to 37%). Give your body windows without food so insulin can drop. And build muscle — skeletal muscle is your body's largest glucose sink. More muscle means better insulin sensitivity." },
       { h: "Why this matters for CKD", p: "CKD patients have higher rates of insulin resistance. Poor insulin management accelerates kidney damage through increased inflammation and blood pressure. Managing insulin through exercise and eating smart isn't just about body composition — it's about protecting your kidneys." },
     ],
   },
@@ -292,7 +293,7 @@ const EDUCATION = [
     id: "mealorder", icon: "UtensilsCrossed", title: "How to Eat Your Meals", subtitle: "Same food, different order, better results",
     content: [
       { h: "Your stomach is a queue, not a blender", p: "Food processes largely in the order it arrives. When protein and fiber hit your stomach first, they form a slower-moving mass. Carbs arriving after have to work through that layer, slowing glucose absorption into your bloodstream." },
-      { h: "The science", p: "Researchers at Weill Cornell Medicine gave people the exact same meal but changed the order. Eating vegetables and protein first, carbs last, reduced post-meal blood sugar spikes by 35-40%. Same food. Same calories. Just different order." },
+      { h: "The science", p: "Researchers at Weill Cornell Medicine gave people the exact same meal but changed the order. Eating vegetables and protein first, carbs last, reduced post-meal blood sugar spikes by 29-37% depending on the time interval. Same food. Same calories. Just different order." },
       { h: "The practical rule", p: "Sit down with your plate. Eat your protein and veggies first. Finish with whatever starch is on the plate. That's it. At breakfast, eat your eggs before your toast. At lunch, eat your chicken and vegetables before your rice. At dinner, keep it protein and vegetable focused with minimal starch." },
       { h: "Timing throughout the day", p: "Your body handles glucose better in the morning (higher insulin sensitivity). Front-load your calories — biggest meal at lunch, lightest at dinner. Eat 2-3 structured meals with 3-4 hours between. Stop eating 2-3 hours before bed. Every snack spikes insulin — those '100 calorie snack packs' keep insulin elevated all day." },
     ],
@@ -334,6 +335,7 @@ const EDUCATION = [
       { h: "Energy drinks — hard no", p: "High caffeine spikes blood pressure. Sugar spikes insulin. Many contain hidden phosphorus and potassium (up to 580mg per serving). Even sugar-free versions are dangerous. Avoid completely." },
       { h: "Soda — also no", p: "Dark colas contain phosphoric acid that directly damages kidneys. Studies show 2+ colas daily doubles CKD risk. Diet soda isn't safe either — artificial sweeteners and phosphoric acid still stress your kidneys." },
       { h: "Alcohol — extremely risky", p: "Raises blood pressure, dehydrates the body, damages kidney cells, disrupts electrolytes, interferes with medications, disrupts sleep, and spikes blood sugar. If you drink, discuss limits with your nephrologist." },
+      { h: "Sports drinks — avoid completely", p: "Gatorade, Powerade, BodyArmor, Liquid IV, and all electrolyte drinks are designed to REPLACE sodium, potassium, and phosphorus. Those are the exact three things your kidneys cannot clear properly. A single 12 oz Gatorade contains approximately 160mg sodium, potassium from monopotassium phosphate (which your kidneys struggle to clear), phosphorus additives (absorbed at over 90 percent), 21 grams of sugar (spikes insulin), artificial colors your kidneys must filter, and natural flavors (unknown chemicals). You do not need electrolyte replacement for a 30-minute moderate workout. That is marketing designed for elite athletes doing 90-plus minutes of intense exercise. Plain water is all you need before, during, and after your workouts. Always consult your nephrologist before consuming any electrolyte-enhanced beverages." },
       { h: "Safe options", p: "Plain water, herbal teas (chamomile, ginger, hibiscus — avoid licorice root), black coffee in moderation (1-2 cups, no sugary creamers), unsweetened cranberry juice, water infused with lemon or berries." },
       { h: "Sparkling water vs. mineral water — know the difference", p: "Plain sparkling water (seltzer) is just water plus carbon dioxide — no added minerals, no sodium, no phosphorus. It's generally safe for CKD. Mineral water is completely different — it comes from natural springs and contains naturally occurring sodium, potassium, calcium, and other minerals. Some brands contain over 1,000mg of sodium per liter. Two glasses could blow your entire daily sodium budget without you realizing it." },
       { h: "Club soda and tonic water — avoid both", p: "Club soda is NOT the same as sparkling water. It has added sodium bicarbonate, sodium citrate, and sometimes potassium sulfate — hidden sodium and potassium sources. Tonic water contains sugar or artificial sweeteners plus quinine. Neither is kidney-friendly. Flavored sparkling waters need a label check too — some add potassium additives, phosphates, or 'natural flavors' that turn safe water into a CKD concern." },
@@ -397,13 +399,26 @@ const EDUCATION = [
     ],
   },
   {
+    id: "detox-dangers", icon: "AlertTriangle", title: "Detoxes, Cleanses & Herbal Supplements", subtitle: "Why 'kidney cleanses' are the most dangerous myth in CKD",
+    content: [
+      { h: "Your kidneys ARE your detox system", p: "The concept of 'detoxing your kidneys' is fundamentally flawed. Your kidneys filter 200 liters of blood every day, removing waste and toxins through urine. You cannot 'cleanse' your cleansing system with a tea or a supplement. The National Kidney Foundation says it directly: avoid teas and supplements marketed as a 'kidney detox' or 'kidney cleanse.' There is limited evidence they work, and some ingredients can interact with medications or directly damage your kidneys." },
+      { h: "Soursop (Graviola) — not safe for CKD", p: "Social media is flooded with claims that soursop cures cancer and reverses kidney disease. Cancer Research UK states that graviola may cause damage to your kidneys and liver if taken frequently. Research shows it can be nephrotoxic at high doses. For CKD patients whose kidneys are already compromised, the risk far outweighs any theoretical benefit from animal studies. Soursop is also high in potassium — the exact mineral you are trying to limit. Do not use soursop supplements, teas, or concentrated extracts without explicit approval from your nephrologist." },
+      { h: "Senna and 'detox' teas — dangerous", p: "Senna is a laxative herb found in most detox teas — Smooth Move, flat tummy teas, and dozens of social media-promoted cleanses. It causes severe electrolyte imbalances, especially potassium disruption. For CKD patients, ANY electrolyte disruption is dangerous and can cause heart problems. Chronic senna use has been linked to kidney damage even in people with healthy kidneys. If a tea is marketed as a 'detox,' 'cleanse,' or 'flush,' assume it is unsafe until your nephrologist says otherwise." },
+      { h: "The detox industry targets CKD patients", p: "People with CKD are targeted by kidney detox teas, multi-ingredient liver-kidney cleanse supplements, social media CKD reversal programs, and online success stories designed to sell products. They prey on fear and desperation. Someone diagnosed with Stage 3 goes to Google, sees 'reverse your kidney disease with this cleanse,' and buys pills that could cause acute kidney injury. The FDA does NOT regulate herbal supplements for dose, content, or purity. You are responsible for knowing what you put in your body." },
+      { h: "Herbs known to be dangerous for CKD", p: "The National Kidney Foundation maintains a list of 37 herbs potentially harmful for CKD. These include: aloe vera (internal use), astragalus, cats claw, comfrey, dandelion (supplement form), horsetail, licorice root, nettle (supplement form), parsley (supplement form — small amounts in cooking are fine), pennyroyal, wormwood, and yohimbe. Even herbs considered safe for healthy people can overwhelm damaged kidneys. Never start any herbal supplement without consulting your nephrologist first — even if it says 'natural' or 'organic' on the label." },
+      { h: "The only evidence-based 'detox' for CKD", p: "The National Kidney Foundation recommends: instead of a detox or cleanse, focus on eating a healthy diet, exercising regularly, staying properly hydrated, and if you smoke — stop. That is the only proven approach. No pill, tea, supplement, or cleanse has been shown to improve kidney function in CKD patients. What HAS been shown to help: regular moderate exercise (like this program), kidney-safe nutrition (like these meal plans), proper hydration, blood pressure management, and working closely with your nephrologist. Your app IS the detox." },
+    ],
+  },
+  {
     id: "exercise-safety", icon: "Shield", title: "Exercise Safety for CKD", subtitle: "Critical precautions before you work out",
     content: [
-      { h: "NEVER take NSAIDs for soreness", p: "This might be the most important thing in this entire app. Ibuprofen (Advil, Motrin), naproxen (Aleve), and aspirin are called NSAIDs. Most people pop them like candy for muscle soreness after workouts. For CKD patients, NSAIDs can cause acute kidney injury and accelerate kidney damage — even a few doses. If you're sore after a workout, use acetaminophen (Tylenol) instead, apply ice, stretch, and rest. Always confirm with your nephrologist which pain relievers are safe for you." },
+      { h: "NEVER take NSAIDs for soreness", p: "This might be the most important thing in this entire app. Ibuprofen (Advil, Motrin), naproxen (Aleve), and aspirin are called NSAIDs. Most people pop them like candy for muscle soreness after workouts. For CKD patients, NSAIDs can cause acute kidney injury and accelerate kidney damage — even a few doses. If you're sore after a workout, use acetaminophen (Tylenol) instead — it does not reduce kidney blood flow like NSAIDs. However, if you have liver disease, check with your doctor first, and never exceed the recommended dose, apply ice, stretch, and rest. Always confirm with your nephrologist which pain relievers are safe for you." },
       { h: "NEVER take creatine supplements", p: "Creatine supplements are everywhere in the fitness world. For CKD patients, they are dangerous. Creatine supplements flood your body with extra creatine, which breaks down into creatinine — the exact waste product your damaged kidneys are already struggling to filter. Taking creatine supplements can spike your creatinine levels, mask your true kidney function on lab tests, and potentially accelerate kidney damage. You do not need supplements to build muscle. Your program and your meals give you everything you need." },
       { h: "Be careful with protein supplements", p: "Protein shakes and powders are popular in fitness. But many contain phosphorus additives, artificial sweeteners, and more protein per serving than a CKD patient should consume at once. Excess protein stresses the kidneys. Get your protein from real food in the portions your meal plan recommends (3-4 oz per meal). If you want a supplement, talk to your nephrologist or a renal dietitian first." },
       { h: "When to STOP exercising immediately", p: "Stop and rest if you experience: chest pain or tightness, severe shortness of breath that doesn't improve with rest, dizziness or lightheadedness, unusual or sudden swelling in your legs or feet, heart pounding or racing irregularly, nausea or vomiting, or sharp pain anywhere (versus normal muscle fatigue). If symptoms don't resolve with rest, call your doctor or 911." },
-      { h: "Blood pressure and exercise", p: "Your blood pressure will rise temporarily during exercise — that's normal. It should return to your baseline within an hour after your workout. If you take blood pressure medication, don't skip it before exercising. Consider checking your blood pressure before and 30 minutes after your first few workouts so you know your pattern. Avoid heavy straining and always breathe — never hold your breath during a lift." },
+      { h: "The blood pressure myth — debunked", p: "The old advice was 'don\'t exercise if you have high blood pressure.' That\'s been completely reversed by modern medicine. Not exercising with high blood pressure is MORE dangerous than exercising with it. The American Heart Association, the National Kidney Foundation, and every major medical body now recommends regular moderate exercise as a treatment for high blood pressure. Here\'s why: after you finish exercising, your blood pressure drops BELOW your normal baseline — this is called post-exercise hypotension, and it lasts 12-24 hours. Over weeks of consistent exercise, your resting blood pressure decreases permanently. Studies show 5-8 mmHg reduction — that\'s equivalent to adding a medication, without the side effects." },
+      { h: "Exercising safely with high blood pressure", p: "Check your blood pressure before starting. If it\'s above 180/110, skip that session and call your doctor. Ask your nephrologist what your personal threshold should be. Below that, you\'re clear for moderate exercise. Never hold your breath during a lift — exhale on effort, inhale on return. Stay at moderate intensity — you should be able to hold a conversation while exercising. If you\'re gasping, you\'re pushing too hard. Don\'t stop suddenly — cool down gradually to prevent blood pressure from dropping too fast. Stay on your blood pressure medication — exercise works WITH your meds, not instead of them. Never stop medication because you feel better." },
+      { h: "Why 150 minutes per week", p: "Research shows at least 150 minutes per week of moderate-intensity activity provides the most benefit for CKD patients. Your program delivers exactly that: three 30-minute sessions per week. That\'s 5 minutes of warm-up, 20 minutes of strength training, and 5 minutes of cool-down. Short enough that fatigue doesn\'t become dangerous, long enough to build real muscle, improve insulin sensitivity, lower blood pressure, and protect your kidneys. You don\'t need hour-long gym sessions. You need consistency." },
       { h: "Muscle soreness vs. kidney pain", p: "New exercisers sometimes confuse lower back muscle soreness with kidney pain. Here's the difference: muscle soreness is typically on both sides, feels like a dull ache that gets better with movement and stretching, and peaks 24-48 hours after exercise. Kidney pain is usually one-sided, deeper, doesn't change with movement, and may come with fever, changes in urination, or nausea. If you're unsure, contact your doctor — don't guess." },
       { h: "Hydration during exercise", p: "Sip water throughout your workout — don't wait until you're thirsty. But don't overdo it either. For a 25-minute session, 8-12 oz of water during the workout is generally fine for Stages 2-3. If you have fluid restrictions, follow your nephrologist's guidance. Watch for dark urine after exercise — that means you need more water next time." },
     ],
@@ -502,8 +517,11 @@ function WelcomePage({ onStart }) {
         <p style={{ fontFamily: font.body, fontSize: 18, color: C.sagePale.replace("20", "CC"), lineHeight: 1.6, maxWidth: 320, margin: "0 auto 12px" }}>
           Take control of your kidney health.
         </p>
-        <p style={{ fontFamily: font.body, fontSize: 15, color: C.sagePale.replace("20", "88"), lineHeight: 1.5, maxWidth: 300, margin: "0 auto 40px" }}>
+        <p style={{ fontFamily: font.body, fontSize: 15, color: C.sagePale.replace("20", "88"), lineHeight: 1.5, maxWidth: 300, margin: "0 auto 16px" }}>
           The first fitness & nutrition app built for people living with CKD. Exercise safely. Eat smart. Understand your body.
+        </p>
+        <p style={{ fontFamily: font.body, fontSize: 13, fontWeight: 600, color: C.secondary, letterSpacing: "0.05em", maxWidth: 300, margin: "0 auto 32px" }}>
+          Built for men and women living with CKD Stages 2–3
         </p>
         <Btn onClick={onStart} full style={{ maxWidth: 300, margin: "0 auto", display: "block", padding: "16px 28px", fontSize: 16 }}>
           Start Your Free Week
@@ -674,7 +692,7 @@ function DashboardPage({ user, setPage, setSubPage }) {
         {/* Disclaimer */}
         <div style={{ background: C.yellowPale, borderRadius: 10, padding: "12px 14px", marginBottom: 20 }}>
           <p style={{ fontSize: 11, color: C.darkMuted, margin: 0, lineHeight: 1.5 }}>
-            <strong>Medical Disclaimer:</strong> FitByChoice supports your kidney health journey alongside your medical team. Always consult your nephrologist before starting or changing your exercise or dietary routine.
+            <strong>Medical Disclaimer:</strong> FitByChoice is an educational wellness tool — not a substitute for medical advice. Always consult your nephrologist, renal dietitian, or healthcare provider before making changes to your exercise, diet, or medication. Your labs, your stage, and your individual health profile should guide every decision. When in doubt, ask your doctor first.
           </p>
         </div>
       </div>
@@ -697,7 +715,7 @@ function WorkoutsPage({ subPage, setSubPage }) {
           <div style={{ display: "flex", gap: 8, marginBottom: 16 }}>
             <div style={{ flex: 1, textAlign: "center", padding: "10px 0", background: C.primaryPale, borderRadius: 10 }}>
               <div style={{ fontSize: 16, fontWeight: 700, color: C.primary }}>{selectedWorkout.duration}</div>
-              <div style={{ fontSize: 10, color: C.textMid, marginTop: 1 }}>Duration</div>
+              <div style={{ fontSize: 10, color: C.textMid, marginTop: 1 }}>Total Time</div>
             </div>
             <div style={{ flex: 1, textAlign: "center", padding: "10px 0", background: C.primaryPale, borderRadius: 10 }}>
               <div style={{ fontSize: 16, fontWeight: 700, color: C.primary }}>{selectedWorkout.exercises.length}</div>
@@ -709,10 +727,26 @@ function WorkoutsPage({ subPage, setSubPage }) {
             </div>
           </div>
 
+          {/* Time Breakdown */}
+          <div style={{ display: "flex", gap: 6, marginBottom: 12 }}>
+            <div style={{ flex: 1, textAlign: "center", padding: "8px 4px", background: C.sagePale, borderRadius: 8 }}>
+              <div style={{ fontSize: 13, fontWeight: 600, color: C.sage }}>5 min</div>
+              <div style={{ fontSize: 9, color: C.textMid }}>Warm-Up</div>
+            </div>
+            <div style={{ flex: 1, textAlign: "center", padding: "8px 4px", background: C.primaryPale, borderRadius: 8 }}>
+              <div style={{ fontSize: 13, fontWeight: 600, color: C.primary }}>20 min</div>
+              <div style={{ fontSize: 9, color: C.textMid }}>Workout</div>
+            </div>
+            <div style={{ flex: 1, textAlign: "center", padding: "8px 4px", background: C.sagePale, borderRadius: 8 }}>
+              <div style={{ fontSize: 13, fontWeight: 600, color: C.sage }}>5 min</div>
+              <div style={{ fontSize: 9, color: C.textMid }}>Cool-Down</div>
+            </div>
+          </div>
+
           {/* Breathing Reminder */}
           <div style={{ background: C.secondaryPale, borderRadius: 10, padding: "10px 14px", marginBottom: 16, borderLeft: `3px solid ${C.secondary}` }}>
             <p style={{ fontSize: 13, color: C.darkMuted, margin: 0, lineHeight: 1.5 }}>
-              <strong style={{ color: C.dark }}>Breathing reminder:</strong> Exhale on the effort, inhale on the return. Never hold your breath.
+              <strong style={{ color: C.dark }}>Breathing reminder:</strong> Exhale on the effort, inhale on the return. Never hold your breath — this protects your blood pressure.
             </p>
           </div>
 
@@ -896,7 +930,7 @@ function MealsPage({ subPage, setSubPage }) {
       <div style={{ paddingBottom: 90 }}>
         <TopBar title="Food Lookup" onBack={() => setShowFoodLookup(false)} />
         <div style={{ padding: "0 20px 20px" }}>
-          <p style={{ fontSize: 13, color: C.textMid, marginBottom: 14, lineHeight: 1.5 }}>Search any food to check if it's kidney-safe. Green = safe, yellow = limit, red = avoid.</p>
+          <p style={{ fontSize: 13, color: C.textMid, marginBottom: 14, lineHeight: 1.5 }}>Search any food to check if it's kidney-safe. Green = safe, yellow = limit, red = avoid. These are general guidelines — always verify with your nephrologist or renal dietitian based on YOUR labs and stage.</p>
           <div style={{ position: "relative", marginBottom: 8 }}>
             <Search size={16} color={C.textLight} style={{ position: "absolute", left: 14, top: 14 }} />
             <input value={searchTerm} onChange={e => setSearchTerm(e.target.value)} placeholder="Search a food..."
@@ -1010,7 +1044,7 @@ function MealsPage({ subPage, setSubPage }) {
 
         <div style={{ background: C.secondaryPale, borderRadius: 10, padding: "10px 14px", marginBottom: 16, borderLeft: `3px solid ${C.secondary}` }}>
           <p style={{ fontSize: 13, color: C.darkMuted, margin: 0, lineHeight: 1.5 }}>
-            <strong style={{ color: C.dark }}>Eating order matters:</strong> Eat protein and vegetables first, carbs last. Same meal, better insulin response.
+            <strong style={{ color: C.dark }}>Eating order matters (always consult your nephrologist for personalized dietary guidance):</strong> Eat protein and vegetables first, carbs last. Same meal, better insulin response.
           </p>
         </div>
 
@@ -1036,9 +1070,19 @@ function MealsPage({ subPage, setSubPage }) {
   );
 }
 
-function LearnPage() {
+function LearnPage({ user }) {
   const [selectedModule, setSelectedModule] = useState(null);
   const iconMap = { Zap, UtensilsCrossed, Heart, Moon, Eye, Droplets, Shield, Activity, Star, AlertTriangle };
+
+  // Filter modules based on user profile
+  const isFemale = user?.sex === "Female";
+  const isPerimenoAge = user?.age === "40–54" || user?.age === "55–64" || user?.age === "65+";
+  const showHormoneModule = isFemale && isPerimenoAge;
+
+  const filteredEducation = EDUCATION.filter(mod => {
+    if (mod.id === "bodyafter50" && !showHormoneModule) return false;
+    return true;
+  });
 
   if (selectedModule) {
     const mod = selectedModule;
@@ -1055,7 +1099,7 @@ function LearnPage() {
           ))}
           <div style={{ background: C.yellowPale, borderRadius: 10, padding: "12px 14px" }}>
             <p style={{ fontSize: 11, color: C.darkMuted, margin: 0, lineHeight: 1.5 }}>
-              <strong>Disclaimer:</strong> This information is educational. Always consult your nephrologist for medical decisions.
+              <strong>Important:</strong> This information is educational only and does not replace medical advice. Always verify with your nephrologist, renal dietitian, or healthcare provider before making any changes. Your individual labs and medical history should guide every decision.
             </p>
           </div>
         </div>
@@ -1064,10 +1108,10 @@ function LearnPage() {
   }
 
   const categories = [
-    { name: "Understanding Your Body", modules: EDUCATION.filter(m => ["insulin", "bodyafter50", "symptoms", "sleep"].includes(m.id)) },
-    { name: "Nutrition & Meal Guidance", modules: EDUCATION.filter(m => ["mealorder", "hydration-fruits", "beverages"].includes(m.id)) },
-    { name: "Reading Labels & Food Safety", modules: EDUCATION.filter(m => ["seasonings", "hidden-dangers"].includes(m.id)) },
-    { name: "Exercise & Medical", modules: EDUCATION.filter(m => ["exercise-safety", "labs"].includes(m.id)) },
+    { name: "Understanding Your Body", modules: filteredEducation.filter(m => ["insulin", "bodyafter50", "symptoms", "sleep"].includes(m.id)) },
+    { name: "Nutrition & Meal Guidance", modules: filteredEducation.filter(m => ["mealorder", "hydration-fruits", "beverages"].includes(m.id)) },
+    { name: "Reading Labels & Food Safety", modules: filteredEducation.filter(m => ["seasonings", "hidden-dangers", "detox-dangers"].includes(m.id)) },
+    { name: "Exercise & Medical", modules: filteredEducation.filter(m => ["exercise-safety", "labs"].includes(m.id)) },
   ];
 
   return (
@@ -1186,7 +1230,7 @@ function TrackPage({ subPage }) {
             {labs.some(l => l.label === "Potassium" && parseFloat(l.value) > 4.5) && (
               <div style={{ background: C.secondaryPale, borderRadius: 10, padding: "10px 14px", marginTop: 14, borderLeft: `3px solid ${C.secondary}` }}>
                 <p style={{ fontSize: 12, color: C.darkMuted, margin: 0, lineHeight: 1.5 }}>
-                  <strong>Note:</strong> Your potassium is in range but trending higher. Review recent meals for high-potassium foods and discuss with your nephrologist.
+                  <strong>Note:</strong> Your potassium is in range but trending higher. Review recent meals for high-potassium foods. Discuss any lab changes with your nephrologist — never adjust your diet or medications based on this app alone.
                 </p>
               </div>
             )}
@@ -1388,7 +1432,7 @@ export default function FitByChoice() {
       {page === "home" && <DashboardPage user={user} setPage={handlePageChange} setSubPage={setSubPage} />}
       {page === "workouts" && <WorkoutsPage subPage={subPage} setSubPage={setSubPage} />}
       {page === "meals" && <MealsPage subPage={subPage} setSubPage={setSubPage} />}
-      {page === "learn" && <LearnPage />}
+      {page === "learn" && <LearnPage user={user} />}
       {page === "track" && <TrackPage subPage={subPage} />}
       {page === "about" && <AboutPage />}
 
