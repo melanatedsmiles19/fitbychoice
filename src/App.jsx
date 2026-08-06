@@ -99,7 +99,7 @@ const MEALS_CKD = [
       { type: "Dinner", name: "Lemon Herb Sea Bass with Roasted Radishes", items: "3 oz sea bass with lemon, thyme, rosemary. 1 cup roasted radishes with olive oil. Side salad with arugula.", order: "All protein and vegetables — ideal evening meal.", k: "low", p: "low", na: "low" },
     ]},
     { day: "Thursday", meals: [
-      { type: "Breakfast", name: "Veggie Egg Scramble", items: "2 egg whites + 1 whole egg, ½ cup diced zucchini, ¼ cup diced onion, garlic powder, black pepper. Side of 1 slice white toast.", order: "Eat the eggs and veggies first, toast last.", k: "low", p: "low", na: "low" },
+      { type: "Breakfast", name: "Savory Grits with Egg & Onions", items: "½ cup cooked grits with olive oil and black pepper. 1 scrambled egg with ¼ cup sautéed onions and garlic powder on top.", order: "Eat the egg and onions first, grits last.", k: "low", p: "low", na: "low" },
       { type: "Lunch", name: "Herb-Crusted Chicken with Rice & Green Beans", items: "3 oz chicken breast coated in oregano, thyme, garlic powder. 1 cup steamed green beans. ½ cup white rice.", order: "Eat chicken and green beans first, rice last.", k: "low", p: "low", na: "low" },
       { type: "Dinner", name: "Garlic Shrimp over Arugula", items: "3 oz shrimp sautéed in olive oil and fresh garlic. 2 cups arugula with lemon juice dressing. ½ cup roasted cauliflower.", order: "Protein and vegetables only — light evening meal.", k: "low", p: "low", na: "low" },
     ]},
@@ -121,7 +121,7 @@ const MEALS_CKD = [
   ],
   [ // WEEK 2
     { day: "Monday", meals: [
-      { type: "Breakfast", name: "Herb Egg White Scramble", items: "3 egg whites with ¼ cup roasted red bell pepper, fresh parsley, garlic powder. Side of white toast.", order: "Eat the scramble first, toast last.", k: "low", p: "low", na: "low" },
+      { type: "Breakfast", name: "Blueberry Cinnamon Oatmeal with Egg", items: "½ cup cooked plain oatmeal (not instant) with ½ cup blueberries, cinnamon. 1 hard-boiled egg on the side. Note: oatmeal 1-2x per week max if phosphorus labs are stable.", order: "Eat the egg first, then the oatmeal.", k: "low", p: "mod", na: "low" },
       { type: "Lunch", name: "Lemon Pepper Chicken with Cauliflower Mash", items: "3 oz chicken breast with lemon, black pepper, thyme. 1 cup cauliflower mashed with olive oil. Side of orzo.", order: "Eat chicken and cauliflower first, couscous last.", k: "low", p: "low", na: "low" },
       { type: "Dinner", name: "Pan-Seared Sole with Cabbage Slaw", items: "3 oz sole pan-seared in olive oil with dill. 1.5 cups cabbage slaw with apple cider vinegar and black pepper.", order: "Light fish and vegetable dinner.", k: "low", p: "low", na: "low" },
     ]},
@@ -143,7 +143,7 @@ const MEALS_CKD = [
     { day: "Friday", meals: [
       { type: "Breakfast", name: "Pineapple Cream Cheese Toast", items: "2 slices white toast with cream cheese (Tillamook or Organic Valley) and ¼ cup diced pineapple. 1 hard-boiled egg.", order: "Eat the egg first, toast second.", k: "low", p: "low", na: "low" },
       { type: "Lunch", name: "Rosemary Chicken with Cauliflower & Rice", items: "3 oz chicken with rosemary, garlic, olive oil. 1 cup roasted cauliflower. ½ cup white rice.", order: "Eat chicken and cauliflower first, rice last.", k: "low", p: "low", na: "low" },
-      { type: "Dinner", name: "Arugula Salad with Grilled Chicken", items: "3 oz grilled chicken over 2 cups arugula, cucumber, radishes. Olive oil and lemon dressing.", order: "All protein and vegetables — light Friday dinner.", k: "low", p: "low", na: "low" },
+      { type: "Dinner", name: "Garlic Ginger Steak over Rice", items: "3 oz flank steak or sirloin sliced thin against the grain. Sear 60-90 seconds per side in olive oil. Same pan: fresh garlic, grated ginger, 1 cup green beans, black pepper, splash of rice vinegar, smoked paprika. Serve over ½ cup white rice. Red meat 1x per week max.", order: "Eat the steak and green beans first, rice last.", k: "low", p: "mod", na: "low" },
     ]},
     { day: "Saturday", meals: [
       { type: "Breakfast", name: "Weekend Herb Scramble", items: "2 egg whites + 1 egg with fresh basil, parsley, diced onion. White toast with olive oil.", order: "Eat the scramble first, toast last.", k: "low", p: "low", na: "low" },
@@ -183,7 +183,7 @@ const MEALS_CKD = [
       { type: "Dinner", name: "Herb Chicken with Roasted Cauliflower", items: "3 oz chicken breast with rosemary, thyme, garlic. 1 cup roasted cauliflower with olive oil. Side of steamed green beans.", order: "Protein and vegetables — satisfying and clean.", k: "low", p: "low", na: "low" },
     ]},
     { day: "Saturday", meals: [
-      { type: "Breakfast", name: "Blueberry Cream Cheese Toast", items: "2 slices white bread with cream cheese (Tillamook or Organic Valley), ½ cup blueberries. 1 hard-boiled egg.", order: "Eat the egg first, toast second.", k: "low", p: "low", na: "low" },
+      { type: "Breakfast", name: "Creamy Grits with Sautéed Peppers & Egg", items: "½ cup cooked grits with 1 tsp olive oil. Topped with ½ cup sautéed bell peppers and 1 scrambled egg. Black pepper and garlic powder.", order: "Eat the egg and peppers first, grits last.", k: "low", p: "low", na: "low" },
       { type: "Lunch", name: "Ground Turkey with Roasted Cauliflower", items: "3 oz ground turkey with smoked paprika, garlic, cumin. 1 cup roasted cauliflower. ½ cup couscous.", order: "Eat turkey and cauliflower first, couscous last.", k: "low", p: "low", na: "low" },
       { type: "Dinner", name: "Mahi Mahi with Cabbage & Carrot Slaw", items: "3 oz baked mahi mahi with herbs. 1.5 cups cabbage and carrot slaw with apple cider vinegar.", order: "Protein and vegetables.", k: "low", p: "low", na: "low" },
     ]},
@@ -210,7 +210,7 @@ const MEALS_CKD = [
       { type: "Dinner", name: "Stuffed Bell Peppers (CKD-Safe)", items: "2 bell peppers stuffed with 3 oz seasoned ground turkey, white rice, diced onion, garlic, cumin, smoked paprika. No cheese. Bake 25 min.", order: "All-in-one meal — protein, veggie, and starch together.", k: "low", p: "low", na: "low" },
     ]},
     { day: "Thursday", meals: [
-      { type: "Breakfast", name: "Egg White & Herb Scramble", items: "3 egg whites with dill, parsley, garlic powder, ¼ cup onion. Side of white toast.", order: "Eat the scramble first, toast last.", k: "low", p: "low", na: "low" },
+      { type: "Breakfast", name: "Apple Cinnamon Oatmeal with Egg", items: "½ cup cooked plain oatmeal (not instant) with ½ diced apple, cinnamon, drizzle of olive oil. 1 hard-boiled egg on the side. Note: oatmeal 1-2x per week max if phosphorus labs are stable.", order: "Eat the egg first, then the oatmeal.", k: "low", p: "mod", na: "low" },
       { type: "Lunch", name: "Cajun Chicken with Cabbage & Couscous", items: "3 oz chicken with smoked paprika, oregano, cayenne, garlic. 1 cup sautéed cabbage. ½ cup couscous.", order: "Eat chicken and cabbage first, couscous last.", k: "low", p: "low", na: "low" },
       { type: "Dinner", name: "Egg White Vegetable Frittata", items: "4 egg whites with ½ cup bell peppers, ¼ cup onions, zucchini, fresh basil, black pepper. Cook in olive oil. Side of arugula salad.", order: "Light protein-packed dinner — no starch needed.", k: "low", p: "low", na: "low" },
     ]},
@@ -233,42 +233,50 @@ const MEALS_CKD = [
 ];
 
 const FOODS = [
-  { name: "Apple", k: "low", p: "low", safe: true, note: "One of the best fruits for CKD" },
+  { name: "Apple", k: "low", p: "low", safe: true, note: "One of the best fruits for CKD. 1 small apple or ½ medium per day." },
   { name: "Arugula", k: "low", p: "low", safe: true, note: "Great salad base" },
   { name: "Avocado", k: "high", p: "mod", safe: false, note: "Very high potassium — avoid" },
   { name: "Banana", k: "high", p: "low", safe: false, note: "High potassium — avoid" },
   { name: "Bell Pepper", k: "low", p: "low", safe: true, note: "Excellent choice — high in vitamin C" },
-  { name: "Blueberries", k: "low", p: "low", safe: true, note: "Antioxidant-rich, kidney-friendly" },
+  { name: "Blueberries", k: "low", p: "low", safe: true, note: "Antioxidant-rich, kidney-friendly. Up to 1 cup per day." },
   { name: "Broccoli", k: "mod", p: "mod", safe: "limit", note: "Moderate potassium — small portions OK" },
   { name: "Brown Rice", k: "mod", p: "high", safe: false, note: "Use white rice instead — lower phosphorus" },
   { name: "Cabbage", k: "low", p: "low", safe: true, note: "Versatile and kidney-safe" },
   { name: "Cauliflower", k: "low", p: "low", safe: true, note: "Great substitute for potatoes" },
   { name: "Cheese (hard)", k: "low", p: "high", safe: false, note: "High phosphorus — avoid most cheeses" },
   { name: "Chicken Breast", k: "low", p: "mod", safe: true, note: "Good protein source — keep to 3-4 oz" },
+  { name: "Cherries", k: "mod", p: "low", safe: "limit", note: "Moderate potassium — 10-15 per sitting max. Do not eat by the bowl. Not a daily fruit." },
+  { name: "Coconut Water", k: "high", p: "mod", safe: false, note: "One 330ml Vita Coco has 646mg potassium, 100mg sodium, 33mg phosphorus. More potassium than a banana. Avoid." },
+  { name: "Crab Legs (King)", k: "low", p: "mod", safe: "limit", note: "OK occasionally — steamed, no butter, lemon and olive oil instead. 3 oz max. Account for phosphorus." },
+  { name: "Lobster", k: "low", p: "mod", safe: "limit", note: "OK occasionally — steamed, no butter, lemon and olive oil instead. 3 oz max. Account for phosphorus." },
+  { name: "Red Meat (Beef)", k: "mod", p: "mod", safe: "limit", note: "3 oz once a week max. Not your primary protein. Increases gout risk. Never processed (no deli, bacon, hot dogs)." },
   { name: "Cod", k: "low", p: "low", safe: true, note: "Excellent low-phosphorus protein" },
   { name: "Cola (dark)", k: "low", p: "high", safe: false, note: "Phosphoric acid — damages kidneys" },
-  { name: "Cranberry Juice", k: "low", p: "low", safe: true, note: "Unsweetened — good for urinary health" },
+  { name: "Cranberry Juice", k: "low", p: "low", safe: true, note: "Unsweetened only — good for urinary health. Up to 8 oz per day." },
   { name: "Cream Cheese", k: "low", p: "low", safe: true, note: "Lower phosphorus than most dairy" },
+  { name: "Cream of Wheat", k: "low", p: "low", safe: true, note: "Lower phosphorus than oatmeal. Good warm breakfast option for CKD." },
   { name: "Cucumber", k: "low", p: "low", safe: true, note: "Hydrating and safe" },
   { name: "Egg (whole)", k: "low", p: "mod", safe: true, note: "Limit to 1 per day — yolk has phosphorus" },
   { name: "Egg Whites", k: "low", p: "low", safe: true, note: "Pure protein, very kidney-friendly" },
   { name: "Energy Drink", k: "varies", p: "mod", safe: false, note: "Dangerous — caffeine, sugar, additives" },
   { name: "Garlic", k: "low", p: "low", safe: true, note: "Flavor powerhouse — use freely" },
+  { name: "Grits", k: "low", p: "low", safe: true, note: "Lower phosphorus than oatmeal. CKD-friendlier hot breakfast. Season with olive oil and black pepper." },
+  { name: "Grapes", k: "mod", p: "low", safe: "limit", note: "Moderate potassium. Limit to 15-20 grapes (½ cup) per sitting." },
   { name: "Green Beans", k: "low", p: "low", safe: true, note: "One of the safest vegetables for CKD" },
   { name: "Milk (cow's)", k: "high", p: "high", safe: false, note: "High in both potassium and phosphorus" },
-  { name: "Oatmeal", k: "mod", p: "high", safe: false, note: "High phosphorus — use white cereals instead" },
+  { name: "Oatmeal", k: "mod", p: "high", safe: "limit", note: "½ cup cooked max, 1-2x per week only IF phosphorus labs are stable. Plain only — no instant packets. Cream of Wheat or rice porridge are safer daily options." },
   { name: "Olive Oil", k: "low", p: "low", safe: true, note: "Healthy fat — use as primary cooking oil" },
   { name: "Onion", k: "low", p: "low", safe: true, note: "Adds great flavor without sodium" },
   { name: "Orange", k: "high", p: "low", safe: false, note: "High potassium — avoid" },
   { name: "Pasta (white)", k: "low", p: "low", safe: true, note: "Better than whole wheat for CKD" },
-  { name: "Pineapple", k: "low", p: "low", safe: true, note: "Safe tropical fruit option" },
+  { name: "Pineapple", k: "low", p: "low", safe: true, note: "Safe tropical fruit option. Up to ½ cup per day." },
   { name: "Potato", k: "high", p: "mod", safe: false, note: "High potassium — avoid or double-leach" },
   { name: "Radishes", k: "low", p: "low", safe: true, note: "Roast them as a potato substitute" },
   { name: "Rice (white)", k: "low", p: "low", safe: true, note: "Safe kidney-friendly starch" },
   { name: "Rye Bread", k: "mod", p: "mod", safe: "limit", note: "OK occasionally if labs are stable. Check label for sodium and additives. White bread is the safer daily choice." },
   { name: "Salmon", k: "mod", p: "mod", safe: "limit", note: "Good omega-3s but moderate portions only" },
   { name: "Spinach", k: "high", p: "mod", safe: false, note: "Very high potassium — use arugula instead" },
-  { name: "Strawberries", k: "low", p: "low", safe: true, note: "Safe and antioxidant-rich" },
+  { name: "Strawberries", k: "low", p: "low", safe: true, note: "Safe and antioxidant-rich. Up to 1 cup (about 8 medium) per day." },
   { name: "Sweet Potato", k: "high", p: "mod", safe: false, note: "High potassium — avoid" },
   { name: "Sole", k: "low", p: "low", safe: true, note: "Excellent kidney-friendly fish — wild-caught preferred" },
   { name: "Tomato", k: "high", p: "low", safe: false, note: "High potassium — avoid sauces and ketchup" },
@@ -279,7 +287,63 @@ const FOODS = [
   { name: "Zucchini", k: "low", p: "low", safe: true, note: "Versatile kidney-friendly vegetable" },
 ];
 
+const SHOPPING_LISTS = [
+  { // WEEK 1
+    produce: ["Bell peppers (3-4)", "Zucchini (3)", "Onions (3)", "Fresh garlic (1 head)", "Arugula (2 bags)", "Cucumber (3)", "Cauliflower (1 large head)", "Cabbage (1 head)", "Green beans (2 lbs)", "Romaine lettuce (1 head)", "Radishes (1 bunch)", "Fresh basil", "Fresh parsley", "Lemons (4)", "Limes (2)", "Blueberries (1 pint)", "Strawberries (1 pint)", "Apples (3)", "Carrots (small bag)"],
+    protein: ["Chicken breast (2 lbs)", "Ground turkey (1 lb)", "Cod fillets (4 pieces, 3 oz each)", "Sea bass (1 piece, 3 oz)", "Shrimp (½ lb)", "Sole fillets (2 pieces, 3 oz each)", "Eggs (1 dozen)"],
+    dairy: ["Cream cheese — Tillamook or Organic Valley (1 block)"],
+    pantry: ["White rice (1 bag)", "White pasta (1 box)", "Couscous (1 box)", "Orzo (1 box)", "White bread (1 loaf)", "Unsalted crackers — Premium Unsalted Tops or Lundberg", "White flour tortillas — Rise and Puff or Tortillaland", "Olive oil (1 bottle)", "Apple cider vinegar"],
+    spices: ["Garlic powder", "Onion powder", "Black pepper", "Paprika", "Smoked paprika", "Cumin", "Oregano", "Basil (dried)", "Thyme (dried)", "Rosemary (dried)", "Dill (dried)", "Cayenne", "Cinnamon", "Ginger powder", "Sage"],
+  },
+  { // WEEK 2
+    produce: ["Bell peppers (2)", "Zucchini (2)", "Onions (3)", "Fresh garlic (1 head)", "Arugula (2 bags)", "Cucumber (3)", "Cauliflower (1 large head)", "Cabbage (1 head)", "Green beans (1.5 lbs)", "Radishes (1 bunch)", "Lettuce — butter or romaine (1 head)", "Fresh basil", "Fresh dill", "Lemons (3)", "Limes (2)", "Blueberries (1 pint)", "Pineapple chunks (1 container)", "Apples (2)", "Carrots (small bag)"],
+    protein: ["Chicken breast (1.5 lbs)", "Chicken thighs (½ lb)", "Ground turkey (1 lb)", "Cod fillets (3 pieces, 3 oz each)", "Sole fillet (1 piece, 3 oz)", "Mahi mahi (1 piece, 3 oz)", "Shrimp (¼ lb)", "Eggs (1 dozen)"],
+    dairy: ["Cream cheese — Tillamook or Organic Valley (1 block)"],
+    pantry: ["White rice (if needed)", "White pasta (if needed)", "Couscous (if needed)", "White bread (1 loaf)", "White flour tortillas — Rise and Puff or Tortillaland"],
+    spices: ["Restock any used from Week 1 — turmeric if not already purchased"],
+  },
+  { // WEEK 3
+    produce: ["Bell peppers (2)", "Zucchini (2)", "Onions (3)", "Fresh garlic (1 head)", "Arugula (2 bags)", "Cucumber (3)", "Cauliflower (1 head)", "Cabbage (1 head)", "Green beans (1.5 lbs)", "Radishes (1 bunch)", "Fresh basil", "Fresh dill", "Fresh cilantro", "Lemons (4)", "Strawberries (1 pint)", "Blueberries (1 pint)", "Apples (2)", "Carrots (small bag)"],
+    protein: ["Chicken breast (2 lbs)", "Ground turkey (1 lb)", "Cod fillets (2 pieces, 3 oz each)", "Sole fillet (1 piece, 3 oz)", "Mahi mahi (1 piece, 3 oz)", "Shrimp (½ lb)", "Eggs (1 dozen)"],
+    dairy: ["Cream cheese — Tillamook or Organic Valley (1 block)"],
+    pantry: ["White rice (if needed)", "White pasta (if needed)", "Couscous (if needed)", "Unsalted crackers (if needed)", "White bread (1 loaf)"],
+    spices: ["Restock any running low"],
+  },
+  { // WEEK 4
+    produce: ["Bell peppers (3)", "Zucchini (2)", "Onions (3)", "Fresh garlic (1 head)", "Arugula (2 bags)", "Cucumber (3)", "Cauliflower (1 large head)", "Cabbage (1 head)", "Green beans (1.5 lbs)", "Radishes (1 bunch)", "Fresh basil", "Fresh parsley", "Lemons (4)", "Limes (1)", "Blueberries (1 pint)", "Pineapple chunks (1 container)", "Apples (3)"],
+    protein: ["Chicken breast (2 lbs)", "Ground turkey (1 lb)", "Cod fillets (2 pieces, 3 oz each)", "Sea bass (2 pieces, 3 oz each)", "Halibut (1 piece, 3 oz)", "Wild trout (1 piece, 3 oz)", "Shrimp (¼ lb)", "Eggs (1 dozen)"],
+    dairy: ["Cream cheese — Tillamook or Organic Valley (1 block)"],
+    pantry: ["White rice (if needed)", "White pasta (if needed)", "Couscous or orzo (if needed)", "White bread (1 loaf)"],
+    spices: ["Restock any running low"],
+  },
+];
+
 const EDUCATION = [
+  {
+    id: "ckd-healthy", icon: "Heart", title: "CKD Eating IS Healthy Eating", subtitle: "Why your diet is healthier than you think — reframing the narrative",
+    content: [
+      { h: "The wellness industry lied about what healthy means", p: "They told you whole wheat is healthy, dark leafy greens are healthy, nuts and seeds are healthy, bananas are healthy. For people with functioning kidneys, that is true. But healthy is not one-size-fits-all. What is healthy for someone with perfect kidneys can be harmful for you. That does not mean your diet is unhealthy. It means your definition of healthy is different — and it is just as valid. The restriction is not on NUTRITION. It is on specific MINERALS — potassium, phosphorus, and sodium. Your body is still getting vitamins, antioxidants, fiber, protein, healthy fats, and complex carbohydrates from sources your kidneys can handle." },
+      { h: "Look at what you are ACTUALLY eating", p: "Bell peppers — more Vitamin C than oranges. Cabbage — loaded with Vitamin K, Vitamin C, and fiber. Cauliflower — rich in folate and Vitamin C. Garlic — allicin, one of the most powerful anti-inflammatory compounds in nature. Onions — quercetin, another potent antioxidant. Green beans — fiber, Vitamin A, Vitamin C. Zucchini — Vitamin A, manganese. Arugula — Vitamin K, calcium, folate. Cucumber — hydrating, silica for skin health. Radishes — Vitamin C, fiber. Blueberries — top 5 most antioxidant-rich foods on earth. Olive oil — one of the healthiest fats in human nutrition." },
+      { h: "White starches are not the enemy", p: "White rice has been a staple of some of the longest-living populations on earth — Japan, Okinawa, parts of Southeast Asia. These are among the healthiest populations in human history, and they eat white rice daily. White rice is not unhealthy. It is a clean, easily digestible source of energy. The wellness industry demonized it because whole grains have more fiber — but for CKD, the lower phosphorus in white rice is what matters, and the fiber you need comes from your vegetables and fruits instead. White pasta, white bread, orzo, couscous — same principle. These are fuel. The enemy is processed food with hidden chemicals, not a plate of white rice with grilled chicken and roasted vegetables." },
+      { h: "The real picture of your health", p: "You are cooking from scratch with whole ingredients. You are using clean seasonings. You are eating lean proteins, a wide variety of colorful vegetables, safe fruits, and healthy fats. You are exercising with progressive overload. You are reading every label. You are tracking your labs. That is healthier than how 90 percent of Americans eat right now — CKD or not. You are not on a restricted diet. You are on an informed diet. There is a difference, and it is an important one." },
+      { h: "What you are protecting", p: "Every meal you prepare with these ingredients is protecting your kidneys from further damage, managing your blood pressure, controlling your insulin, reducing inflammation, maintaining your muscle mass, and supporting your heart. You are not just eating. You are actively defending your health with every bite. That is not deprivation. That is empowerment. That is FitByChoice." },
+    ],
+  },
+
+  {
+    id: "mens-health", icon: "Shield", title: "Men's Health & CKD", subtitle: "Testosterone, muscle loss, and what every man with CKD needs to know",
+    content: [
+      { h: "CKD is quietly lowering your testosterone", p: "This is the conversation nobody is having with men who have CKD. Research shows testosterone levels gradually decrease across increasing CKD stages — from 17% prevalence of low testosterone in Stage 1 to over 50% in advanced stages. Even in Stages 2-3, your testosterone is likely already declining. CKD patients have testosterone levels roughly 28 ng/mL lower than men without kidney disease. And only about 31% of CKD men with low testosterone are ever treated for it — meaning most men are living with the symptoms and blaming aging, stress, or themselves. Ask your nephrologist to check your testosterone levels at your next visit." },
+      { h: "What low testosterone actually does to you", p: "Testosterone is not just about sex drive. It regulates muscle mass, bone density, fat distribution, energy, mood, cognitive function, and red blood cell production. When CKD lowers it, the effects cascade: muscle wasting accelerates (making you weaker and worsening insulin resistance), fatigue deepens (on top of CKD fatigue from low EPO), belly fat increases (testosterone normally keeps fat off the midsection), depression and irritability worsen (this is biochemical, not weakness), brain fog increases, and erectile dysfunction develops. Most men experience several of these and never connect them to their kidneys." },
+      { h: "Erectile dysfunction is a CKD symptom", p: "This needs to be said directly: if you have CKD and are experiencing ED, it is very likely a consequence of your kidney disease lowering your testosterone — not just aging. It is treatable. It is common. It is not a personal failure. Talk to your nephrologist AND a urologist. Many men avoid this conversation out of embarrassment, but your doctors have heard it thousands of times and there are effective treatments. Do not suffer in silence or buy unregulated supplements online — some of those supplements contain ingredients that can further damage your kidneys." },
+      { h: "Why strength training is your best defense", p: "Here is the cycle CKD creates in men: kidney damage lowers testosterone, low testosterone causes muscle wasting, less muscle worsens insulin resistance, worsened insulin resistance accelerates kidney damage. Strength training breaks this cycle directly. Building muscle improves insulin sensitivity, helps maintain testosterone levels, combats the wasting that CKD causes, and protects your kidneys. This program is specifically designed for this — moderate weights, progressive overload, proper breathing, CKD-safe intensity. You are not training for a competition. You are training to break the cycle." },
+      { h: "Gout prevention", p: "Men with CKD are significantly more prone to gout because damaged kidneys cannot properly excrete uric acid. Gout causes sudden, severe joint pain — most commonly in the big toe, but also ankles, knees, and wrists. To help prevent flares: limit red meat and organ meats (also good for CKD protein management), avoid alcohol entirely (already recommended for CKD), avoid high-fructose corn syrup (found in sodas, candy, many processed foods), stay hydrated with plain water, and tell your nephrologist if you experience any sudden joint pain or swelling." },
+      { h: "Sleep apnea — get screened", p: "Sleep apnea is highly prevalent in CKD patients and more common in men. It is also bidirectional — sleep apnea worsens CKD, and CKD worsens sleep apnea. Symptoms: loud snoring, waking up gasping or choking, excessive daytime sleepiness even after a full night, morning headaches, difficulty concentrating. If you experience any of these, tell your nephrologist. Sleep apnea is treatable, and treating it can slow CKD progression, lower blood pressure, and dramatically improve your quality of life and energy." },
+      { h: "Cardiovascular risk — the real danger", p: "Heart disease is the number one killer of CKD patients, and men with CKD face even higher cardiovascular risk than women with CKD. Low testosterone further increases this risk by worsening cholesterol profiles, promoting arterial stiffness, and increasing inflammation. The exercise program, the meal plans, the blood pressure management, and the insulin education in this app are all directly addressing your cardiovascular risk — not just your kidney health. Every workout you complete is protecting your heart." },
+      { h: "Prostate and urinary awareness", p: "Men with CKD who also have benign prostate hyperplasia (enlarged prostate) face a specific risk — urinary obstruction from BPH can worsen kidney function by creating backpressure on the kidneys. If you experience difficulty starting urination, weak stream, frequent nighttime bathroom trips, or feeling like your bladder does not fully empty, tell your nephrologist immediately. These symptoms could be accelerating your CKD. Also note that some prostate medications lower blood pressure, which interacts with CKD management — your doctors need to coordinate." },
+      { h: "Depression is hormonal — not weakness", p: "If you are feeling consistently low, unmotivated, irritable, or withdrawn, understand that this may be a direct biochemical consequence of CKD lowering your testosterone. Testosterone regulates mood and cognitive function. When it drops, depression often follows. This is not a character flaw. This is your body chemistry changing because of your kidney condition. Talk to your doctor about it. Exercise helps significantly — research shows regular moderate exercise improves mood, energy, and cognitive function in CKD patients. But if it persists, professional support exists and there is no shame in seeking it." },
+    ],
+  },
   {
     id: "insulin", icon: "Zap", title: "Insulin & Fat Storage", subtitle: "Why your body stores fat and how to change it",
     content: [
@@ -334,8 +398,9 @@ const EDUCATION = [
       { h: "Water — your primary drink", p: "For CKD Stages 2-3a without fluid restrictions, aim for about 1-1.5 liters daily. Sip throughout the day, don't chug. Watch your urine color — straw-colored is the target. Ask your nephrologist for YOUR specific number." },
       { h: "Energy drinks — hard no", p: "High caffeine spikes blood pressure. Sugar spikes insulin. Many contain hidden phosphorus and potassium (up to 580mg per serving). Even sugar-free versions are dangerous. Avoid completely." },
       { h: "Soda — also no", p: "Dark colas contain phosphoric acid that directly damages kidneys. Studies show 2+ colas daily doubles CKD risk. Diet soda isn't safe either — artificial sweeteners and phosphoric acid still stress your kidneys." },
-      { h: "Alcohol — extremely risky", p: "Raises blood pressure, dehydrates the body, damages kidney cells, disrupts electrolytes, interferes with medications, disrupts sleep, and spikes blood sugar. If you drink, discuss limits with your nephrologist." },
+      { h: "Alcohol — understand the real risk", p: "The honest answer: research suggests occasional minimal drinking may be tolerable for CKD Stages 2-3 if your blood pressure is well-controlled and your nephrologist approves. The limit is strict — no more than 1 drink per day for women and 2 for men (12 oz light beer, 5 oz wine, or 1.5 oz spirits). Always with a meal, never on an empty stomach. Wine and light beer are the lowest risk options. However, know what alcohol does regardless of amount: it raises blood pressure, dehydrates your body (stresses kidneys), disrupts sleep and cortisol, interferes with blood pressure medications, disrupts electrolyte balance, and spikes blood sugar. The mixers are often worse than the alcohol — a single Bloody Mary can deliver 1,200mg of sodium, which is 60-80 percent of your entire daily limit. Avoid cocktails with orange juice, tomato juice, or premade mixes. Alcohol use disorder increases CKD risk by 62-68 percent. The safest amount of alcohol for CKD is zero. If you do not currently drink, do not start. Always discuss with your nephrologist." },
       { h: "Sports drinks — avoid completely", p: "Gatorade, Powerade, BodyArmor, Liquid IV, and all electrolyte drinks are designed to REPLACE sodium, potassium, and phosphorus. Those are the exact three things your kidneys cannot clear properly. A single 12 oz Gatorade contains approximately 160mg sodium, potassium from monopotassium phosphate (which your kidneys struggle to clear), phosphorus additives (absorbed at over 90 percent), 21 grams of sugar (spikes insulin), artificial colors your kidneys must filter, and natural flavors (unknown chemicals). You do not need electrolyte replacement for a 30-minute moderate workout. That is marketing designed for elite athletes doing 90-plus minutes of intense exercise. Plain water is all you need before, during, and after your workouts. Always consult your nephrologist before consuming any electrolyte-enhanced beverages." },
+      { h: "Coconut water — avoid completely", p: "Vita Coco, Zico, and all coconut water brands are marketed as natural and healthy. For CKD patients, they are one of the riskiest beverages you can consume. One 330ml Vita Coco container contains 646mg of potassium (more than a banana), 100mg of sodium, and 33mg of phosphorus. Drink two and that is nearly 1,300mg of potassium — potentially half your entire daily limit from a single beverage. The pressed or creamy versions are even worse. Most nephrologists recommend CKD patients avoid coconut water entirely. Choose plain water, herbal tea, or unsweetened cranberry juice instead." },
       { h: "Safe options", p: "Plain water, herbal teas (chamomile, ginger, hibiscus — avoid licorice root), black coffee in moderation (1-2 cups, no sugary creamers), unsweetened cranberry juice, water infused with lemon or berries." },
       { h: "Sparkling water vs. mineral water — know the difference", p: "Plain sparkling water (seltzer) is just water plus carbon dioxide — no added minerals, no sodium, no phosphorus. It's generally safe for CKD. Mineral water is completely different — it comes from natural springs and contains naturally occurring sodium, potassium, calcium, and other minerals. Some brands contain over 1,000mg of sodium per liter. Two glasses could blow your entire daily sodium budget without you realizing it." },
       { h: "Club soda and tonic water — avoid both", p: "Club soda is NOT the same as sparkling water. It has added sodium bicarbonate, sodium citrate, and sometimes potassium sulfate — hidden sodium and potassium sources. Tonic water contains sugar or artificial sweeteners plus quinine. Neither is kidney-friendly. Flavored sparkling waters need a label check too — some add potassium additives, phosphates, or 'natural flavors' that turn safe water into a CKD concern." },
@@ -358,6 +423,7 @@ const EDUCATION = [
       { h: "Hidden ingredients to avoid", p: "Maltodextrin (glycemic index higher than sugar), yeast extract and hydrolyzed proteins (hidden MSG), 'natural flavors' (can contain 100+ unknown ingredients), disodium guanylate and disodium inosinate (hidden sodium), corn starch, dextrose, caramel color, soybean/canola oil." },
       { h: "Safe single-ingredient spices", p: "Garlic powder, onion powder, black pepper, paprika, smoked paprika, cumin, oregano, basil, thyme, rosemary, dill, parsley, cayenne, turmeric, coriander, ginger. Buy them individually — just the dried plant, nothing added." },
       { h: "Vetted clean brands", p: "Benson's Gourmet Seasonings — salt-free, sugar-free, no MSG, no potassium chloride, no silicon dioxide. Uses rice hulls (natural) as anti-caking agent instead of chemicals. Flavor God — no fillers, no preservatives, no sodium, no artificial coloring. Small business, USA-made. DAK's Spices — 100% salt-free, MSG-free, preservative-free, potassium chloride-free. Always read the full ingredient list yourself — even 'trusted' brands change formulas." },
+      { h: "Make your own blends", p: "The safest option is always making your own from single-ingredient spices. See the DIY Seasoning Blends module for 5 ready-to-make recipes — All-Purpose, Chili-Lime, Italian Herb, Smoky Cajun, and Garlic Herb." },
     ],
   },
   {
@@ -396,6 +462,125 @@ const EDUCATION = [
       { h: "The simple rule", p: "If a product needs a chemistry lab to make it taste good, your kidneys don't want it. Stick to whole foods, single-ingredient spices, and things your great-grandmother would recognize as food. When you do buy packaged products, flip it over and read every ingredient. The front of the package is marketing. The back is the truth." },
       { h: "Trader Joe's — 5 products to watch", p: "1) Sweet & Sour Gummy Worms — '0g sugar' but contains erythritol, maltodextrin, sodium citrate, calcium lactate, and 'natural flavors.' Five CKD concerns behind one healthy claim. 2) Quest Protein Bars — 220mg sodium, 21g protein (too much for one sitting with CKD), plus 6g erythritol. 3) Energy Bar Chocolate Chip — oats AND soy protein isolate (double phosphorus hit), brown rice syrup, sea salt listed twice. 4) Chewy Chocolate & Peanut Butter Protein Bar — 180mg sodium, soy protein isolate, peanuts (high phosphorus), agave syrup. Peanuts and soy together deliver a massive phosphorus load. 5) Coconut and plant milks — check every label for tricalcium phosphate or dipotassium phosphate. Phosphorus from additives is absorbed at over 90%, far more than natural food sources." },
       { h: "Whole Foods — 5 products to watch", p: "1) 365 Organic Whole Wheat Bread — whole wheat is high in phosphorus. The general health world says 'choose whole grain.' For CKD, white bread is actually safer. This contradiction confuses newly diagnosed patients. 2) 365 Organic Black Bean Soup — beans are high in both potassium AND phosphorus, and canned soup adds sodium. Three CKD concerns in one 'organic' can. 3) Kombucha (any brand) — high in potassium, contains acids that stress the kidneys, some brands add sugar alcohols. 4) 365 Organic Peanut Butter — peanuts are high in phosphorus and potassium. A two-tablespoon serving can have 100mg+ phosphorus and 200mg+ potassium. 'Organic' doesn't mean kidney-safe. 5) Fortified Almond Milk — check labels for calcium phosphate or dipotassium phosphate. Some brands have up to 500mg added calcium per serving plus phosphorus additives. Choose unfortified, unsweetened versions only." },
+    ],
+  },
+  {
+    id: "supplements", icon: "AlertTriangle", title: "Vitamins & Supplements for CKD", subtitle: "Why most OTC vitamins are not safe for kidney disease",
+    content: [
+      { h: "Most vitamins are NOT safe for CKD", p: "Standard multivitamins like Centrum, One A Day, and store-brand vitamins are designed for people with healthy kidneys. They often contain potassium, phosphorus, vitamin A, and other nutrients that accumulate dangerously when your kidneys cannot filter properly. The National Kidney Foundation warns that over-the-counter vitamin and mineral products may contain too much potassium or phosphorus for people with kidney disease. Do NOT take any supplement without your nephrologist's explicit approval." },
+      { h: "Vitamins to AVOID unless prescribed", p: "Vitamin A — already elevated in CKD, builds up to toxic levels because your kidneys cannot clear the excess. Vitamin C in high doses (500mg+) — excess converts to oxalate, which can cause kidney stones and worsen kidney function. Vitamin E supplements — can build up in CKD and may raise bleeding risk, especially if you take blood thinners. Calcium supplements (unless prescribed) — unregulated calcium intake can cause vascular calcification, hardening your arteries. Potassium supplements — obvious danger for CKD." },
+      { h: "Products that sound healthy but are dangerous", p: "Greens powders, superfood blends, electrolyte mixes, mineral supplements, immune support formulas, and detox supplements. The NKF specifically flags labels like electrolyte support, high in minerals, and superfood green powders as warning signs that a product may be high in potassium or phosphorus. Just because it is sold at a health food store does not mean it is safe for your kidneys. Natural does not mean safe for CKD." },
+      { h: "What you MIGHT need — only with lab confirmation", p: "Vitamin D — CKD patients are commonly deficient, and vitamin D plays a critical role in bone health and calcium regulation. But dosing must be managed by your nephrologist based on YOUR blood levels. B vitamins (B12, folate) — support red blood cell production and energy. May help with CKD-related anemia. Iron — only if your labs show deficiency and your doctor prescribes it. Do not self-supplement iron. Renal-specific multivitamins (like Nephrovite or ProRenal) — these are designed specifically for CKD with appropriate levels of B vitamins and limited vitamin C, no vitamin A, no potassium, no phosphorus." },
+      { h: "The safest approach", p: "Food first. Supplements only when your labs show a specific deficiency and your nephrologist prescribes them. Bring every supplement you are currently taking to your next appointment and ask your nephrologist to review each one. Many people are taking products that are silently stressing their kidneys without knowing it. Vitamins are medicines — treat them that way." },
+    ],
+  },
+  {
+    id: "sodium", icon: "AlertTriangle", title: "Sodium & Your Kidneys", subtitle: "Why 2,000mg is your daily ceiling and how sodium accelerates CKD",
+    content: [
+      { h: "Sodium is worse than you think for CKD", p: "When you eat sodium, it increases sodium levels in your blood. Your body pulls water from cells into your bloodstream to dilute it, and triggers thirst so you drink more. This increases total blood volume. Healthy kidneys filter the excess out. Damaged kidneys cannot keep up. The fluid stays, blood volume stays elevated, and blood pressure rises. But it goes further — sodium also increases pressure inside your kidney filtering units, causing protein to leak into your urine. Proteinuria is a key marker of kidney damage. So sodium does not just raise your blood pressure — it directly damages your kidneys from the inside." },
+      { h: "The cascade of damage", p: "High sodium intake causes endothelial dysfunction (damage to blood vessel walls), oxidative stress (cellular damage), increased inflammation, insulin resistance (worsens blood sugar control), and cardiac fibrosis (heart muscle stiffening). CKD patients are significantly more salt-sensitive than healthy people — the same amount of sodium causes a bigger blood pressure spike. And critically, high sodium reduces the effectiveness of ACE inhibitors and ARBs — the very medications your nephrologist prescribed to protect your kidneys. You could be taking the right medication and undermining it with every salty meal." },
+      { h: "Your limit: less than 2,000mg per day", p: "The KDIGO 2024 guidelines recommend less than 2 grams (2,000mg) of sodium per day for people with CKD. That is about 5 grams of salt. The average American eats 3,400mg daily — nearly double the CKD limit. To put 2,000mg in perspective: one tablespoon of soy sauce has 900mg, one can of soup can have 800-1,200mg, one fast food sandwich can have 1,500mg. You could blow your entire daily budget in a single meal without realizing it. This is why cooking from scratch with clean spices is not optional for CKD — it is essential." },
+      { h: "Where sodium hides", p: "Most dietary sodium does NOT come from the salt shaker. It comes from processed and packaged foods, canned soups, frozen meals, deli meats, cheeses, condiments (ketchup, mustard, soy sauce, salad dressings), bread (even a single slice can have 150-230mg), restaurant food (almost impossible to control sodium), and fast food. Even foods that do not taste salty can contain significant sodium — breakfast cereals, cottage cheese, and canned vegetables are common hidden sources." },
+      { h: "How to stay under 2,000mg", p: "Cook at home as much as possible — this is the single most effective strategy. One smart trick: cook without salt entirely, then sprinkle a tiny pinch on top of already-plated food. When salt crystals hit your tongue first, you taste it more intensely but use far less — maybe 50-100mg instead of 300-500mg cooked in. It is the difference between tasting salt and eating salt. Use the DIY Seasoning Blends in this app instead of salt or commercial seasonings. Read every label (check sodium per serving AND the number of servings per container). Avoid canned foods (or rinse thoroughly to remove some sodium). Choose fresh or frozen vegetables over canned. Avoid deli meats and processed meats entirely. At restaurants, ask for no added salt and dressings on the side. Track your sodium for one week to see where you actually stand — most people are shocked. And always consult your nephrologist or renal dietitian for guidance specific to your stage and labs." },
+    ],
+  },
+  {
+    id: "alkaline", icon: "Zap", title: "Acid, Alkaline & Your Kidneys", subtitle: "Why pH balance matters for CKD — and what the wellness industry gets wrong",
+    content: [
+      { h: "This is real science, not a wellness fad", p: "Metabolic acidosis is a documented complication of CKD. Healthy kidneys maintain blood pH between 7.35 and 7.45 (slightly alkaline). As CKD progresses, your kidneys lose the ability to excrete acid properly. The acid builds up. If left untreated, metabolic acidosis accelerates CKD progression, promotes muscle wasting, causes bone demineralization, triggers insulin resistance, increases inflammation, and raises mortality risk. This is not theoretical — it is in the clinical guidelines." },
+      { h: "Why vegetables protect your kidneys", p: "Research shows that dietary acid reduction with fruits and vegetables better prevents Stage 3 CKD from transitioning to Stage 4 than oral sodium bicarbonate alone. Eating more alkaline-producing foods — which are fruits and vegetables — literally slows CKD progression. The CKD-safe vegetables in your meal plan (cauliflower, cabbage, bell peppers, cucumbers, green beans, zucchini, arugula) and safe fruits (apples, blueberries, strawberries, pineapple) are alkaline-producing. Your plate should lean more toward vegetables than protein at every meal." },
+      { h: "Acid-producing foods to balance", p: "Meat, cheese, eggs, grains, and processed foods are acid-producing. These are not bad — you need protein and carbs — but the balance matters. This is why your meal plan includes generous vegetable portions alongside moderate 3 oz protein servings. The ratio matters more than eliminating any single food. Think of your plate as two-thirds vegetables and one-third protein and starch." },
+      { h: "What your nephrologist monitors", p: "Your blood work includes serum bicarbonate levels. If this drops below 22 mEq/L, it indicates metabolic acidosis. Your nephrologist may prescribe sodium bicarbonate supplements to correct it. Ask about your bicarbonate level at your next appointment. KDIGO 2024 recommends considering treatment when bicarbonate falls below 18 mmol/L." },
+      { h: "The alkaline water and diet industry is misleading", p: "The wellness industry promotes alkaline water, alkaline diets, and alkaline supplements as cure-alls. The concept of maintaining pH balance is real for CKD — but their specific food recommendations are often dangerous. They recommend spinach, bananas, oranges, beets, and sweet potatoes — all very high in potassium and harmful for CKD. Your app teaches the RIGHT alkaline-producing foods that are actually safe for your kidneys. Do not follow generic alkaline diet advice without verifying it against CKD restrictions. Always consult your nephrologist." },
+    ],
+  },
+  {
+    id: "blood-pressure", icon: "Heart", title: "Blood Pressure & CKD", subtitle: "The most important number you need to understand and track",
+    content: [
+      { h: "Why blood pressure matters more for you", p: "High blood pressure is both the number one cause and a major consequence of CKD. Approximately 85-95 percent of CKD patients have hypertension. Here is the cycle: high blood pressure damages the tiny blood vessels in your kidneys, which worsens CKD. Damaged kidneys lose their ability to regulate fluid and sodium, which raises blood pressure further. Breaking this cycle is one of the most important things you can do to protect your remaining kidney function." },
+      { h: "What the numbers mean", p: "Blood pressure is measured as two numbers — for example, 130/80. The TOP number (systolic) is the pressure when your heart beats and pushes blood out. The BOTTOM number (diastolic) is the pressure when your heart rests between beats. Both matter. For CKD patients, most nephrologists target below 130/80, but YOUR target may differ based on your stage, age, and medications. Ask your nephrologist what YOUR target numbers are." },
+      { h: "How to take it correctly at home", p: "Sit quietly for 5 minutes before measuring — no talking, no phone. Use the correct cuff size (too small reads high, too large reads low). Rest your arm on a table at heart level — not dangling at your side. Keep feet flat on the floor, legs uncrossed. Take two readings one minute apart and average them. Measure at the same times daily — morning before medications and evening. A single reading means nothing. The TREND over days and weeks tells the real story." },
+      { h: "What raises blood pressure", p: "Sodium is the biggest dietary driver — it causes your body to retain fluid, increasing blood volume and pressure. Stress and poor sleep raise cortisol, which raises blood pressure. Caffeine causes temporary spikes. Dehydration can paradoxically raise blood pressure as your body constricts blood vessels. Pain and NSAIDs (which CKD patients should avoid anyway) raise blood pressure. Being sedentary allows blood vessels to stiffen over time." },
+      { h: "What lowers blood pressure naturally", p: "Regular moderate exercise (like this program) reduces blood pressure by 5-8 mmHg on average — equivalent to adding a medication. Reducing sodium intake directly lowers fluid retention. Adequate sleep allows blood pressure to reset overnight. Stress management lowers cortisol. Maintaining a healthy weight reduces the workload on your heart and blood vessels. Proper hydration helps your kidneys regulate fluid balance. These are all things your FitByChoice program addresses." },
+      { h: "Blood pressure medications and CKD", p: "Many CKD patients take ACE inhibitors or ARBs — these medications lower blood pressure AND have a protective effect on your kidneys by reducing pressure inside the kidney filtering units. Do NOT stop or adjust these medications without your nephrologist approval, even if your blood pressure seems better from exercise and diet. Never skip your medication before a workout. If you feel dizzy or lightheaded during exercise, stop, sit down, hydrate, and check your blood pressure. Report this to your doctor." },
+      { h: "Track your blood pressure", p: "Use the Blood Pressure tracker in this app to log your readings. Take measurements in the morning before medications and in the evening. Over time you will see patterns — how exercise affects your numbers, how sodium intake changes them, and whether your overall trend is moving in the right direction. Bring this data to every nephrologist appointment. Consistent home monitoring is more valuable than the single reading taken at the doctor office when you are already stressed." },
+    ],
+  },
+  {
+    id: "water-safety", icon: "Droplets", title: "Your Water: What's Really In That Bottle", subtitle: "The bottled water truth, which brands to avoid, and the best filters for CKD",
+    content: [
+      { h: "Most bottled water is tap water with additives", p: "Dasani (Coca-Cola) is municipal tap water purified by reverse osmosis, then they ADD BACK magnesium sulfate, potassium chloride, and salt. Potassium chloride — the same ingredient flagged as dangerous for CKD in salt substitutes — is in your water. Aquafina (PepsiCo) is also municipal tap water. SmartWater adds calcium chloride, magnesium chloride, and potassium bicarbonate. Nestle Pure Life adds calcium chloride, sodium bicarbonate, and magnesium sulfate. You are paying premium prices for reprocessed tap water with minerals your kidneys cannot handle, in plastic bottles averaging 325 microplastic particles per liter." },
+      { h: "Bottled water to AVOID for CKD", p: "Dasani — contains potassium chloride, dangerous for CKD. SmartWater — contains potassium bicarbonate. Any alkaline water brand — added minerals to raise pH that your kidneys must process. Any mineral water — can contain very high sodium and potassium (we covered this in the beverage guide). Any electrolyte enhanced water — same problem as sports drinks. If the bottle says enhanced, fortified, electrolyte, alkaline, or mineral — read the ingredient list or skip it entirely." },
+      { h: "Bottled water that is ACCEPTABLE if needed", p: "If you must buy bottled water, choose brands that are actual spring or artesian sources without added minerals: Poland Spring, Fiji, or Evian. These are not perfect — they still have the microplastic problem from plastic packaging — but they do not contain the added potassium chloride, sodium, and mineral additives that engineered waters do. However, the best option is always filtering your own water at home." },
+      { h: "Best filter: Pitcher (affordable, no installation)", p: "The Culligan ZeroWater pitcher scored 9.33 out of 10 in independent lab testing, eliminating every health-related contaminant — performance comparable to reverse osmosis. About 35-40 dollars for the pitcher, approximately 15 dollars per replacement filter. This is your easiest starting point. Fill it with tap water, let it filter, drink clean water without the microplastics, additives, or markup of bottled water." },
+      { h: "Best filter: Countertop (no installation, premium)", p: "The AquaTru Carafe scored 9.57 out of 10 — a countertop reverse osmosis system requiring no installation. It removed 100 percent of fluoride, uranium, copper, and chlorine and is certified for 83 contaminants. About 130-150 dollars upfront, filters last up to 2 years. No plumbing needed — sits on your counter and plugs in. Glass carafe, not plastic. Removes up to 97 percent of total dissolved solids including potassium and sodium. Also 4 times more efficient than under-sink RO systems, creating very little waste water. IMPORTANT: purchase the STANDARD version only. Do NOT get the Alkaline Mineral Boost version — it adds minerals back into the water after filtering, which defeats the purpose for CKD patients." },
+      { h: "Best filter: Under-sink (permanent, best filtration)", p: "The iSpring RCC7AK features a 6-stage reverse osmosis filtration process that removes up to 99 percent of over 1,000 contaminants — specifically recommended for kidney health. The 6th stage adds alkaline remineralization, which slightly raises pH after filtration — supporting the acid-base balance that matters for CKD. The APEC ROES-50 received the highest overall rating in 2026 with nearly perfect contaminant removal scores. Both cost 150-200 dollars and require basic under-sink installation. These are the gold standard for CKD because reverse osmosis removes dissolved minerals like sodium and potassium that carbon filters leave behind." },
+      { h: "Good mid-tier option: Aquasana", p: "Aquasana uses carbon and ion-exchange filtration — not reverse osmosis. It removes lead, mercury, chlorine, PFAS, pharmaceuticals, and pesticides effectively, and is NSF P473 certified. It does NOT remove dissolved minerals (sodium, potassium, fluoride) the way reverse osmosis does. For CKD patients, those dissolved minerals matter. However, Aquasana is more affordable (around 100 dollars), does not waste water like RO systems do, and is a legitimate choice if reverse osmosis is not in the budget. A good filter is always better than no filter. Discuss with your nephrologist which level of filtration is appropriate for your stage and labs." },
+      { h: "The bottom line", p: "Stop paying for bottled tap water with added minerals your kidneys cannot process. Invest once in a quality filter and drink clean water from your own tap for pennies per gallon. A ZeroWater pitcher pays for itself in less than a month versus buying bottled water. Your kidneys will thank you. Always consult your nephrologist if you have specific fluid restrictions." },
+    ],
+  },
+  {
+    id: "smoothie-danger", icon: "AlertTriangle", title: "Why Juices & Smoothies Aren't Safe for CKD", subtitle: "The 'healthy' habit that can overwhelm your kidneys",
+    content: [
+      { h: "The concentration problem", p: "When you eat one apple, you get the potassium from one apple and your body absorbs it slowly because it has to break down the fiber first. When you blend 2-3 fruits into a smoothie, you consume all that potassium at once in liquid form — and your body absorbs it much faster. One glass can contain what your kidneys would normally process over an entire day. For CKD patients whose kidneys are already struggling to filter, this flood of minerals can push potassium to dangerous levels." },
+      { h: "The 'healthy' smoothie trap", p: "The ingredients people put in healthy smoothies are the exact ones CKD patients need to limit: banana (very high potassium), spinach (very high potassium), mango (high potassium), orange juice (high potassium), yogurt (high phosphorus), protein powder (high phosphorus and additives). One green smoothie can contain 800-1,200mg of potassium in a single glass. For Stages 2-3, that could be half or more of your entire daily potassium budget consumed in 60 seconds. Always verify your personal limits with your nephrologist." },
+      { h: "Fresh juices are even worse", p: "Juicing removes the fiber completely — which is the one thing that slows mineral absorption in a smoothie. What you are left with is pure concentrated mineral-heavy liquid. A glass of fresh celery-spinach-kale juice is a potassium bomb. Beet juice, carrot juice, tomato juice — all very high potassium with zero fiber to slow the absorption. The more someone tries to make their juice 'healthier' by adding greens and superfoods, the more dangerous it becomes for CKD." },
+      { h: "The cruel irony", p: "The general wellness world promotes juicing and smoothies as the pinnacle of healthy living. For CKD patients, they can be one of the most dangerous dietary habits. Juice bars, detox cleanses (which we cover in another module), and social media smoothie trends are not designed with your kidneys in mind. What is healthy for someone with fully functioning kidneys can be harmful for you. This is not about deprivation — it is about knowing the difference." },
+      { h: "The safe version (if you really want one)", p: "A small smoothie (8 oz maximum — not a 24 oz Jamba Juice) made ONLY from low-potassium fruits is manageable occasionally. Use: blueberries, strawberries, pineapple, or apple. Blend with water or a splash of unsweetened cranberry juice — not orange juice, not milk, not yogurt. No spinach, no banana, no mango, no protein powder, no superfood additives. Keep it simple and small." },
+      { h: "Whole fruit is always better", p: "Eating the whole fruit is ALWAYS safer than blending or juicing it. The fiber slows mineral absorption and keeps you fuller longer. A cup of whole blueberries is safer than a blueberry smoothie because your body processes it more gradually. The bottom line for CKD: whole fruit in moderate portions beats smoothies, smoothies beat juices, and juices are the most concentrated and fastest-absorbing — the most risky form. Regardless of form, the INGREDIENTS determine safety more than anything. When in doubt, ask your nephrologist." },
+    ],
+  },
+  {
+    id: "snacks", icon: "Star", title: "10 CKD-Safe Snacks", subtitle: "Quick, satisfying options that will not stress your kidneys",
+    content: [
+      { h: "The snacking rule", p: "Snacking should be occasional, not constant. Every time you eat, insulin rises. If you genuinely need something between meals, choose from this list. These are all low potassium, low phosphorus, and low sodium. Protein or fat based snacks produce a gentler insulin response than processed carbs. Always verify with your nephrologist or renal dietitian based on your individual labs." },
+      { h: "1. Apple slices with cinnamon", p: "Low potassium, low phosphorus. The cinnamon adds sweetness without sugar. One small apple or half a medium. One of the safest CKD fruits." },
+      { h: "2. Unsalted crackers with cream cheese", p: "Premium Unsalted Tops or Lundberg Thin Stackers with 1-2 tablespoons of Tillamook or Organic Valley cream cheese. Crunchy, creamy, satisfying." },
+      { h: "3. Fresh blueberries", p: "Up to 1 cup. One of the top 5 most antioxidant-rich foods on earth. Low potassium, low phosphorus, naturally sweet." },
+      { h: "4. Air-popped popcorn with DIY seasoning", p: "Pop plain kernels, drizzle with olive oil, sprinkle your All-Purpose or Smoky Cajun blend. Crunchy, savory, low potassium, low phosphorus. No microwave popcorn — those bags are loaded with sodium and chemicals." },
+      { h: "5. Cucumber slices with cream cheese and dill", p: "Hydrating, crisp, and kidney-safe. Cucumbers are 96 percent water and very low in everything your kidneys worry about. Eat as much as you want." },
+      { h: "6. Frozen strawberries or pineapple chunks", p: "Straight from the freezer — natural sweet treat. No added sugar needed. Freezing makes them feel like dessert." },
+      { h: "7. Bell pepper strips with cream cheese", p: "Crunchy, more Vitamin C than oranges, and kidney-safe. Dip in 1-2 tablespoons of cream cheese." },
+      { h: "8. Hard-boiled egg", p: "Pure protein, portable, filling. One whole egg is fine. Prep a few on Sunday for the week." },
+      { h: "9. Homemade tortilla chips", p: "Cut Rise and Puff or Tortillaland tortillas into triangles, brush with olive oil and garlic powder, bake at 375 for 8 minutes. Crispier and cleaner than anything in a bag." },
+      { h: "10. Unsalted rice cakes", p: "Light, crunchy, low in everything. Top with cream cheese and a few blueberries for a mini snack plate." },
+    ],
+  },
+  {
+    id: "sweets", icon: "Heart", title: "Sweets & Treats: The CKD-Safe Guide", subtitle: "What you CAN enjoy, what to avoid, and quick homemade treats",
+    content: [
+      { h: "You can still enjoy sweets — here's how", p: "Living with CKD does not mean giving up everything you love. It means knowing which treats are safer and which ones are hiding potassium, phosphorus, and chemicals your kidneys cannot handle. This guide gives you the honest breakdown and homemade alternatives that satisfy the craving without stressing your kidneys. Always verify with your nephrologist or renal dietitian based on your individual labs." },
+      { h: "Chocolate — the truth", p: "Dark chocolate is the worst for CKD despite being 'healthiest' in general — very high in potassium (228mg per ounce) and phosphorus (59mg per ounce). Milk chocolate is moderate. White chocolate is actually the safest option because it contains no cocoa solids, which is where all the potassium and phosphorus hide. The smart move: choose chocolate-COATED or chocolate-DIPPED rather than solid chocolate. A couple chocolate-dipped strawberries uses a fraction of the chocolate in a candy bar but satisfies the craving. Avoid completely: anything with nuts — Snickers, Reese's, M&Ms Peanut, Almond Joy, Payday — double hit of phosphorus and potassium." },
+      { h: "Gummy & hard candy — safer options", p: "Regular gummy candy is actually one of the safer CKD options. Gummy bears, jelly beans, Skittles, Starburst, Dots, Jolly Ranchers, Life Savers, lollipops, and candy corn are lower in potassium and phosphorus. Hard candy in general is the safest candy category — small portion, no minerals. NEVER buy sugar-free versions — erythritol, maltitol, and sorbitol are dangerous for CKD (see The Healthy Label Trap module). Enjoy regular versions in moderation." },
+      { h: "Chips — what to reach for", p: "Potato chips are the worst — high potassium from potatoes plus high sodium. Skip them. Air-popped popcorn seasoned with your DIY blends (All-Purpose or Smoky Cajun) is a great CKD-safe alternative — low potassium, low phosphorus, and you control the sodium. Rice cakes and rice crackers (Lundberg Thin Stackers) are also safer. If you want a crunch, bake thin white tortilla strips (Rise and Puff or Tortillaland) with olive oil and garlic powder for 8 minutes — homemade tortilla chips, zero additives." },
+      { h: "Cakes & baked goods", p: "Angel food cake is one of the safest — made from egg whites, sugar, and white flour. No butter, no dairy, no nuts. Simple white cake with minimal frosting beats any 'healthy' whole grain brownie for CKD. Avoid: carrot cake (potassium from carrots, phosphorus from nuts), chocolate cake (potassium and phosphorus from cocoa), banana bread (high potassium), and cheesecake (high phosphorus from heavy dairy). For homemade baking, use white flour, sugar, egg whites, butter, and vanilla — simple and safe." },
+      { h: "Ice cream alternatives", p: "Regular ice cream is high in phosphorus from dairy. Sorbet and Italian ice made from low-potassium fruits (apple, berry, pineapple — not banana, mango, or orange) are safer alternatives. Frozen fruit bars from safe fruits work too. But the best option is making your own frozen treats — see the recipes below. They take under 5 minutes and taste better than store-bought." },
+      { h: "Homemade frozen treats", p: "Making your own frozen treats takes under 3 minutes and tastes better than store-bought. See the DIY Frozen Treats module for 5 quick recipes using CKD-safe fruits and cream cheese as the creamy base." },
+    ],
+  },
+  {
+    id: "diy-frozen", icon: "Star", title: "DIY Frozen Treats", subtitle: "5 CKD-safe ice cream alternatives — under 3 minutes each",
+    content: [
+      { h: "Why make your own", p: "Regular ice cream is high in phosphorus from dairy. Store-bought sorbet often has additives and high-potassium fruits. Making your own takes under 3 minutes, uses 2-4 ingredients you already have, and you control everything. The secret to creamy texture: cream cheese (Tillamook or Organic Valley). It is lower in phosphorus than milk, heavy cream, or yogurt, blends smooth, and a small amount goes a long way. Do NOT use regular ice cream, heavy cream, condensed milk, or yogurt — all higher in phosphorus. Always verify ingredients with your nephrologist." },
+      { h: "Blueberry Vanilla Soft-Serve (3 min)", p: "1 cup frozen blueberries + 2 tbsp cream cheese (Tillamook or Organic Valley) + ½ tsp vanilla extract. Blend until smooth and thick. Eat immediately for soft-serve texture, or freeze 20 minutes for firmer scoop." },
+      { h: "Pineapple Cream (3 min)", p: "1 cup frozen pineapple chunks + 2 tbsp cream cheese (Tillamook or Organic Valley) + ½ tsp vanilla extract. Blend until smooth. Tropical, creamy, refreshing. No added sugar needed — pineapple is naturally sweet and CKD-safe." },
+      { h: "Strawberry Lemon Ice (2 min)", p: "1 cup frozen strawberries + 1 tbsp fresh lemon juice + 2 tbsp water. Blend until smooth. Light, tangy, refreshing — more like Italian ice than ice cream. Add a pinch of cinnamon for warmth. No dairy needed." },
+      { h: "Apple Cinnamon Frozen Cream (3 min)", p: "1 cup frozen apple chunks + 2 tbsp cream cheese (Tillamook or Organic Valley) + ½ tsp cinnamon + ½ tsp vanilla extract. Blend until smooth. Tastes like apple pie in frozen form." },
+      { h: "Mixed Berry Swirl (3 min)", p: "½ cup frozen blueberries + ½ cup frozen strawberries + 2 tbsp cream cheese (Tillamook or Organic Valley) + ½ tsp vanilla extract. Blend until smooth. Rich, creamy, antioxidant-packed." },
+      { h: "Mexican Hot Chocolate Freeze (3 min)", p: "2 tbsp cream cheese (Tillamook or Organic Valley) + 1 tsp unsweetened cocoa powder (just 1 tsp keeps potassium and phosphorus low) + pinch of cinnamon + tiny pinch of cayenne + ½ tsp vanilla extract + 1 tsp Kahlúa (optional — adds flavor, negligible alcohol) + ½ cup ice. Blend until smooth. Warm-spicy-chocolate flavor in a CKD-safer version. Skip the heavy cream and milk that traditional recipes use." },
+    ],
+  },
+  {
+    id: "diy-dressings", icon: "Star", title: "DIY Salad Dressings", subtitle: "5 kidney-safe dressings — under 3 minutes, zero additives",
+    content: [
+      { h: "Why store-bought dressings are a problem", p: "Even the 'healthy' dressings at places like Whole Foods and Trader Joe's are loaded with sodium (300-400mg per serving), soybean or canola oil, sugar, 'natural flavors,' and preservatives. Some contain phosphorus-based emulsifiers and potassium additives. For CKD patients, a single salad can go from kidney-safe to kidney-stressing just from the dressing. Making your own takes 2-3 minutes, uses ingredients you already have, and tastes better. Always consult your nephrologist or renal dietitian about your specific dietary needs." },
+      { h: "Classic Lemon Vinaigrette (2 min)", p: "3 tbsp olive oil + 1 tbsp fresh lemon juice + 1 small clove garlic (minced or ¼ tsp garlic powder) + pinch of black pepper + pinch of dried oregano. Shake in a small jar or whisk in a bowl. Store in fridge up to 5 days. This is your everyday go-to — works on any salad, drizzled on chicken, or over roasted vegetables." },
+      { h: "Apple Cider Vinaigrette (2 min)", p: "3 tbsp olive oil + 1 tbsp apple cider vinegar + ¼ tsp garlic powder + ¼ tsp dried thyme + black pepper to taste. Shake in a jar. Slightly tangy and warm — great on cabbage slaws and arugula salads. Apple cider vinegar also supports digestion." },
+      { h: "Creamy Garlic Dressing (3 min)", p: "2 tbsp cream cheese (Tillamook or Organic Valley) + 1 tbsp fresh lemon juice + 1 tbsp water (to thin) + ¼ tsp garlic powder + ¼ tsp dried dill + black pepper. Mix with a fork until smooth. Creamy, satisfying, and tastes like ranch without the sodium, preservatives, and buttermilk. Keeps 3 days in fridge." },
+      { h: "Herb Italian Dressing (2 min)", p: "3 tbsp olive oil + 1 tbsp red wine vinegar + ¼ tsp garlic powder + ¼ tsp dried basil + ¼ tsp dried oregano + pinch of black pepper. Shake well. Classic Italian flavor without the 400mg of sodium in store-bought versions. Perfect on romaine, cucumber, and bell pepper salads." },
+      { h: "Smoky Lime Dressing (2 min)", p: "3 tbsp olive oil + 1 tbsp fresh lime juice + ¼ tsp smoked paprika + ¼ tsp garlic powder + ¼ tsp cumin + black pepper to taste. Shake in a jar. Warm, smoky, slightly tangy — great on arugula, cabbage, and grilled chicken salads. This is your CKD-safe chipotle-lime without the sodium." },
+      { h: "Cucumber Dill Dressing (3 min)", p: "2 tbsp olive oil + 1 tbsp lemon juice + 2 tbsp finely diced cucumber + ¼ tsp dried dill (or 1 tsp fresh dill) + black pepper. Mix together. Light, refreshing, and hydrating — the cucumber adds water content and crunch. Pairs beautifully with fish dinners." },
+      { h: "Storage tip", p: "Make a double batch on Sunday and store in small jars in the fridge. You have dressings for the whole week — no excuses to reach for a bottle. Glass jars work best. Shake before each use since oil and vinegar naturally separate." },
     ],
   },
   {
@@ -920,9 +1105,78 @@ function MealsPage({ subPage, setSubPage }) {
   const [selectedDay, setSelectedDay] = useState(0);
   const [selectedWeek, setSelectedWeek] = useState(0);
   const [showFoodLookup, setShowFoodLookup] = useState(subPage?.type === "foodlookup");
+  const [showShoppingList, setShowShoppingList] = useState(false);
+  const [checkedItems, setCheckedItems] = useState({});
   const [searchTerm, setSearchTerm] = useState("");
   const [aiResult, setAiResult] = useState(null);
   const [aiLoading, setAiLoading] = useState(false);
+
+  const toggleCheck = (item) => {
+    setCheckedItems(prev => ({ ...prev, [item]: !prev[item] }));
+  };
+
+  if (showShoppingList) {
+    const list = SHOPPING_LISTS[selectedWeek];
+    const categories = [
+      { name: "Produce", icon: "🥬", items: list.produce },
+      { name: "Protein", icon: "🍗", items: list.protein },
+      { name: "Dairy", icon: "🧀", items: list.dairy },
+      { name: "Pantry & Grains", icon: "🍚", items: list.pantry },
+      { name: "Spices", icon: "🌿", items: list.spices },
+    ];
+    const totalItems = Object.values(list).flat().length;
+    const checkedCount = Object.values(checkedItems).filter(Boolean).length;
+
+    return (
+      <div style={{ paddingBottom: 90 }}>
+        <TopBar title="Shopping List" onBack={() => setShowShoppingList(false)} />
+        <div style={{ padding: "0 20px 20px" }}>
+          <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 16 }}>
+            <div style={{ display: "flex", gap: 6 }}>
+              {["Wk 1", "Wk 2", "Wk 3", "Wk 4"].map((w, i) => (
+                <button key={i} onClick={() => { setSelectedWeek(i); setCheckedItems({}); }} style={{
+                  padding: "6px 12px", borderRadius: 8, border: "none", cursor: "pointer",
+                  background: selectedWeek === i ? C.primary : C.card, color: selectedWeek === i ? "#FFF" : C.textMid,
+                  fontFamily: font.body, fontSize: 11, fontWeight: 600,
+                }}>{w}</button>
+              ))}
+            </div>
+            <span style={{ fontSize: 12, color: C.sage, fontWeight: 600 }}>{checkedCount}/{totalItems} items</span>
+          </div>
+          {categories.map((cat, ci) => (
+            <div key={ci} style={{ marginBottom: 16 }}>
+              <p style={{ fontSize: 13, fontWeight: 700, color: C.secondary, marginBottom: 8 }}>{cat.icon} {cat.name}</p>
+              {cat.items.map((item, ii) => {
+                const key = `${selectedWeek}-${cat.name}-${ii}`;
+                const checked = checkedItems[key];
+                return (
+                  <button key={ii} onClick={() => toggleCheck(key)} style={{
+                    display: "flex", alignItems: "center", gap: 10, width: "100%", padding: "10px 12px",
+                    background: checked ? C.greenPale : C.card, borderRadius: 8, border: "none", cursor: "pointer",
+                    marginBottom: 4, textAlign: "left", textDecoration: checked ? "line-through" : "none",
+                    color: checked ? C.textLight : C.dark, fontFamily: font.body, fontSize: 14,
+                  }}>
+                    <div style={{
+                      width: 22, height: 22, borderRadius: 6, border: `2px solid ${checked ? C.green : "#D0D8D6"}`,
+                      background: checked ? C.green : "transparent", display: "flex", alignItems: "center", justifyContent: "center",
+                    }}>
+                      {checked && <Check size={14} color="#FFF" />}
+                    </div>
+                    {item}
+                  </button>
+                );
+              })}
+            </div>
+          ))}
+          <div style={{ background: C.yellowPale, borderRadius: 10, padding: "10px 14px", marginTop: 8 }}>
+            <p style={{ fontSize: 11, color: C.darkMuted, margin: 0, lineHeight: 1.5 }}>
+              <strong>Tip:</strong> Buy spices in bulk during Week 1 — they last months. After that, you only need to restock produce, protein, and dairy each week. Always read labels on packaged items even if they are on this list.
+            </p>
+          </div>
+        </div>
+      </div>
+    );
+  }
 
   if (showFoodLookup) {
     const filtered = FOODS.filter(f => f.name.toLowerCase().includes(searchTerm.toLowerCase()));
@@ -1014,9 +1268,14 @@ function MealsPage({ subPage, setSubPage }) {
   return (
     <div style={{ paddingBottom: 90 }}>
       <TopBar title="Meal Plan" right={
-        <button onClick={() => setShowFoodLookup(true)} style={{ background: "none", border: "none", cursor: "pointer", color: C.primary, display: "flex", alignItems: "center", gap: 4, fontFamily: font.body, fontSize: 13, fontWeight: 600 }}>
-          <Search size={16} /> Food Lookup
-        </button>
+        <div style={{ display: "flex", gap: 8 }}>
+          <button onClick={() => setShowShoppingList(true)} style={{ background: "none", border: "none", cursor: "pointer", color: C.primary, display: "flex", alignItems: "center", gap: 4, fontFamily: font.body, fontSize: 12, fontWeight: 600 }}>
+            🛒 Shop
+          </button>
+          <button onClick={() => setShowFoodLookup(true)} style={{ background: "none", border: "none", cursor: "pointer", color: C.primary, display: "flex", alignItems: "center", gap: 4, fontFamily: font.body, fontSize: 12, fontWeight: 600 }}>
+            <Search size={14} /> Lookup
+          </button>
+        </div>
       } />
       <div style={{ padding: "0 20px 20px" }}>
         {/* Week selector */}
@@ -1081,6 +1340,7 @@ function LearnPage({ user }) {
 
   const filteredEducation = EDUCATION.filter(mod => {
     if (mod.id === "bodyafter50" && !showHormoneModule) return false;
+    if (mod.id === "mens-health" && isFemale) return false;
     return true;
   });
 
@@ -1108,10 +1368,11 @@ function LearnPage({ user }) {
   }
 
   const categories = [
-    { name: "Understanding Your Body", modules: filteredEducation.filter(m => ["insulin", "bodyafter50", "symptoms", "sleep"].includes(m.id)) },
-    { name: "Nutrition & Meal Guidance", modules: filteredEducation.filter(m => ["mealorder", "hydration-fruits", "beverages"].includes(m.id)) },
-    { name: "Reading Labels & Food Safety", modules: filteredEducation.filter(m => ["seasonings", "hidden-dangers", "detox-dangers"].includes(m.id)) },
-    { name: "Exercise & Medical", modules: filteredEducation.filter(m => ["exercise-safety", "labs"].includes(m.id)) },
+    { name: "Understanding Your Body", modules: filteredEducation.filter(m => ["ckd-healthy", "insulin", "bodyafter50", "mens-health", "symptoms", "sleep"].includes(m.id)) },
+    { name: "Nutrition & Meal Guidance", modules: filteredEducation.filter(m => ["mealorder", "hydration-fruits", "beverages", "water-safety", "smoothie-danger", "snacks", "sweets"].includes(m.id)) },
+    { name: "DIY Recipes", modules: filteredEducation.filter(m => ["diy-dressings", "diy-frozen", "diy-blends"].includes(m.id)) },
+    { name: "Reading Labels & Food Safety", modules: filteredEducation.filter(m => ["seasonings", "hidden-dangers", "detox-dangers", "supplements"].includes(m.id)) },
+    { name: "Exercise & Medical", modules: filteredEducation.filter(m => ["exercise-safety", "sodium", "alkaline", "blood-pressure", "labs"].includes(m.id)) },
   ];
 
   return (
@@ -1149,7 +1410,12 @@ function LearnPage({ user }) {
 }
 
 function TrackPage({ subPage }) {
-  const [tab, setTab] = useState(subPage?.type === "labs" ? "labs" : subPage?.type === "symptoms" ? "symptoms" : "labs");
+  const [tab, setTab] = useState(subPage?.type === "labs" ? "labs" : subPage?.type === "symptoms" ? "symptoms" : subPage?.type === "bp" ? "bp" : "labs");
+  const [bpReadings, setBpReadings] = useState([
+    { date: "Sample", systolic: "128", diastolic: "82", time: "Morning" },
+  ]);
+  const [newBp, setNewBp] = useState({ systolic: "", diastolic: "", time: "Morning" });
+  const [showBpInput, setShowBpInput] = useState(false);
   const [labs, setLabs] = useState([
     { label: "eGFR", value: "52", prev: "50", unit: "mL/min", range: "60+ normal", direction: "up" },
     { label: "Creatinine", value: "1.3", prev: "1.4", unit: "mg/dL", range: "0.7–1.3 normal", direction: "down" },
@@ -1191,7 +1457,7 @@ function TrackPage({ subPage }) {
       <TopBar title="Track" />
       <div style={{ padding: "0 20px 20px" }}>
         <div style={{ display: "flex", gap: 6, marginBottom: 20 }}>
-          {[{ id: "labs", label: "Lab Results" }, { id: "symptoms", label: "Daily Check-In" }].map(t => (
+          {[{ id: "labs", label: "Labs" }, { id: "bp", label: "Blood Pressure" }, { id: "symptoms", label: "Check-In" }].map(t => (
             <button key={t.id} onClick={() => setTab(t.id)} style={{
               flex: 1, padding: "10px 8px", borderRadius: 10, border: "none", cursor: "pointer",
               background: tab === t.id ? C.primary : C.card, color: tab === t.id ? "#FFF" : C.textMid,
@@ -1262,6 +1528,61 @@ function TrackPage({ subPage }) {
               </div>
             )}
             <Btn full secondary style={{ marginTop: 10 }}>Generate Doctor Sheet</Btn>
+          </>
+        )}
+
+        {tab === "bp" && (
+          <>
+            <SectionTitle sub="Track your readings to see trends over time">Blood Pressure</SectionTitle>
+            <div style={{ display: "flex", gap: 8, marginBottom: 16 }}>
+              {bpReadings.map((r, i) => (
+                <Card key={i} style={{ flex: 1, padding: 14, borderLeft: `3px solid ${parseInt(r.systolic) > 140 || parseInt(r.diastolic) > 90 ? C.red : parseInt(r.systolic) > 130 || parseInt(r.diastolic) > 80 ? C.secondary : C.sage}` }}>
+                  <div style={{ fontSize: 10, color: C.textMid, marginBottom: 4 }}>{r.time} · {r.date}</div>
+                  <div style={{ fontSize: 22, fontWeight: 700, color: C.dark }}>{r.systolic}/{r.diastolic}</div>
+                  <div style={{ fontSize: 10, color: parseInt(r.systolic) > 140 ? C.red : parseInt(r.systolic) > 130 ? C.secondary : C.sage, fontWeight: 600, marginTop: 4 }}>
+                    {parseInt(r.systolic) > 140 || parseInt(r.diastolic) > 90 ? "High — contact doctor" : parseInt(r.systolic) > 130 || parseInt(r.diastolic) > 80 ? "Slightly elevated" : "In target range"}
+                  </div>
+                </Card>
+              ))}
+            </div>
+            <Btn full secondary onClick={() => setShowBpInput(!showBpInput)}>Log New Reading</Btn>
+            {showBpInput && (
+              <Card style={{ marginTop: 12, padding: 20 }}>
+                <div style={{ display: "flex", gap: 10, marginBottom: 10 }}>
+                  <div style={{ flex: 1 }}>
+                    <p style={{ fontSize: 11, color: C.textMid, marginBottom: 4 }}>Systolic (top)</p>
+                    <input type="number" placeholder="130" value={newBp.systolic} onChange={e => setNewBp({...newBp, systolic: e.target.value})}
+                      style={{ width: "100%", padding: "10px", borderRadius: 8, border: "1px solid #E0E8E6", fontSize: 16, fontFamily: font.body, outline: "none", boxSizing: "border-box" }} />
+                  </div>
+                  <div style={{ flex: 1 }}>
+                    <p style={{ fontSize: 11, color: C.textMid, marginBottom: 4 }}>Diastolic (bottom)</p>
+                    <input type="number" placeholder="80" value={newBp.diastolic} onChange={e => setNewBp({...newBp, diastolic: e.target.value})}
+                      style={{ width: "100%", padding: "10px", borderRadius: 8, border: "1px solid #E0E8E6", fontSize: 16, fontFamily: font.body, outline: "none", boxSizing: "border-box" }} />
+                  </div>
+                </div>
+                <div style={{ display: "flex", gap: 6, marginBottom: 12 }}>
+                  {["Morning", "Evening"].map(t => (
+                    <button key={t} onClick={() => setNewBp({...newBp, time: t})} style={{
+                      flex: 1, padding: "8px", borderRadius: 8, border: "none", cursor: "pointer",
+                      background: newBp.time === t ? C.primary : C.bg, color: newBp.time === t ? "#FFF" : C.textMid,
+                      fontFamily: font.body, fontSize: 13, fontWeight: 600,
+                    }}>{t}</button>
+                  ))}
+                </div>
+                <Btn full onClick={() => {
+                  if (newBp.systolic && newBp.diastolic) {
+                    setBpReadings([...bpReadings, { ...newBp, date: new Date().toLocaleDateString() }]);
+                    setNewBp({ systolic: "", diastolic: "", time: "Morning" });
+                    setShowBpInput(false);
+                  }
+                }}>Save Reading</Btn>
+              </Card>
+            )}
+            <div style={{ background: C.yellowPale, borderRadius: 10, padding: "10px 14px", marginTop: 14 }}>
+              <p style={{ fontSize: 11, color: C.darkMuted, margin: 0, lineHeight: 1.5 }}>
+                <strong>How to get accurate readings:</strong> Sit quietly 5 minutes first. Correct cuff size. Arm on table at heart level. Feet flat, legs uncrossed. Two readings one minute apart, average them. Same times daily. Never adjust medications based on this app — always consult your nephrologist.
+              </p>
+            </div>
           </>
         )}
 
