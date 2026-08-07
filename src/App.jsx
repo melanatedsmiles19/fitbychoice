@@ -279,6 +279,9 @@ const FOODS = [
   { name: "Strawberries", k: "low", p: "low", safe: true, note: "Safe and antioxidant-rich. Up to 1 cup (about 8 medium) per day." },
   { name: "Sweet Potato", k: "high", p: "mod", safe: false, note: "High potassium — avoid" },
   { name: "Sole", k: "low", p: "low", safe: true, note: "Excellent kidney-friendly fish — wild-caught preferred" },
+  { name: "Starfruit", k: "high", p: "mod", safe: false, note: "TOXIC — contains caramboxin neurotoxin. A single fruit can cause seizures, coma, death in CKD. NEVER eat. ER immediately if consumed." },
+  { name: "Rhubarb", k: "mod", p: "low", safe: false, note: "TOXIC — extremely high oxalate causes direct kidney tissue damage. Avoid entirely." },
+  { name: "Noni Juice", k: "high", p: "mod", safe: false, note: "TOXIC — high potassium plus direct liver/kidney toxicity reports. Avoid entirely." },
   { name: "Tomato", k: "high", p: "low", safe: false, note: "High potassium — avoid sauces and ketchup" },
   { name: "Turkey", k: "low", p: "mod", safe: true, note: "Good protein — keep to 3-4 oz portions" },
   { name: "White Bread", k: "low", p: "low", safe: true, note: "Better than whole grain for CKD" },
@@ -293,32 +296,43 @@ const SHOPPING_LISTS = [
     protein: ["Chicken breast (2 lbs)", "Ground turkey (1 lb)", "Cod fillets (4 pieces, 3 oz each)", "Sea bass (1 piece, 3 oz)", "Shrimp (½ lb)", "Sole fillets (2 pieces, 3 oz each)", "Eggs (1 dozen)"],
     dairy: ["Cream cheese — Tillamook or Organic Valley (1 block)"],
     pantry: ["White rice (1 bag)", "White pasta (1 box)", "Couscous (1 box)", "Orzo (1 box)", "White bread (1 loaf)", "Unsalted crackers — Premium Unsalted Tops or Lundberg", "White flour tortillas — Rise and Puff or Tortillaland", "Olive oil (1 bottle)", "Apple cider vinegar"],
-    spices: ["Garlic powder", "Onion powder", "Black pepper", "Paprika", "Smoked paprika", "Cumin", "Oregano", "Basil (dried)", "Thyme (dried)", "Rosemary (dried)", "Dill (dried)", "Cayenne", "Cinnamon", "Ginger powder", "Sage"],
+    spices: ["Garlic powder (Simply Organic or Frontier Co-op)", "Onion powder (Simply Organic or Frontier Co-op)", "Black pepper (Simply Organic or Frontier Co-op)", "Paprika (Simply Organic or Frontier Co-op)", "Smoked paprika (Simply Organic or Frontier Co-op)", "Cumin (Simply Organic or Frontier Co-op)", "Oregano (Simply Organic or Frontier Co-op)", "Basil dried (Simply Organic or Frontier Co-op)", "Thyme dried (Simply Organic or Frontier Co-op)", "Rosemary dried (Simply Organic or Frontier Co-op)", "Dill dried (Simply Organic or Frontier Co-op)", "Cayenne (Simply Organic or Frontier Co-op)", "Cinnamon (Simply Organic or Frontier Co-op)", "Ginger powder (Simply Organic or Frontier Co-op)", "Sage (Simply Organic or Frontier Co-op)", "BLEND OPTION: Benson's Gourmet, Flavor God, or DAK's Spices (all salt-free, no MSG, no potassium chloride)", "DO NOT BUY: McCormick, Lawry's, Dash/Mrs. Dash, Goya Adobo, Sazon Goya, Slap Ya Mama, or any brand with salt as first ingredient, silicon dioxide, maltodextrin, MSG, potassium chloride, tricalcium phosphate, artificial dyes, or natural flavors"],
   },
   { // WEEK 2
     produce: ["Bell peppers (2)", "Zucchini (2)", "Onions (3)", "Fresh garlic (1 head)", "Arugula (2 bags)", "Cucumber (3)", "Cauliflower (1 large head)", "Cabbage (1 head)", "Green beans (1.5 lbs)", "Radishes (1 bunch)", "Lettuce — butter or romaine (1 head)", "Fresh basil", "Fresh dill", "Lemons (3)", "Limes (2)", "Blueberries (1 pint)", "Pineapple chunks (1 container)", "Apples (2)", "Carrots (small bag)"],
     protein: ["Chicken breast (1.5 lbs)", "Chicken thighs (½ lb)", "Ground turkey (1 lb)", "Cod fillets (3 pieces, 3 oz each)", "Sole fillet (1 piece, 3 oz)", "Mahi mahi (1 piece, 3 oz)", "Shrimp (¼ lb)", "Eggs (1 dozen)"],
     dairy: ["Cream cheese — Tillamook or Organic Valley (1 block)"],
     pantry: ["White rice (if needed)", "White pasta (if needed)", "Couscous (if needed)", "White bread (1 loaf)", "White flour tortillas — Rise and Puff or Tortillaland"],
-    spices: ["Restock any used from Week 1 — turmeric if not already purchased"],
+    spices: ["Restock any running low (Simply Organic or Frontier Co-op only)", "Turmeric if not already purchased (Simply Organic or Frontier Co-op)", "Pre-made blends: Benson's Gourmet, Flavor God, or DAK's Spices"],
   },
   { // WEEK 3
     produce: ["Bell peppers (2)", "Zucchini (2)", "Onions (3)", "Fresh garlic (1 head)", "Arugula (2 bags)", "Cucumber (3)", "Cauliflower (1 head)", "Cabbage (1 head)", "Green beans (1.5 lbs)", "Radishes (1 bunch)", "Fresh basil", "Fresh dill", "Fresh cilantro", "Lemons (4)", "Strawberries (1 pint)", "Blueberries (1 pint)", "Apples (2)", "Carrots (small bag)"],
     protein: ["Chicken breast (2 lbs)", "Ground turkey (1 lb)", "Cod fillets (2 pieces, 3 oz each)", "Sole fillet (1 piece, 3 oz)", "Mahi mahi (1 piece, 3 oz)", "Shrimp (½ lb)", "Eggs (1 dozen)"],
     dairy: ["Cream cheese — Tillamook or Organic Valley (1 block)"],
     pantry: ["White rice (if needed)", "White pasta (if needed)", "Couscous (if needed)", "Unsalted crackers (if needed)", "White bread (1 loaf)"],
-    spices: ["Restock any running low"],
+    spices: ["Restock any running low (Simply Organic or Frontier Co-op only)", "Pre-made blends: Benson's Gourmet, Flavor God, or DAK's Spices"],
   },
   { // WEEK 4
     produce: ["Bell peppers (3)", "Zucchini (2)", "Onions (3)", "Fresh garlic (1 head)", "Arugula (2 bags)", "Cucumber (3)", "Cauliflower (1 large head)", "Cabbage (1 head)", "Green beans (1.5 lbs)", "Radishes (1 bunch)", "Fresh basil", "Fresh parsley", "Lemons (4)", "Limes (1)", "Blueberries (1 pint)", "Pineapple chunks (1 container)", "Apples (3)"],
     protein: ["Chicken breast (2 lbs)", "Ground turkey (1 lb)", "Cod fillets (2 pieces, 3 oz each)", "Sea bass (2 pieces, 3 oz each)", "Halibut (1 piece, 3 oz)", "Wild trout (1 piece, 3 oz)", "Shrimp (¼ lb)", "Eggs (1 dozen)"],
     dairy: ["Cream cheese — Tillamook or Organic Valley (1 block)"],
     pantry: ["White rice (if needed)", "White pasta (if needed)", "Couscous or orzo (if needed)", "White bread (1 loaf)"],
-    spices: ["Restock any running low"],
+    spices: ["Restock any running low (Simply Organic or Frontier Co-op only)", "Pre-made blends: Benson's Gourmet, Flavor God, or DAK's Spices"],
   },
 ];
 
 const EDUCATION = [
+  {
+    id: "partnership", icon: "Heart", title: "Your Health Is a Partnership", subtitle: "Nobody is coming to save you — and that is your power",
+    content: [
+      { h: "The hard truth", p: "Your doctor is not going to fix you. That is not a criticism of doctors — it is the reality of how healthcare works. Your nephrologist sees you for 15 to 30 minutes every few months. They review labs, adjust medications, and send you home. In between those visits, YOU are the one making every decision that determines whether your kidneys get better, stay stable, or get worse. What you eat for breakfast. Whether you exercise today. Whether you read that label before you buy it. Whether you drink water or Gatorade. Those are YOUR choices, and they matter more than any pill." },
+      { h: "Your doctor is your partner, not your savior", p: "A good nephrologist gives you the medical framework — medications to manage blood pressure, guidance on your labs, monitoring your progression. But they cannot follow you to the grocery store. They cannot cook your meals. They cannot make you exercise. They cannot stop you from drinking coconut water or eating a whole bowl of cherries. The medication works WITH lifestyle — not instead of it. If you take your blood pressure pill and then eat a Subway footlong with 2,000mg of sodium, the medication is fighting a losing battle. Partnership means your doctor handles the clinical side and YOU handle the daily living side." },
+      { h: "Knowledge is your weapon", p: "The reason this app exists is because knowledge changes outcomes. When you understand that sodium directly increases pressure inside your kidneys, you put down the salt. When you understand that insulin resistance accelerates CKD, you eat your protein before your carbs. When you understand that erythritol cannot be cleared by damaged kidneys, you put down the sugar-free candy. When you understand that strength training breaks the muscle-wasting cycle, you pick up the dumbbells. Every module in this app gives you knowledge that turns into a decision that protects your kidneys. Your doctor cannot teach you all of this in a 15-minute appointment. But you can learn it here and show up to that appointment informed, prepared, and in control." },
+      { h: "Come to every appointment prepared", p: "Do not walk into your nephrologist visit and wait to be told what is wrong. Walk in with YOUR data. Your blood pressure readings. Your symptom log. Your food diary. Your workout completions. Your questions written down. Use the Doctor Communication Sheet in this app to bring organized information that shows your doctor exactly what you have been doing between visits. When a patient walks in prepared with data, the conversation changes from the doctor lecturing you to the doctor partnering with you. That is the difference between being a patient and being a participant." },
+      { h: "Stop waiting for permission", p: "Too many people wait for their doctor to tell them to exercise before they start. Wait for their doctor to tell them to eat better before they change. Wait for their doctor to tell them their kidneys are failing before they take action. By then, damage has been done that could have been prevented. You do not need permission to drink clean water, eat vegetables, move your body, and read ingredient labels. You need permission from your doctor for medications and medical procedures. You do not need permission to take care of yourself. Start now. Adjust with your doctor later." },
+      { h: "This is your life", p: "Nobody else is living in your body. Nobody else feels the fatigue, the swelling, the fear of what the next lab results will say. And nobody else can do the work for you. But here is the other side of that truth — nobody else gets the reward either. When your labs stabilize because YOU changed your diet. When your blood pressure drops because YOU started exercising. When your energy comes back because YOU made better choices. That is yours. You earned it. Your doctor did not do that. Your app did not do that. YOU did that. The app is the tool. The doctor is the guide. You are the one who decides whether your kidneys last. Make the choice. That is what FitByChoice means." },
+    ],
+  },
   {
     id: "ckd-healthy", icon: "Heart", title: "CKD Eating IS Healthy Eating", subtitle: "Why your diet is healthier than you think — reframing the narrative",
     content: [
@@ -422,7 +436,7 @@ const EDUCATION = [
       { h: "The problem with 'low sodium'", p: "Many products swap sodium chloride for potassium chloride — dangerous for CKD patients because impaired kidneys can't clear excess potassium. Elevated potassium causes heart rhythm problems. Morton Salt Substitute, Nu-Salt, and most 'lite salt' products use potassium chloride." },
       { h: "Hidden ingredients to avoid", p: "Maltodextrin (glycemic index higher than sugar), yeast extract and hydrolyzed proteins (hidden MSG), 'natural flavors' (can contain 100+ unknown ingredients), disodium guanylate and disodium inosinate (hidden sodium), corn starch, dextrose, caramel color, soybean/canola oil." },
       { h: "Safe single-ingredient spices", p: "Garlic powder, onion powder, black pepper, paprika, smoked paprika, cumin, oregano, basil, thyme, rosemary, dill, parsley, cayenne, turmeric, coriander, ginger. Buy them individually — just the dried plant, nothing added." },
-      { h: "Vetted clean brands", p: "Benson's Gourmet Seasonings — salt-free, sugar-free, no MSG, no potassium chloride, no silicon dioxide. Uses rice hulls (natural) as anti-caking agent instead of chemicals. Flavor God — no fillers, no preservatives, no sodium, no artificial coloring. Small business, USA-made. DAK's Spices — 100% salt-free, MSG-free, preservative-free, potassium chloride-free. Always read the full ingredient list yourself — even 'trusted' brands change formulas." },
+      { h: "Vetted clean brands", p: "Benson's Gourmet Seasonings — salt-free, sugar-free, no MSG, no potassium chloride, no silicon dioxide. Uses rice hulls (natural) as anti-caking agent instead of chemicals. Flavor God — no fillers, no preservatives, no sodium, no artificial coloring. Small business, USA-made. DAK's Spices — 100% salt-free, MSG-free, preservative-free, potassium chloride-free. Always read the full ingredient list yourself — even 'trusted' brands change formulas. Specifically avoid: Lawry's Seasoned Salt (380mg sodium per quarter teaspoon plus tricalcium phosphate), Lawry's Less Sodium version (contains potassium chloride — even worse for CKD), Goya Adobo (salt and MSG as first ingredients), Sazon Goya (MSG first ingredient, 480mg sodium per packet, tricalcium phosphate, Yellow 5, Red 40), and Slap Ya Mama (salt is the first and primary ingredient). All of these use spices that are individually safe — garlic, cumin, paprika, turmeric — but pack salt, MSG, phosphorus additives, and artificial dyes around them." },
       { h: "Make your own blends", p: "The safest option is always making your own from single-ingredient spices. See the DIY Seasoning Blends module for 5 ready-to-make recipes — All-Purpose, Chili-Lime, Italian Herb, Smoky Cajun, and Garlic Herb." },
     ],
   },
@@ -434,6 +448,9 @@ const EDUCATION = [
       { h: "All-Purpose Everyday Blend", p: "2 tbsp garlic powder + 2 tbsp onion powder + 1 tbsp black pepper + 1 tbsp paprika + 1 tbsp dried oregano + 1 tsp dried thyme. This covers 90% of your cooking — meat, vegetables, eggs, soups. Your clean replacement for any commercial 'all-purpose' seasoning." },
       { h: "Italian Herb Blend", p: "2 tbsp dried basil + 2 tbsp dried oregano + 1 tbsp dried rosemary (crushed) + 1 tbsp dried thyme + 1 tbsp garlic powder + 1 tsp black pepper + 1 tsp dried parsley. Use on chicken, fish, pasta, roasted vegetables, or mix with olive oil for a dipping sauce." },
       { h: "Smoky Cajun Blend", p: "2 tbsp smoked paprika + 1 tbsp garlic powder + 1 tbsp onion powder + 1 tbsp dried oregano + 1 tbsp dried thyme + 1 tsp cayenne + 1 tsp black pepper. Bold and smoky — great on chicken, shrimp, roasted cauliflower, and fish." },
+      { h: "Adobo Blend (Goya Adobo replacement)", p: "2 tbsp garlic powder + 1 tbsp oregano + 1 tbsp black pepper + 1 tsp turmeric + 1 tsp onion powder. Same warm, garlicky adobo flavor without the salt and MSG that are the first two ingredients in Goya Adobo. Use on chicken, pork, rice, beans — everywhere you used to shake that Goya bottle." },
+      { h: "Cajun Blend (Slap Ya Mama replacement)", p: "2 tbsp smoked paprika + 1 tbsp garlic powder + 1 tbsp onion powder + 1 tbsp dried oregano + 1 tbsp dried thyme + 1 tsp cayenne + 1 tsp black pepper. Bold Louisiana flavor without the salt that is the first and primary ingredient in Slap Ya Mama. Adjust cayenne to your heat preference." },
+      { h: "Latin Sazon Blend (Sazon Goya replacement)", p: "1 tbsp garlic powder + 1 tbsp cumin + 1 tbsp ground coriander + 1 tbsp smoked paprika + ½ tsp turmeric (for that golden color). Same Latin flavor as Sazon Goya — zero sodium, zero MSG, zero tricalcium phosphate, zero Yellow 5 or Red 40. Use on rice, beans, chicken, stews. Annatto powder optional for deeper orange color." },
       { h: "Garlic Herb Everyday Blend", p: "3 tbsp garlic powder + 1 tbsp dried parsley + 1 tbsp dried dill + 1 tbsp onion powder + 1 tsp black pepper + 1 tsp dried basil. Mild and versatile — perfect for anyone just starting to season without salt. Works on everything from eggs to roasted vegetables to rice." },
     ],
   },
@@ -459,6 +476,7 @@ const EDUCATION = [
       { h: "Erythritol: the sugar alcohol your kidneys can't handle", p: "Erythritol is in thousands of 'sugar-free' and 'keto' products — candy, gum, protein bars, drinks, baked goods. Healthy kidneys flush 90% of it out through urine. With CKD, your kidneys can't clear it efficiently, so it builds up in your blood. Research has linked elevated erythritol levels to dramatically increased risk of blood clotting, heart attack, and stroke. CKD patients already have elevated cardiovascular risk — adding erythritol on top of that is playing with fire." },
       { h: "Products to check that you wouldn't expect", p: "Sugar-free candy and gum (erythritol, maltitol, sorbitol — all sugar alcohols processed by kidneys). Diet sodas (phosphoric acid, artificial sweeteners). Protein bars (phosphorus additives, potassium additives, sugar alcohols). 'Keto-friendly' snacks (erythritol, allulose in excess amounts). Sugar-free ice cream (sugar alcohols, phosphorus). Flavored water (hidden phosphorus, potassium, sodium). Meal replacement shakes (high phosphorus, high potassium, high protein)." },
       { h: "Ingredients to scan for on ANY label", p: "Erythritol, maltitol, sorbitol, xylitol (sugar alcohols — kidneys process these). Maltodextrin (blood sugar spike). Phosphoric acid (kidney damage). Potassium chloride (dangerous with CKD). Sodium citrate, disodium phosphate, sodium benzoate (hidden sodium). 'Natural flavors' (unknown). Carrageenan (inflammatory). Any ingredient you can't pronounce — look it up before you eat it." },
+            { h: "Subway — 'Eat Fresh' is not CKD-safe", p: "Subway markets itself as the healthy fast-food option. For CKD patients, a single sandwich can destroy your entire daily sodium budget. Here is the breakdown by ingredient: THE BREAD — a 6-inch Italian White roll alone contains approximately 390mg sodium, plus dough conditioners (ammonium sulfate, DATEM, sodium stearoyl lactylate), calcium sulfate, and monocalcium phosphate (a phosphorus additive). THE MEAT — all Subway deli meats are processed with sodium phosphate (phosphorus additive absorbed at 90 percent), sodium nitrate and nitrite (preservatives), and massive sodium. A 6-inch turkey sub has approximately 500-600mg sodium just from the meat. Italian BMT exceeds 1,000mg. THE CHEESE — all options are high in phosphorus. One slice adds 200mg+ sodium. THE SAUCES — ranch and mayo contain soybean oil, natural flavors, and 100-200mg sodium per serving. Sweet onion sauce contains high-fructose corn syrup. TOTAL DAMAGE — an average 6-inch sub contains 1,000-2,000mg of sodium. A footlong can EXCEED your entire daily CKD limit of 2,000mg in a single sandwich. Add chips and a drink and you have consumed two days worth of sodium in one meal. There is no way to order a CKD-safe Subway sandwich. Even a veggie sub on their bread with no sauce still delivers 400-500mg sodium from the bread alone plus whatever the vegetables absorbed during storage. Cook at home." },
       { h: "The simple rule", p: "If a product needs a chemistry lab to make it taste good, your kidneys don't want it. Stick to whole foods, single-ingredient spices, and things your great-grandmother would recognize as food. When you do buy packaged products, flip it over and read every ingredient. The front of the package is marketing. The back is the truth." },
       { h: "Trader Joe's — 5 products to watch", p: "1) Sweet & Sour Gummy Worms — '0g sugar' but contains erythritol, maltodextrin, sodium citrate, calcium lactate, and 'natural flavors.' Five CKD concerns behind one healthy claim. 2) Quest Protein Bars — 220mg sodium, 21g protein (too much for one sitting with CKD), plus 6g erythritol. 3) Energy Bar Chocolate Chip — oats AND soy protein isolate (double phosphorus hit), brown rice syrup, sea salt listed twice. 4) Chewy Chocolate & Peanut Butter Protein Bar — 180mg sodium, soy protein isolate, peanuts (high phosphorus), agave syrup. Peanuts and soy together deliver a massive phosphorus load. 5) Coconut and plant milks — check every label for tricalcium phosphate or dipotassium phosphate. Phosphorus from additives is absorbed at over 90%, far more than natural food sources." },
       { h: "Whole Foods — 5 products to watch", p: "1) 365 Organic Whole Wheat Bread — whole wheat is high in phosphorus. The general health world says 'choose whole grain.' For CKD, white bread is actually safer. This contradiction confuses newly diagnosed patients. 2) 365 Organic Black Bean Soup — beans are high in both potassium AND phosphorus, and canned soup adds sodium. Three CKD concerns in one 'organic' can. 3) Kombucha (any brand) — high in potassium, contains acids that stress the kidneys, some brands add sugar alcohols. 4) 365 Organic Peanut Butter — peanuts are high in phosphorus and potassium. A two-tablespoon serving can have 100mg+ phosphorus and 200mg+ potassium. 'Organic' doesn't mean kidney-safe. 5) Fortified Almond Milk — check labels for calcium phosphate or dipotassium phosphate. Some brands have up to 500mg added calcium per serving plus phosphorus additives. Choose unfortified, unsweetened versions only." },
@@ -584,6 +602,18 @@ const EDUCATION = [
     ],
   },
   {
+    id: "toxic-foods", icon: "AlertTriangle", title: "Foods That Are TOXIC to CKD Kidneys", subtitle: "Not just unhealthy — actually poisonous to compromised kidneys",
+    content: [
+      { h: "This is different from high potassium or high phosphorus", p: "Most foods we flag in this app are problematic because they contain too much of a mineral your kidneys struggle to clear. The foods in this module are different. These contain actual toxins, nephrotoxins, or neurotoxins that can cause acute kidney injury, brain damage, or death in people with CKD. This is the most important food safety information in the entire app." },
+      { h: "STARFRUIT — never eat this. Ever.", p: "Starfruit contains a neurotoxin called caramboxin that healthy kidneys filter out. CKD kidneys cannot clear it. It accumulates in your blood, crosses the blood-brain barrier, and causes irreversible brain damage. A SINGLE starfruit can put a CKD patient in seizures within three hours, a coma, then death within three days. The first warning sign is uncontrollable hiccups. The first documented US death was reported in 2023 — a 74-year-old woman with CKD ate two starfruit and died despite emergency dialysis. Starfruit is the ONLY food that naturally contains caramboxin. Also avoid starfruit juice, starfruit-flavored drinks, and any tropical fruit mix that may contain starfruit. If you accidentally consume starfruit, go to the emergency room immediately." },
+      { h: "RHUBARB — dangerous oxalate levels", p: "Rhubarb contains extremely high levels of oxalic acid. In CKD patients, this can cause acute oxalate nephropathy — direct kidney tissue damage from oxalate crystals depositing in your kidney tubules. This is not just about kidney stones. The oxalate crystals physically block and destroy the filtering structures in your kidneys. Avoid rhubarb entirely — fresh, cooked, in pies, in sauces, in juices." },
+      { h: "NONI JUICE — marketed as a miracle, dangerous for CKD", p: "Noni juice is heavily marketed as a superfood with healing properties. For CKD patients, it is high in potassium AND has reports of direct liver and kidney toxicity. Multiple medical case reports document dangerously high potassium levels in CKD patients after drinking noni juice. Do not consume noni juice, noni supplements, or noni extract in any form." },
+      { h: "REAL LICORICE ROOT — blood pressure crisis", p: "Real licorice (not artificial licorice flavoring) contains glycyrrhizin, which causes a condition called pseudoaldosteronism. This severely raises blood pressure and disrupts potassium regulation. Found in some herbal teas, natural candies, European black licorice, and supplements. A few weeks of regular consumption can cause hypertensive crisis in CKD patients. Check ingredient lists for licorice root, glycyrrhiza, or glycyrrhizin. Artificial licorice flavor (used in most American licorice candy) does not contain this compound and is not the same risk." },
+      { h: "HIGH-OXALATE JUICES — acute kidney damage", p: "Spinach juice, beet juice, sorrel juice, and Swiss chard juice in concentrated form deliver massive oxalate loads that can cause acute oxalate nephropathy — even in people with only mild CKD. Eating a small portion of cooked spinach as a food is one thing. Drinking concentrated raw spinach juice is a completely different level of oxalate exposure. This connects directly to our module on why juices and smoothies are dangerous — the concentration effect turns a manageable food into a toxic dose." },
+      { h: "If you experience symptoms after eating any food", p: "Uncontrollable hiccups, sudden confusion, agitation, muscle weakness, tremors, seizures, severe nausea or vomiting — go to the emergency room immediately and tell them you have CKD and what you consumed. Time matters with neurotoxin exposure. Do not wait to see if it passes. Always consult your nephrologist about any food you are unsure about." },
+    ],
+  },
+  {
     id: "detox-dangers", icon: "AlertTriangle", title: "Detoxes, Cleanses & Herbal Supplements", subtitle: "Why 'kidney cleanses' are the most dangerous myth in CKD",
     content: [
       { h: "Your kidneys ARE your detox system", p: "The concept of 'detoxing your kidneys' is fundamentally flawed. Your kidneys filter 200 liters of blood every day, removing waste and toxins through urine. You cannot 'cleanse' your cleansing system with a tea or a supplement. The National Kidney Foundation says it directly: avoid teas and supplements marketed as a 'kidney detox' or 'kidney cleanse.' There is limited evidence they work, and some ingredients can interact with medications or directly damage your kidneys." },
@@ -706,7 +736,7 @@ function WelcomePage({ onStart }) {
           The first fitness & nutrition app built for people living with CKD. Exercise safely. Eat smart. Understand your body.
         </p>
         <p style={{ fontFamily: font.body, fontSize: 13, fontWeight: 600, color: C.secondary, letterSpacing: "0.05em", maxWidth: 300, margin: "0 auto 32px" }}>
-          Built for men and women living with CKD Stages 2–3
+          Built for men and women living with CKD — for dialysis prevention
         </p>
         <Btn onClick={onStart} full style={{ maxWidth: 300, margin: "0 auto", display: "block", padding: "16px 28px", fontSize: 16 }}>
           Start Your Free Week
@@ -1331,7 +1361,29 @@ function MealsPage({ subPage, setSubPage }) {
 
 function LearnPage({ user }) {
   const [selectedModule, setSelectedModule] = useState(null);
+  const [isPlaying, setIsPlaying] = useState(false);
   const iconMap = { Zap, UtensilsCrossed, Heart, Moon, Eye, Droplets, Shield, Activity, Star, AlertTriangle };
+
+  const handleListen = (mod) => {
+    if (isPlaying) {
+      window.speechSynthesis.cancel();
+      setIsPlaying(false);
+      return;
+    }
+    const fullText = mod.content.map(s => s.h + ". " + s.p).join(". ");
+    const utterance = new SpeechSynthesisUtterance(fullText);
+    utterance.rate = 0.9;
+    utterance.pitch = 1;
+    utterance.onend = () => setIsPlaying(false);
+    utterance.onerror = () => setIsPlaying(false);
+    window.speechSynthesis.speak(utterance);
+    setIsPlaying(true);
+  };
+
+  const stopListening = () => {
+    window.speechSynthesis.cancel();
+    setIsPlaying(false);
+  };
 
   // Filter modules based on user profile
   const isFemale = user?.sex === "Female";
@@ -1348,9 +1400,23 @@ function LearnPage({ user }) {
     const mod = selectedModule;
     return (
       <div style={{ paddingBottom: 90 }}>
-        <TopBar title={mod.title} onBack={() => setSelectedModule(null)} />
+        <TopBar title={mod.title} onBack={() => { stopListening(); setSelectedModule(null); }} />
         <div style={{ padding: "0 20px 20px" }}>
-          <p style={{ fontSize: 14, color: C.textMid, marginBottom: 24, lineHeight: 1.5 }}>{mod.subtitle}</p>
+          <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 16 }}>
+            <p style={{ fontSize: 14, color: C.textMid, lineHeight: 1.5, margin: 0, flex: 1 }}>{mod.subtitle}</p>
+            <button onClick={() => handleListen(mod)} style={{
+              display: "flex", alignItems: "center", gap: 6, padding: "10px 16px", borderRadius: 10, border: "none", cursor: "pointer", marginLeft: 12, flexShrink: 0,
+              background: isPlaying ? C.red : C.primary, color: "#FFF", fontFamily: font.body, fontSize: 13, fontWeight: 600,
+            }}>
+              {isPlaying ? "■ Stop" : "▶ Listen"}
+            </button>
+          </div>
+          {isPlaying && (
+            <div style={{ background: C.primaryPale, borderRadius: 10, padding: "10px 14px", marginBottom: 16, display: "flex", alignItems: "center", gap: 8 }}>
+              <div style={{ width: 8, height: 8, borderRadius: 4, background: C.primary, animation: "pulse 1.5s infinite" }} />
+              <p style={{ fontSize: 12, color: C.primary, margin: 0, fontWeight: 500 }}>Playing audio — tap Stop or navigate back to end</p>
+            </div>
+          )}
           {mod.content.map((section, i) => (
             <div key={i} style={{ marginBottom: 24 }}>
               <h3 style={{ fontFamily: font.display, fontSize: 18, fontWeight: 600, color: C.dark, marginBottom: 8 }}>{section.h}</h3>
@@ -1368,10 +1434,10 @@ function LearnPage({ user }) {
   }
 
   const categories = [
-    { name: "Understanding Your Body", modules: filteredEducation.filter(m => ["ckd-healthy", "insulin", "bodyafter50", "mens-health", "symptoms", "sleep"].includes(m.id)) },
+    { name: "Understanding Your Body", modules: filteredEducation.filter(m => ["partnership", "ckd-healthy", "insulin", "bodyafter50", "mens-health", "symptoms", "sleep"].includes(m.id)) },
     { name: "Nutrition & Meal Guidance", modules: filteredEducation.filter(m => ["mealorder", "hydration-fruits", "beverages", "water-safety", "smoothie-danger", "snacks", "sweets"].includes(m.id)) },
     { name: "DIY Recipes", modules: filteredEducation.filter(m => ["diy-dressings", "diy-frozen", "diy-blends"].includes(m.id)) },
-    { name: "Reading Labels & Food Safety", modules: filteredEducation.filter(m => ["seasonings", "hidden-dangers", "detox-dangers", "supplements"].includes(m.id)) },
+    { name: "Reading Labels & Food Safety", modules: filteredEducation.filter(m => ["seasonings", "hidden-dangers", "toxic-foods", "detox-dangers", "supplements"].includes(m.id)) },
     { name: "Exercise & Medical", modules: filteredEducation.filter(m => ["exercise-safety", "sodium", "alkaline", "blood-pressure", "labs"].includes(m.id)) },
   ];
 
