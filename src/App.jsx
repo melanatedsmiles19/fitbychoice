@@ -622,6 +622,18 @@ const EDUCATION = [
     ],
   },
   {
+    id: "diy-sausage", icon: "Star", title: "DIY Breakfast Sausage", subtitle: "Two zero-sodium versions - savory herb and maple-sage",
+    content: [
+      { h: "Why homemade wins here", p: "This recipe replaces Jimmy Dean Original Pork Sausage, Bob Evans Original Sausage, and Johnsonville Original Breakfast Sausage - all of which put salt in the first two or three ingredients plus preservatives like BHA/BHT, with 340-450mg sodium per serving. Your homemade version has zero added sodium - only what is naturally in the turkey itself." },
+      { h: "Savory Herb Version (per 1 lb ground turkey)", p: "1 lb ground turkey | 1 tsp sage | ½ tsp thyme | ½ tsp garlic powder | ½ tsp onion powder | ½ tsp smoked paprika | ¼ tsp black pepper | optional pinch of cayenne for heat. Mix all seasonings into the ground turkey by hand until evenly combined. Form into 2-3 oz patties." },
+      { h: "Maple-Sage Version (per 1 lb ground turkey)", p: "1 lb ground turkey | 1 tsp sage | ½ tsp black pepper | 1-2 tsp pure maple syrup | ¼ tsp cinnamon | pinch of nutmeg. This version leans sweet-savory, like a diner-style maple sausage link. Maple syrup is low potassium (about 40mg per tablespoon) so 1-2 teaspoons across a full pound is well within safe range. Mix all ingredients by hand, form into patties." },
+      { h: "Optional umami boosters (either version)", p: "For extra savory depth without sodium: add ½ tsp nutritional yeast (genuinely savory, cheese-like flavor, very low sodium and potassium in small amounts) or a splash of plain apple cider vinegar (adds brightness that makes other flavors pop, zero sodium). Both are optional - the base recipe is flavorful without them. Avoid Worcestershire sauce, even reduced-sodium versions, as it still carries meaningful sodium." },
+      { h: "A note on salt", p: "This recipe intentionally contains no added salt. If you want a touch after cooking, use the sprinkle-on-top technique from the Sodium module - a tiny pinch directly on the cooked patty right before eating, not mixed into the raw meat. That way you control the exact amount per serving rather than baking sodium into the entire batch." },
+      { h: "Cooking", p: "Heat 1 tsp olive oil in a pan over medium heat. Cook patties 4-5 minutes per side until browned and internal temperature reaches 165°F." },
+      { h: "Batch prep and freezing", p: "Mix your full batch, form into 2-3 oz patties, and lay them flat on a parchment-lined tray without touching. Freeze flat for 1-2 hours to flash-freeze each patty individually. Once firm, wrap each patty individually in parchment paper, twisting the ends. Store all wrapped patties together in a freezer bag or airtight container, labeled with the date. Keeps well in the freezer for about 3 months. Cook from frozen (6-7 minutes per side) or thaw overnight in the fridge first (4-5 minutes per side)." },
+    ],
+  },
+  {
     id: "diy-dressings", icon: "Star", title: "DIY Salad Dressings", subtitle: "5 kidney-safe dressings — under 3 minutes, zero additives",
     content: [
       { h: "Why store-bought dressings are a problem", p: "Even the 'healthy' dressings at places like Whole Foods and Trader Joe's are loaded with sodium (300-400mg per serving), soybean or canola oil, sugar, 'natural flavors,' and preservatives. Some contain phosphorus-based emulsifiers and potassium additives. For CKD patients, a single salad can go from kidney-safe to kidney-stressing just from the dressing. Making your own takes 2-3 minutes, uses ingredients you already have, and tastes better. Always consult your nephrologist or renal dietitian about your specific dietary needs." },
@@ -1428,28 +1440,28 @@ function MealsPage({ subPage, setSubPage }) {
 
 function LearnPage({ user }) {
   const [selectedModule, setSelectedModule] = useState(null);
-  const [isPlaying, setIsPlaying] = useState(false);
+  const [playingSection, setPlayingSection] = useState(null);
   const iconMap = { Zap, UtensilsCrossed, Heart, Moon, Eye, Droplets, Shield, Activity, Star, AlertTriangle };
 
-  const handleListen = (mod) => {
-    if (isPlaying) {
+  const handleListenSection = (text, sectionKey) => {
+    if (playingSection === sectionKey) {
       window.speechSynthesis.cancel();
-      setIsPlaying(false);
+      setPlayingSection(null);
       return;
     }
-    const fullText = mod.content.map(s => s.h + ". " + s.p).join(". ");
-    const utterance = new SpeechSynthesisUtterance(fullText);
+    window.speechSynthesis.cancel();
+    const utterance = new SpeechSynthesisUtterance(text);
     utterance.rate = 0.9;
     utterance.pitch = 1;
-    utterance.onend = () => setIsPlaying(false);
-    utterance.onerror = () => setIsPlaying(false);
+    utterance.onend = () => setPlayingSection(null);
+    utterance.onerror = () => setPlayingSection(null);
     window.speechSynthesis.speak(utterance);
-    setIsPlaying(true);
+    setPlayingSection(sectionKey);
   };
 
   const stopListening = () => {
     window.speechSynthesis.cancel();
-    setIsPlaying(false);
+    setPlayingSection(null);
   };
 
   // Filter modules based on user profile
@@ -1469,27 +1481,32 @@ function LearnPage({ user }) {
       <div style={{ paddingBottom: 90 }}>
         <TopBar title={mod.title} onBack={() => { stopListening(); setSelectedModule(null); }} />
         <div style={{ padding: "0 20px 20px" }}>
-          <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 16 }}>
-            <p style={{ fontSize: 14, color: C.textMid, lineHeight: 1.5, margin: 0, flex: 1 }}>{mod.subtitle}</p>
-            <button onClick={() => handleListen(mod)} style={{
-              display: "flex", alignItems: "center", gap: 6, padding: "10px 16px", borderRadius: 10, border: "none", cursor: "pointer", marginLeft: 12, flexShrink: 0,
-              background: isPlaying ? C.red : C.primary, color: "#FFF", fontFamily: font.body, fontSize: 13, fontWeight: 600,
-            }}>
-              {isPlaying ? "■ Stop" : "▶ Listen"}
-            </button>
-          </div>
-          {isPlaying && (
-            <div style={{ background: C.primaryPale, borderRadius: 10, padding: "10px 14px", marginBottom: 16, display: "flex", alignItems: "center", gap: 8 }}>
-              <div style={{ width: 8, height: 8, borderRadius: 4, background: C.primary, animation: "pulse 1.5s infinite" }} />
-              <p style={{ fontSize: 12, color: C.primary, margin: 0, fontWeight: 500 }}>Playing audio — tap Stop or navigate back to end</p>
-            </div>
-          )}
-          {mod.content.map((section, i) => (
-            <div key={i} style={{ marginBottom: 24 }}>
-              <h3 style={{ fontFamily: font.display, fontSize: 18, fontWeight: 600, color: C.dark, marginBottom: 8 }}>{section.h}</h3>
-              <p style={{ fontSize: 15, color: C.darkMuted, lineHeight: 1.7, margin: 0 }}>{section.p}</p>
-            </div>
-          ))}
+          <p style={{ fontSize: 14, color: C.textMid, lineHeight: 1.5, marginBottom: 20 }}>{mod.subtitle}</p>
+          {mod.content.map((section, i) => {
+            const sectionKey = `${mod.id}-${i}`;
+            const isThisPlaying = playingSection === sectionKey;
+            return (
+              <div key={i} style={{ marginBottom: 24 }}>
+                <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", gap: 10, marginBottom: 8 }}>
+                  <h3 style={{ fontFamily: font.display, fontSize: 18, fontWeight: 600, color: C.dark, margin: 0, flex: 1 }}>{section.h}</h3>
+                  <button onClick={() => handleListenSection(section.h + ". " + section.p, sectionKey)} style={{
+                    display: "flex", alignItems: "center", justifyContent: "center", width: 32, height: 32, borderRadius: 16,
+                    border: "none", cursor: "pointer", flexShrink: 0, marginTop: 2,
+                    background: isThisPlaying ? C.red : C.primaryPale, color: isThisPlaying ? "#FFF" : C.primary, fontSize: 13,
+                  }}>
+                    {isThisPlaying ? "■" : "▶"}
+                  </button>
+                </div>
+                {isThisPlaying && (
+                  <div style={{ display: "flex", alignItems: "center", gap: 6, marginBottom: 8 }}>
+                    <div style={{ width: 6, height: 6, borderRadius: 3, background: C.primary }} />
+                    <p style={{ fontSize: 11, color: C.primary, margin: 0, fontWeight: 500 }}>Playing this section</p>
+                  </div>
+                )}
+                <p style={{ fontSize: 15, color: C.darkMuted, lineHeight: 1.7, margin: 0 }}>{section.p}</p>
+              </div>
+            );
+          })}
           <div style={{ background: C.yellowPale, borderRadius: 10, padding: "12px 14px" }}>
             <p style={{ fontSize: 11, color: C.darkMuted, margin: 0, lineHeight: 1.5 }}>
               <strong>Important:</strong> This information is educational only and does not replace medical advice. Always verify with your nephrologist, renal dietitian, or healthcare provider before making any changes. Your individual labs and medical history should guide every decision.
@@ -1503,7 +1520,7 @@ function LearnPage({ user }) {
   const categories = [
     { name: "Understanding Your Body", modules: filteredEducation.filter(m => ["partnership", "ckd-healthy", "insulin", "bodyafter50", "mens-health", "symptoms", "sleep"].includes(m.id)) },
     { name: "Nutrition & Meal Guidance", modules: filteredEducation.filter(m => ["mealorder", "hydration-fruits", "beverages", "water-safety", "smoothie-danger", "snacks", "sweets"].includes(m.id)) },
-    { name: "DIY Recipes", modules: filteredEducation.filter(m => ["diy-dressings", "diy-frozen", "diy-baked", "diy-blends"].includes(m.id)) },
+    { name: "DIY Recipes", modules: filteredEducation.filter(m => ["diy-sausage", "diy-dressings", "diy-frozen", "diy-baked", "diy-blends"].includes(m.id)) },
     { name: "Reading Labels & Food Safety", modules: filteredEducation.filter(m => ["seasonings", "hidden-dangers", "toxic-foods", "dangerous-combos", "detox-dangers", "supplements"].includes(m.id)) },
     { name: "Exercise & Medical", modules: filteredEducation.filter(m => ["exercise-safety", "sodium", "alkaline", "blood-pressure", "labs"].includes(m.id)) },
   ];
