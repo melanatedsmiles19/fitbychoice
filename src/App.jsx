@@ -513,6 +513,18 @@ const EDUCATION = [
     ],
   },
   {
+    id: "accumulation", icon: "AlertTriangle", title: "Why Minerals Build Up, Not Reset Daily", subtitle: "The most important concept for understanding your labs and your food choices",
+    content: [
+      { h: "This changes how you should think about every food choice", p: "Most people assume nutrition works like calories - eat too much on Monday, your body processes it, and Tuesday starts fresh. For potassium, phosphorus, and sodium in CKD, this is NOT how it works. These minerals can accumulate across days when your damaged kidneys cannot clear them as fast as a healthy person's would. Understanding this changes everything about how you should approach limit foods." },
+      { h: "Potassium - the real-time filter that falls behind", p: "Healthy kidneys filter potassium into urine essentially in real time, keeping blood levels in a tight normal range no matter what you eat. Damaged kidneys filter more slowly and less completely. When you eat a moderate-potassium food, your kidneys cannot clear it as fast as they should. If you eat cherries today, grapes tomorrow, and a potato the next day, the potassium load can compound - your blood levels rise, and rise again, because your kidneys never fully caught up from the day before. This is why your potassium lab number reflects accumulation over time, not just what you ate yesterday." },
+      { h: "Phosphorus - the silent accumulator that damages bones and arteries", p: "Phosphorus buildup is arguably the most dangerous of the three because the damage happens silently, often with zero symptoms until it is advanced. When phosphorus accumulates in your blood (hyperphosphatemia), your body pulls calcium out of your bones to try to rebalance, weakening them over months and years. Excess phosphorus also binds with calcium and deposits in your blood vessels and heart tissue - a slow process called vascular calcification. This means phosphorus accumulation is actively hardening your arteries and thinning your bones in the background while you feel completely fine. This is why phosphorus additives in processed food (absorbed at 90 percent plus) are far more dangerous than natural phosphorus in whole foods (absorbed at 40-60 percent) - the accumulation happens faster with additives." },
+      { h: "Sodium - accumulates through fluid, not blood concentration", p: "Sodium works differently. It does not build up in your bloodstream the way potassium and phosphorus do. Instead, excess sodium causes your body to retain water to dilute it - that retained fluid is what accumulates. Days of high sodium intake compound into rising blood pressure and fluid overload, which shows up as swelling in your ankles and feet, and excessive thirst. The reset for sodium is about giving your kidneys a chance to flush the retained fluid, which is harder for damaged kidneys to do than for healthy ones. This is why a single high-sodium meal does not just affect that day - the fluid retention can linger for days afterward." },
+      { h: "This is why lab results matter more than any single meal", p: "Your blood potassium and phosphorus numbers reflect what is actually accumulating in your system over time, not just what you ate yesterday. A stable reading over months means your kidneys and your diet are keeping pace together. A rising trend means intake is outpacing what your kidneys can clear, regardless of which specific day caused it. This is exactly why the Lab Tracker in this app matters so much - trends over time tell the real story, not any single number." },
+      { h: "What this means practically: space out your limit foods", p: "This is why the app frames higher-potassium items as occasional treats rather than daily foods. Cherries once this week, grapes another day, a small potato portion another time - spaced apart - gives your kidneys recovery time between mineral loads. Cherries every day, plus grapes every day, plus dark chocolate every day stacks the burden with no recovery window, even if each individual portion seems reasonable on its own. Spacing matters as much as portion size." },
+      { h: "Related accumulation processes covered elsewhere in this app", p: "Several other substances follow this same buildup pattern rather than a daily reset. BUN (blood urea nitrogen) accumulates from protein waste - covered in the Understanding Your Lab Results module. Uric acid accumulates and drives gout risk, especially relevant for men - covered in the Men's Health module. Metabolic acidosis is a slow acid buildup process, not a daily reset - covered in the Acid, Alkaline & Your Kidneys module. All of these reinforce the same core principle: consistency and spacing matter more than any single day's choices." },
+    ],
+  },
+  {
     id: "sodium", icon: "AlertTriangle", title: "Sodium & Your Kidneys", subtitle: "Why 2,000mg is your daily ceiling and how sodium accelerates CKD",
     content: [
       { h: "Sodium is worse than you think for CKD", p: "When you eat sodium, it increases sodium levels in your blood. Your body pulls water from cells into your bloodstream to dilute it, and triggers thirst so you drink more. This increases total blood volume. Healthy kidneys filter the excess out. Damaged kidneys cannot keep up. The fluid stays, blood volume stays elevated, and blood pressure rises. But it goes further — sodium also increases pressure inside your kidney filtering units, causing protein to leak into your urine. Proteinuria is a key marker of kidney damage. So sodium does not just raise your blood pressure — it directly damages your kidneys from the inside." },
@@ -582,6 +594,16 @@ const EDUCATION = [
       { h: "8. Hard-boiled egg", p: "Pure protein, portable, filling. One whole egg is fine. Prep a few on Sunday for the week." },
       { h: "9. Homemade tortilla chips", p: "Cut Rise and Puff or Tortillaland tortillas into triangles, brush with olive oil and garlic powder, bake at 375 for 8 minutes. Crispier and cleaner than anything in a bag." },
       { h: "10. Unsalted rice cakes", p: "Light, crunchy, low in everything. Top with cream cheese and a few blueberries for a mini snack plate." },
+    ],
+  },
+  {
+    id: "know-produce", icon: "Eye", title: "Know Your Produce", subtitle: "Visual guide to avoid grabbing the wrong green at the store",
+    headerImage: "/produce/produce-header.jpg",
+    content: [
+      { h: "Why this matters", p: "Arugula and watercress look similar in a bagged mix or under grocery store lighting, but they are nutritionally different for CKD. Arugula is one of your safest daily greens. Watercress runs higher in potassium and should be used more sparingly. A quick glance is not enough - knowing the visual difference protects your diet." },
+      { h: "Arugula - the safer daily choice", p: "Look for flat, deeply jagged, oak-leaf shaped leaves - almost like a dandelion leaf. Medium-dark green, single leaves usually sold loose in a clamshell or bag. Low potassium, low phosphorus. This is your everyday salad green in the meal plan.", image: "/produce/arugula.jpg", caption: "Arugula - jagged, flat leaves" },
+      { h: "Watercress - use more sparingly", p: "Look for small, round, smooth leaflets clustered along thin, visible stems - more delicate and rounded than arugula's jagged single leaves. Often sold in bunches with the stems clearly showing, like a small bouquet. Moderate-to-higher potassium than arugula.", image: "/produce/watercress.jpg", caption: "Watercress - round leaflets on visible stems. Photo by Polina Tankilevitch via Pexels" },
+      { h: "At the store", p: "If the stems are thin and visible with small round leaflets attached along them - that is watercress. If the leaves are flat, jagged, and attached individually with no visible stem cluster - that is arugula. When in doubt, ask the produce staff or check the sign/label directly rather than guessing." },
     ],
   },
   {
@@ -1481,6 +1503,9 @@ function LearnPage({ user }) {
       <div style={{ paddingBottom: 90 }}>
         <TopBar title={mod.title} onBack={() => { stopListening(); setSelectedModule(null); }} />
         <div style={{ padding: "0 20px 20px" }}>
+          {mod.headerImage && (
+            <img src={mod.headerImage} alt={mod.title} style={{ width: "100%", height: 160, objectFit: "cover", borderRadius: 12, marginBottom: 16 }} />
+          )}
           <p style={{ fontSize: 14, color: C.textMid, lineHeight: 1.5, marginBottom: 20 }}>{mod.subtitle}</p>
           {mod.content.map((section, i) => {
             const sectionKey = `${mod.id}-${i}`;
@@ -1503,6 +1528,12 @@ function LearnPage({ user }) {
                     <p style={{ fontSize: 11, color: C.primary, margin: 0, fontWeight: 500 }}>Playing this section</p>
                   </div>
                 )}
+                {section.image && (
+                  <div style={{ marginBottom: 10 }}>
+                    <img src={section.image} alt={section.caption || section.h} style={{ width: "100%", maxWidth: 280, height: 200, objectFit: "cover", borderRadius: 10, display: "block" }} />
+                    {section.caption && <p style={{ fontSize: 11, color: C.textLight, marginTop: 4, fontStyle: "italic" }}>{section.caption}</p>}
+                  </div>
+                )}
                 <p style={{ fontSize: 15, color: C.darkMuted, lineHeight: 1.7, margin: 0 }}>{section.p}</p>
               </div>
             );
@@ -1519,10 +1550,10 @@ function LearnPage({ user }) {
 
   const categories = [
     { name: "Understanding Your Body", modules: filteredEducation.filter(m => ["partnership", "ckd-healthy", "insulin", "bodyafter50", "mens-health", "symptoms", "sleep"].includes(m.id)) },
-    { name: "Nutrition & Meal Guidance", modules: filteredEducation.filter(m => ["mealorder", "hydration-fruits", "beverages", "water-safety", "smoothie-danger", "snacks", "sweets"].includes(m.id)) },
+    { name: "Nutrition & Meal Guidance", modules: filteredEducation.filter(m => ["know-produce", "mealorder", "hydration-fruits", "beverages", "water-safety", "smoothie-danger", "snacks", "sweets"].includes(m.id)) },
     { name: "DIY Recipes", modules: filteredEducation.filter(m => ["diy-sausage", "diy-dressings", "diy-frozen", "diy-baked", "diy-blends"].includes(m.id)) },
     { name: "Reading Labels & Food Safety", modules: filteredEducation.filter(m => ["seasonings", "hidden-dangers", "toxic-foods", "dangerous-combos", "detox-dangers", "supplements"].includes(m.id)) },
-    { name: "Exercise & Medical", modules: filteredEducation.filter(m => ["exercise-safety", "sodium", "alkaline", "blood-pressure", "labs"].includes(m.id)) },
+    { name: "Exercise & Medical", modules: filteredEducation.filter(m => ["accumulation", "exercise-safety", "sodium", "alkaline", "blood-pressure", "labs"].includes(m.id)) },
   ];
 
   return (
