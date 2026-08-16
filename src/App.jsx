@@ -105,7 +105,7 @@ const MEALS_CKD = [
     ]},
     { day: "Friday", meals: [
       { type: "Breakfast", name: "Cream Cheese Toast with Berries", recipe: ["Toast 2 slices white bread until golden.", "Spread each slice with a thin layer of Tillamook cream cheese.", "Top with ½ cup fresh blueberries.", "Boil 1 egg for 8-10 minutes for a hard-boiled egg, then peel.", "Eat the egg first, then the toast and berries."], items: "2 slices white bread with thin spread of cream cheese (Tillamook or Organic Valley — no gums, no additives). ½ cup fresh blueberries on the side. 1 hard-boiled egg.", order: "Eat the egg first, then toast and berries.", k: "low", p: "low", na: "low" },
-      { type: "Lunch", name: "Turkey Burger Patty with Roasted Vegetables", recipe: ["Mix 3 oz ground turkey with cumin, paprika, and minced garlic. Form into a patty.", "Heat 1 tsp olive oil in a skillet over medium heat, cook patty 5-6 minutes per side until 165°F internal.", "Toss 1 cup diced bell peppers and zucchini with olive oil, black pepper.", "Roast at 400°F for 20 minutes, or sauté 10 minutes until tender.", "Cook ½ cup couscous according to package directions.", "Plate patty and roasted vegetables first, couscous last."], items: "3 oz ground turkey patty seasoned with cumin, paprika, garlic. 1 cup roasted bell peppers and zucchini. Side of orzo.", order: "Eat the patty and roasted veggies first, couscous last.", k: "low", p: "low", na: "low" },
+      { type: "Lunch", name: "Seasoned Turkey Burger with Roasted Vegetables", recipe: ["In a bowl, mix 1 lb ground turkey with garlic powder, onion powder, smoked paprika, cumin, black pepper, dried oregano, 1 tsp rice vinegar, and 2 tbsp Tillamook or Organic Valley cream cheese.", "If making a larger batch, mix in 1 beaten egg per 1-1.5 lbs of turkey as a binder. For a single patty, egg is optional.", "Form into patties (about 3 oz each).", "Heat 1 tsp olive oil in a skillet over medium heat, cook patties 5-6 minutes per side until 165°F internal.", "Toss 1 cup diced bell peppers and zucchini with olive oil, black pepper.", "Roast at 400°F for 20 minutes, or sauté 10 minutes until tender.", "Cook ½ cup couscous according to package directions.", "Plate patty and roasted vegetables first, couscous last."], items: "3 oz ground turkey patty seasoned with garlic powder, onion powder, smoked paprika, cumin, oregano, black pepper, rice vinegar, and cream cheese for moisture. 1 cup roasted bell peppers and zucchini. Side of orzo.", order: "Eat the patty and roasted veggies first, couscous last.", k: "low", p: "low", na: "low" },
       { type: "Dinner", name: "Baked Sole with Cucumber Dill Salad", recipe: ["Preheat oven to 400°F.", "Place 3 oz sole on a lined baking sheet, drizzle with lemon, sprinkle fresh dill.", "Bake 10-12 minutes until fish flakes easily.", "Thinly slice 1 cup cucumber.", "Toss cucumber with olive oil, dill, and apple cider vinegar.", "Steam ½ cup cabbage for 5 minutes until tender.", "Plate fish with cucumber salad and steamed cabbage."], items: "3 oz baked cod with lemon and dill. 1 cup cucumber slices with olive oil, dill, and apple cider vinegar. Steamed cabbage.", order: "All protein and vegetables.", k: "low", p: "low", na: "low" },
     ]},
     { day: "Saturday", meals: [
@@ -597,16 +597,6 @@ const EDUCATION = [
     ],
   },
   {
-    id: "know-produce", icon: "Eye", title: "Know Your Produce", subtitle: "Visual guide to avoid grabbing the wrong green at the store",
-    headerImage: "/produce/produce-header.jpg",
-    content: [
-      { h: "Why this matters", p: "Arugula and watercress look similar in a bagged mix or under grocery store lighting, but they are nutritionally different for CKD. Arugula is one of your safest daily greens. Watercress runs higher in potassium and should be used more sparingly. A quick glance is not enough - knowing the visual difference protects your diet." },
-      { h: "Arugula - the safer daily choice", p: "Look for flat, deeply jagged, oak-leaf shaped leaves - almost like a dandelion leaf. Medium-dark green, single leaves usually sold loose in a clamshell or bag. Low potassium, low phosphorus. This is your everyday salad green in the meal plan.", image: "/produce/arugula.jpg", caption: "Arugula - jagged, flat leaves" },
-      { h: "Watercress - use more sparingly", p: "Look for small, round, smooth leaflets clustered along thin, visible stems - more delicate and rounded than arugula's jagged single leaves. Often sold in bunches with the stems clearly showing, like a small bouquet. Moderate-to-higher potassium than arugula.", image: "/produce/watercress.jpg", caption: "Watercress - round leaflets on visible stems. Photo by Polina Tankilevitch via Pexels" },
-      { h: "At the store", p: "If the stems are thin and visible with small round leaflets attached along them - that is watercress. If the leaves are flat, jagged, and attached individually with no visible stem cluster - that is arugula. When in doubt, ask the produce staff or check the sign/label directly rather than guessing." },
-    ],
-  },
-  {
     id: "sweets", icon: "Heart", title: "Sweets & Treats: The CKD-Safe Guide", subtitle: "What you CAN enjoy, what to avoid, and quick homemade treats",
     content: [
       { h: "You can still enjoy sweets — here's how", p: "Living with CKD does not mean giving up everything you love. It means knowing which treats are safer and which ones are hiding potassium, phosphorus, and chemicals your kidneys cannot handle. This guide gives you the honest breakdown and homemade alternatives that satisfy the craving without stressing your kidneys. Always verify with your nephrologist or renal dietitian based on your individual labs." },
@@ -647,12 +637,113 @@ const EDUCATION = [
     id: "diy-sausage", icon: "Star", title: "DIY Breakfast Sausage", subtitle: "Two zero-sodium versions - savory herb and maple-sage",
     content: [
       { h: "Why homemade wins here", p: "This recipe replaces Jimmy Dean Original Pork Sausage, Bob Evans Original Sausage, and Johnsonville Original Breakfast Sausage - all of which put salt in the first two or three ingredients plus preservatives like BHA/BHT, with 340-450mg sodium per serving. Your homemade version has zero added sodium - only what is naturally in the turkey itself." },
-      { h: "Savory Herb Version (per 1 lb ground turkey)", p: "1 lb ground turkey | 1 tsp sage | ½ tsp thyme | ½ tsp garlic powder | ½ tsp onion powder | ½ tsp smoked paprika | ¼ tsp black pepper | optional pinch of cayenne for heat. Mix all seasonings into the ground turkey by hand until evenly combined. Form into 2-3 oz patties." },
+      { h: "Savory Herb Version (per 1 lb ground turkey)", p: "1 lb ground turkey | 1 tsp sage | ½ tsp thyme | ½ tsp garlic powder | ½ tsp onion powder | ½ tsp smoked paprika | ¼ tsp black pepper | 1-2 tsp Tillamook or Organic Valley cream cheese (adds moisture, prevents dryness) | 1 egg per 1-1.5 lbs batch (binder — helps patties hold together through freezing and cooking) | optional pinch of cayenne for heat. Mix all seasonings, cream cheese, and egg into the ground turkey by hand until evenly combined. Form into 2-3 oz patties." },
       { h: "Maple-Sage Version (per 1 lb ground turkey)", p: "1 lb ground turkey | 1 tsp sage | ½ tsp black pepper | 1-2 tsp pure maple syrup | ¼ tsp cinnamon | pinch of nutmeg. This version leans sweet-savory, like a diner-style maple sausage link. Maple syrup is low potassium (about 40mg per tablespoon) so 1-2 teaspoons across a full pound is well within safe range. Mix all ingredients by hand, form into patties." },
       { h: "Optional umami boosters (either version)", p: "For extra savory depth without sodium: add ½ tsp nutritional yeast (genuinely savory, cheese-like flavor, very low sodium and potassium in small amounts) or a splash of plain apple cider vinegar (adds brightness that makes other flavors pop, zero sodium). Both are optional - the base recipe is flavorful without them. Avoid Worcestershire sauce, even reduced-sodium versions, as it still carries meaningful sodium." },
       { h: "A note on salt", p: "This recipe intentionally contains no added salt. If you want a touch after cooking, use the sprinkle-on-top technique from the Sodium module - a tiny pinch directly on the cooked patty right before eating, not mixed into the raw meat. That way you control the exact amount per serving rather than baking sodium into the entire batch." },
       { h: "Cooking", p: "Heat 1 tsp olive oil in a pan over medium heat. Cook patties 4-5 minutes per side until browned and internal temperature reaches 165°F." },
       { h: "Batch prep and freezing", p: "Mix your full batch, form into 2-3 oz patties, and lay them flat on a parchment-lined tray without touching. Freeze flat for 1-2 hours to flash-freeze each patty individually. Once firm, wrap each patty individually in parchment paper, twisting the ends. Store all wrapped patties together in a freezer bag or airtight container, labeled with the date. Keeps well in the freezer for about 3 months. Cook from frozen (6-7 minutes per side) or thaw overnight in the fridge first (4-5 minutes per side)." },
+    ],
+  },
+  {
+    id: "constipation", icon: "Heart", title: "Staying Regular on a CKD Diet", subtitle: "Safe high-fiber solutions within your mineral limits",
+    content: [
+      { h: "Why this happens", p: "CKD diets restrict many high-fiber foods - beans in large amounts, whole grains, certain fruits and vegetables - because they carry potassium and phosphorus. Constipation is a commonly reported side effect of renal diets, but it does not have to be. There are genuinely safe ways to stay regular within your limits." },
+      { h: "Safe fiber sources within CKD limits", p: "White pasta and white bread still contain some fiber, just less than whole grain. Apples with skin (one of your safe daily fruits) provide meaningful fiber. Cucumber, cabbage, and green beans add fiber volume without mineral concerns. Chia seeds in small amounts (1 tsp) are relatively low in potassium per serving and add real fiber and gel-forming bulk. Ground flaxseed in small amounts (1 tsp) works similarly." },
+      { h: "Hydration matters as much as fiber", p: "Adequate water intake (within your personal fluid limits, confirmed with your nephrologist) is essential for regularity. Fiber without enough fluid can worsen constipation rather than help it. This connects directly to your hydration guidance elsewhere in this app." },
+      { h: "Movement helps", p: "Physical activity, including the exercise program in this app, stimulates digestive motility. Regular movement is one of the most effective and completely free tools for staying regular." },
+      { h: "When to talk to your doctor", p: "If constipation persists despite these strategies, tell your nephrologist. Some CKD medications (particularly phosphate binders and certain blood pressure medications) can contribute to constipation, and your doctor may adjust your regimen or recommend a specific safe stool softener. Do not start any laxative or fiber supplement without checking - some contain potassium or magnesium that need monitoring for CKD." },
+    ],
+  },
+  {
+    id: "fluid-coping", icon: "Droplets", title: "Coping With Fluid Restriction", subtitle: "Practical techniques when your nephrologist has limited your fluids",
+    content: [
+      { h: "For those on a stricter fluid limit", p: "Not everyone with CKD has a fluid restriction - it depends on your stage and whether you are retaining fluid. If your nephrologist has given you a specific daily fluid limit, these techniques help manage thirst without exceeding it." },
+      { h: "Ice chips instead of drinking", p: "Sucking on ice chips lets you experience the sensation of drinking without the same fluid volume as a full glass. A cup of ice chips is roughly half the fluid volume of the same cup filled with water." },
+      { h: "Freeze small portions", p: "Freeze small amounts of your allowed fluids (water, or a favorite safe juice in small quantity) into ice cube trays. Eating a frozen cube slowly satisfies the urge to drink and takes longer to consume than drinking the same amount as liquid." },
+      { h: "Stimulate saliva instead", p: "Sour hard candy (check the Sweets guide for safe options) stimulates saliva production, which helps relieve dry mouth without adding fluid volume. Chewing gum works similarly." },
+      { h: "Rinse without swallowing", p: "Rinsing your mouth with cold water and spitting it out (not swallowing) relieves dry mouth sensation without adding to your fluid count." },
+      { h: "Track it honestly", p: "Use a marked container to track your actual daily fluid intake against your limit, including the fluid content of soups, ice cream, and other foods that count toward your total. Many people underestimate how much they are actually consuming." },
+    ],
+  },
+  {
+    id: "nuts-crunch", icon: "Star", title: "Crunchy Substitutes for Nuts & Seeds", subtitle: "Getting that crunch without the phosphorus load",
+    content: [
+      { h: "The problem with nuts and seeds", p: "Nuts and seeds are high in phosphorus and often high in potassium, making them one of the more restricted categories for CKD. But the craving for crunch - on a salad, in baking, as a snack - is real and deserves a real substitute, not just avoidance." },
+      { h: "Toasted rice or cereal crumbles", p: "Crushed unsalted rice cakes or a small amount of crushed Premium Unsalted Tops crackers, lightly toasted, adds crunch to salads or yogurt-style dishes without the phosphorus load of nuts." },
+      { h: "Roasted chickpea alternative: roasted white beans (small amounts)", p: "In small, well-drained portions, roasted beans tossed in olive oil and your DIY seasoning blend and baked until crisp can mimic the roasted-nut snacking experience. Keep portions modest given the beans discussion in the Accumulation module." },
+      { h: "Crispy vegetable chips", p: "Thinly sliced and baked radish or zucchini chips (see the DIY Chips module) provide a genuinely crunchy topping for salads or a snack on their own." },
+      { h: "For baking specifically", p: "When a recipe calls for nuts for texture (not primarily flavor), toasted rice krispies-style cereal (check for a clean, low-sodium option) or crushed unsalted crackers can substitute for the crunch factor in a crust or topping." },
+    ],
+  },
+  {
+    id: "taste-changes", icon: "AlertTriangle", title: "When Food Stops Tasting Right", subtitle: "Understanding and managing altered taste in CKD",
+    content: [
+      { h: "This is a real and common CKD symptom", p: "Altered taste perception - food tasting metallic, bland, or simply wrong - is one of the most common and quality-of-life-affecting symptoms of CKD, and it is rarely discussed. It happens because toxin buildup and zinc deficiency (common in CKD) can affect your taste buds directly. This can lead to reduced appetite and unintentional weight loss if not addressed." },
+      { h: "Why it happens", p: "Reduced kidney function allows urea and other waste products to build up slightly in saliva, creating a metallic or ammonia-like taste. Zinc deficiency, common in CKD due to dietary restrictions and absorption issues, independently affects taste bud function. Some medications also alter taste as a side effect." },
+      { h: "What can help", p: "Using acidic, bright flavors - lemon juice, vinegar, your DIY seasoning blends - can cut through a metallic taste more effectively than salt would anyway. Trying foods at different temperatures, since altered taste sometimes affects hot foods more than cold or room-temperature foods. Using plastic or bamboo utensils instead of metal, since metal utensils can worsen a metallic taste sensation for some people. Rinsing your mouth with a baking soda and water solution before eating can neutralize some of the metallic taste temporarily." },
+      { h: "Talk to your nephrologist", p: "If taste changes are significant or affecting your appetite and weight, tell your doctor. Zinc levels can be checked and supplemented if low (only under medical guidance, since supplements need CKD-specific dosing). This symptom is real, it is not in your head, and it has management strategies - you do not have to just push through unappetizing food." },
+    ],
+  },
+  {
+    id: "dining-out", icon: "UtensilsCrossed", title: "Eating Out & Social Situations", subtitle: "Restaurants, parties, and potlucks when food isn't in your control",
+    content: [
+      { h: "The general restaurant strategy", p: "Choose grilled, baked, or steamed protein (chicken, fish, shrimp) over fried or sauced options. Ask for sauces and dressings on the side so you control the amount. Request no added salt when possible - many kitchens will accommodate this. Skip the bread basket. Choose steamed or roasted vegetables as your side rather than potatoes or heavily seasoned rice. Avoid soup as a starter - it is almost always high sodium. Order water, unsweetened tea, or a plain seltzer rather than soda or a sweetened drink." },
+      { h: "Cuisine-specific tips", p: "Italian: grilled chicken or fish over pasta with olive oil and garlic rather than cream or tomato-heavy sauces, ask for light cheese. Mexican: grilled protein, ask for no added salt on rice and beans, go easy on cheese and sour cream, skip the chips or ask for a small portion. Asian: ask for sauces on the side (soy-based sauces are very high sodium), steamed rather than fried preparations, steamed vegetables. American: grilled protein, side salad with dressing on the side, skip the fries for a vegetable side if available." },
+      { h: "Potlucks and parties", p: "Eat a small CKD-safe snack before you go so you are not arriving hungry and more likely to overeat unknown foods. Bring a dish you know is safe to share - this guarantees at least one option you can eat freely and often introduces others to kidney-friendly food. Fill your plate with the safest visible options first - plain proteins, fresh vegetables, fruit you recognize - before considering anything with an unknown sauce or preparation. It is always acceptable to ask the host what is in a dish, especially regarding salt and any cheese-heavy components." },
+      { h: "The bigger picture", p: "You do not have to avoid social situations because of CKD. A little planning goes a long way, and one imperfect meal at a party does not undo your consistent daily choices. Enjoy the occasion - the accumulation principle from our other module means what you eat most days matters far more than any single event." },
+    ],
+  },
+  {
+    id: "nocturia", icon: "Moon", title: "Nighttime Urination (Nocturia)", subtitle: "Why it happens and how to protect your sleep",
+    content: [
+      { h: "Why this happens with CKD", p: "As kidneys lose their ability to concentrate urine efficiently, they may produce more urine overall, including at night when healthy kidneys would normally slow production. Waking multiple times to urinate is one of the most disruptive CKD symptoms because it directly damages sleep quality, which then affects nearly everything else - energy, mood, blood pressure, and healing." },
+      { h: "Timing your fluids", p: "If your nephrologist has not restricted your fluids, front-load your water intake earlier in the day and taper off in the 2-3 hours before bed. This does not mean restricting overall fluid, just shifting when you drink it. This connects directly to the sodium and hydration guidance elsewhere in this app - proper daytime hydration actually supports better nighttime kidney function." },
+      { h: "Evening habits that help", p: "Avoid caffeine and alcohol in the evening, both increase urine production. Elevate your legs for 30 minutes before bed if you have swelling - this helps your body process excess fluid before you lie down, rather than processing it overnight. Keep a consistent bedtime so your body's natural rhythms support better fluid regulation." },
+      { h: "When to tell your doctor", p: "If nocturia is severe (waking more than 2-3 times nightly), worsening suddenly, or accompanied by pain, blood in urine, or fever, contact your nephrologist. This could indicate a urinary tract infection, worsening kidney function, or another condition needing attention separate from typical CKD-related nocturia." },
+    ],
+  },
+  {
+    id: "bone-joint", icon: "Activity", title: "Bone & Joint Pain in CKD", subtitle: "The phosphorus-calcium connection and what helps",
+    content: [
+      { h: "Why CKD causes bone and joint pain", p: "This connects directly to the phosphorus accumulation we covered in the Accumulation module. When phosphorus builds up because your kidneys cannot clear it efficiently, your body pulls calcium from your bones to try to rebalance, weakening bone density over time. This condition, sometimes called CKD-mineral bone disorder, causes aching, stiffness, and increased fracture risk. Joint pain can also stem from uric acid buildup (see the Men's Health module for the gout connection) or general inflammation associated with CKD." },
+      { h: "Nutrition connection", p: "This is exactly why phosphorus control matters beyond just your lab numbers - it is directly protecting your bone structure. Following the low-phosphorus meal plans, avoiding phosphate additives (the Read Your Labels module), and maintaining stable labs all work toward preventing this specific symptom." },
+      { h: "Movement helps more than rest", p: "Counterintuitively, gentle consistent movement - like the strength training program in this app - helps maintain bone density rather than worsening pain. Bones respond to load-bearing exercise by staying stronger. Complete inactivity accelerates bone weakening. If a joint is acutely painful and swollen (possible gout flare), rest that specific joint and contact your doctor, but general CKD-related bone aching benefits from your regular program, done at a comfortable intensity." },
+      { h: "What your doctor can check", p: "Your nephrologist can check calcium, phosphorus, PTH (parathyroid hormone), and vitamin D levels - all connected to bone health in CKD. If bone or joint pain is persistent, ask about these specific labs at your next visit. Some patients need phosphate binder medications or vitamin D supplementation (only under medical guidance) to protect bone health." },
+    ],
+  },
+  {
+    id: "anxiety-ckd", icon: "Heart", title: "Anxiety & the Emotional Weight of CKD", subtitle: "You are not imagining the worry, and you are not alone in it",
+    content: [
+      { h: "This is a real, documented part of CKD", p: "Anxiety and worry are consistently identified in research as significant impacts of living with CKD - not a personal weakness, a documented and common experience. The uncertainty of watching lab numbers, wondering about progression, and managing a condition that requires constant vigilance creates a real psychological load on top of the physical one." },
+      { h: "Why it compounds", p: "Sleep problems worsen anxiety. Anxiety worsens sleep. Fatigue makes coping harder. Financial stress about medical costs adds another layer. This is not a simple problem with a simple fix, and acknowledging that is more honest than pretending a single tip solves it." },
+      { h: "What genuinely helps", p: "Exercise has documented anti-anxiety effects independent of its physical benefits - this is one more reason the program in this app matters beyond muscle and kidney protection. Connecting with others who understand the specific experience of CKD reduces the isolation that fuels anxiety - this is exactly why community matters, which is why FitByChoice is building a support community (see below). Tracking your data (labs, symptoms, blood pressure) can paradoxically reduce anxiety by replacing vague worry with concrete information you can act on." },
+      { h: "When to seek professional support", p: "If anxiety is persistent, overwhelming, or affecting your daily functioning, professional support - a therapist, counselor, or your doctor - is a legitimate and valuable option, not a last resort. Many nephrology practices now have or can refer to mental health professionals who understand chronic illness specifically. There is no shame in needing support for the emotional weight of a real medical condition." },
+    ],
+  },
+  {
+    id: "diy-creamer", icon: "Star", title: "DIY Coffee Creamer Flavors", subtitle: "Real flavor for your coffee - zero phosphorus additives, completely your control",
+    content: [
+      { h: "Why homemade wins here", p: "Most flavored coffee creamers on shelves contain phosphorus additives, artificial flavors, and hidden sugars. Making your own takes 10 seconds longer than pouring from a carton and you know exactly what is in it. Base for all flavors below: start with a small splash of plain heavy cream (one of the cleanest dairy options - only about 3 out of 200+ heavy creams in the USDA database contain phosphate additives). If you prefer a store-bought option, Nutpods (unsweetened, almond-coconut base, no additives) or Chobani Vanilla Creamer (real milk, cream, sugar, vanilla) are the cleanest branded choices." },
+      { h: "Classic Vanilla", p: "Heavy cream + ¼ tsp pure vanilla extract + a small amount of sugar if you want sweetness. Stir into hot coffee. Simple, clean, tastes like a proper vanilla latte." },
+      { h: "Cinnamon", p: "Sprinkle ground cinnamon directly into your coffee grounds before brewing, or stir a pinch into the finished cup along with your cream. Cinnamon also has some blood sugar benefits, a nice bonus for insulin management." },
+      { h: "Vanilla-Cinnamon", p: "Heavy cream + vanilla extract + a pinch of cinnamon. Tastes remarkably close to a flavored cafe creamer, zero additives, completely in your control." },
+      { h: "Caramel-Style", p: "A small amount of pure maple syrup (CKD-safe in moderation, about 40mg potassium per tablespoon) stirred into heavy cream gives a warm, caramel-adjacent sweetness without real caramel sauce, which carries sodium and additives." },
+      { h: "Pumpkin Spice", p: "Heavy cream + small pinch each of cinnamon, ginger, nutmeg, and clove + touch of vanilla extract + a small amount of sugar or maple syrup. Real pumpkin puree is moderate-to-high potassium, so skip the pumpkin itself - the spice blend is what actually creates the pumpkin spice flavor everyone loves. This nails the taste without the potassium concern." },
+      { h: "Mocha", p: "Heavy cream + ½ tsp unsweetened cocoa powder (small amount keeps potassium and phosphorus low) + vanilla extract + a touch of sugar." },
+      { h: "Coconut", p: "Heavy cream + ¼ tsp coconut extract (not coconut milk, which carries its own mineral content) + a touch of sugar. Tropical coconut flavor without the potassium load of actual coconut products." },
+      { h: "Almond", p: "Heavy cream + ¼ tsp almond extract + touch of sugar. Almond extract is a flavor extract used in tiny amounts, very different from eating actual almonds." },
+      { h: "Gingerbread", p: "Heavy cream + pinch of ginger, cinnamon, and a tiny pinch of clove + vanilla extract + touch of maple syrup. A cozy variation on the pumpkin spice profile, great for winter mornings." },
+      { h: "A note on half and half", p: "If you prefer half and half over heavy cream, Land O'Lakes has exactly one phosphate-free version - it must say '100% Real Milk and Cream' on the label specifically. Every other half and half, including other Land O'Lakes varieties and single-serve packets, contains phosphate additives. Always check the exact wording every time you buy, since formulas change." },
+    ],
+  },
+  {
+    id: "diy-pasta", icon: "Star", title: "DIY Creamy Pasta Dishes", subtitle: "Penne alla Vodka and Chicken Alfredo - CKD-safer versions of the classics",
+    content: [
+      { h: "Why homemade wins here", p: "Traditional vodka sauce and Alfredo are sodium and phosphorus concentrated - jarred vodka sauce runs 400-600mg sodium per half cup, and restaurant Alfredo stacks butter, heavy cream, and parmesan at full strength. These homemade versions use portion-controlled dairy and real aromatics to deliver the same flavor satisfaction. These are occasional dishes, not weekly staples, due to the concentrated dairy - but occasional and enjoyed properly beats never eaten." },
+      { h: "Penne alla Vodka (CKD version)", p: "3 oz chicken or shrimp (optional) seared and set aside. In the same pan: 2 tbsp olive oil, 3 cloves minced garlic, pinch of red pepper flakes, cooked 1 minute. Add ¼ cup crushed tomato (used sparingly, not a thick layer), simmer 5 minutes. Add 2 tbsp vodka, simmer 2-3 minutes to cook off the alcohol. Stir in 2 tbsp heavy cream and 1 tbsp grated parmesan. Toss with ½ cup cooked penne. Finish with black pepper and fresh basil." },
+      { h: "Chicken Alfredo (CKD version)", p: "Season and pan-sear 3 oz chicken breast, slice, set aside. In the same pan: 1 tbsp olive oil, 2 cloves minced garlic, cooked 1 minute. Add ¼ cup heavy cream and 1 tbsp Tillamook or Organic Valley cream cheese, whisk until smooth over low heat. Stir in 1-2 tbsp grated parmesan (portion-controlled, not piled on) and black pepper. Toss with ½ cup cooked white pasta and the sliced chicken. The cream cheese trick creates a creamier, more stable sauce without needing as much heavy cream or butter." },
+      { h: "The parmesan rule", p: "Parmesan is concentrated in flavor, which means a little goes further than you think. 1-2 tablespoons grated (not a thick blanket over the dish) delivers the sharp, nutty flavor that makes these dishes taste right, while keeping phosphorus more manageable than a heavy-handed pour." },
     ],
   },
   {
@@ -972,7 +1063,7 @@ function DashboardPage({ user, setPage, setSubPage }) {
           {[
             { label: "Food Lookup", icon: Search, pg: "meals", sub: "foodlookup" },
             { label: "Lab Tracker", icon: Activity, pg: "track", sub: "labs" },
-            { label: "Log Symptoms", icon: Heart, pg: "track", sub: "symptoms" },
+            { label: "Community", icon: Heart, pg: "community" },
             { label: "Learn", icon: BookOpen, pg: "learn" },
           ].map(a => (
             <button key={a.label} onClick={() => { setPage(a.pg); if (a.sub) setSubPage({ type: a.sub }); }} style={{
@@ -1218,6 +1309,7 @@ function MealsPage({ subPage, setSubPage }) {
   const [selectedWeek, setSelectedWeek] = useState(0);
   const [showFoodLookup, setShowFoodLookup] = useState(subPage?.type === "foodlookup");
   const [showShoppingList, setShowShoppingList] = useState(false);
+  const [showProduceGuide, setShowProduceGuide] = useState(false);
   const [expandedRecipe, setExpandedRecipe] = useState(null);
   const [checkedItems, setCheckedItems] = useState({});
   const [searchTerm, setSearchTerm] = useState("");
@@ -1378,15 +1470,74 @@ function MealsPage({ subPage, setSubPage }) {
   const weekData = MEALS_CKD[selectedWeek];
   const dayData = weekData[selectedDay];
 
+  const PRODUCE_GUIDE = [
+    {
+      name: "Arugula vs Watercress",
+      image: "/produce/arugula.jpg",
+      compareImage: "/produce/watercress.jpg",
+      leftLabel: "Arugula — safer daily green",
+      rightLabel: "Watercress — use sparingly",
+      leftDetail: "Flat, deeply jagged, oak-leaf shaped. Low potassium.",
+      rightDetail: "Small round leaflets on thin visible stems. Moderate-higher potassium.",
+      credit: "Watercress photo by Polina Tankilevitch via Pexels",
+    },
+  ];
+
+  if (showProduceGuide) {
+    return (
+      <div style={{ paddingBottom: 90 }}>
+        <TopBar title="Produce Guide" onBack={() => setShowProduceGuide(false)} />
+        <img src="/produce/produce-header.jpg" alt="Produce section" style={{ width: "100%", height: 140, objectFit: "cover" }} />
+        <div style={{ padding: "16px 20px 20px" }}>
+          <p style={{ fontSize: 13, color: C.textMid, marginBottom: 20, lineHeight: 1.5 }}>
+            Know exactly what you're grabbing before you're standing in the aisle. Side-by-side comparisons for look-alike produce.
+          </p>
+          {PRODUCE_GUIDE.map((item, i) => (
+            <div key={i} style={{ marginBottom: 20 }}>
+              <p style={{ fontFamily: font.display, fontSize: 17, fontWeight: 600, color: C.dark, marginBottom: 10 }}>{item.name}</p>
+              <div style={{ display: "flex", gap: 10 }}>
+                <div style={{ flex: 1 }}>
+                  <img src={item.image} alt={item.leftLabel} style={{ width: "100%", height: 160, objectFit: "cover", borderRadius: 12, marginBottom: 8, border: `2px solid ${C.sage}` }} />
+                  <div style={{ display: "flex", alignItems: "center", gap: 4, marginBottom: 4 }}>
+                    <Check size={13} color={C.sage} />
+                    <p style={{ fontSize: 12, fontWeight: 700, color: C.sage, margin: 0 }}>{item.leftLabel}</p>
+                  </div>
+                  <p style={{ fontSize: 11, color: C.textMid, margin: 0, lineHeight: 1.4 }}>{item.leftDetail}</p>
+                </div>
+                <div style={{ flex: 1 }}>
+                  <img src={item.compareImage} alt={item.rightLabel} style={{ width: "100%", height: 160, objectFit: "cover", borderRadius: 12, marginBottom: 8, border: `2px solid ${C.secondary}` }} />
+                  <div style={{ display: "flex", alignItems: "center", gap: 4, marginBottom: 4 }}>
+                    <AlertTriangle size={13} color={C.secondary} />
+                    <p style={{ fontSize: 12, fontWeight: 700, color: C.secondary, margin: 0 }}>{item.rightLabel}</p>
+                  </div>
+                  <p style={{ fontSize: 11, color: C.textMid, margin: 0, lineHeight: 1.4 }}>{item.rightDetail}</p>
+                </div>
+              </div>
+              {item.credit && <p style={{ fontSize: 10, color: C.textLight, marginTop: 8, fontStyle: "italic" }}>{item.credit}</p>}
+            </div>
+          ))}
+          <div style={{ background: C.primaryPale, borderRadius: 10, padding: "12px 14px", marginTop: 8 }}>
+            <p style={{ fontSize: 12, color: C.primary, margin: 0, lineHeight: 1.5 }}>
+              📸 More comparisons coming soon — this guide grows as new look-alike foods are added.
+            </p>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
   return (
     <div style={{ paddingBottom: 90 }}>
       <TopBar title="Meal Plan" right={
-        <div style={{ display: "flex", gap: 8 }}>
-          <button onClick={() => setShowShoppingList(true)} style={{ background: "none", border: "none", cursor: "pointer", color: C.primary, display: "flex", alignItems: "center", gap: 4, fontFamily: font.body, fontSize: 12, fontWeight: 600 }}>
+        <div style={{ display: "flex", gap: 6 }}>
+          <button onClick={() => setShowProduceGuide(true)} style={{ background: "none", border: "none", cursor: "pointer", color: C.primary, display: "flex", alignItems: "center", gap: 3, fontFamily: font.body, fontSize: 11, fontWeight: 600 }}>
+            🥬 ID
+          </button>
+          <button onClick={() => setShowShoppingList(true)} style={{ background: "none", border: "none", cursor: "pointer", color: C.primary, display: "flex", alignItems: "center", gap: 3, fontFamily: font.body, fontSize: 11, fontWeight: 600 }}>
             🛒 Shop
           </button>
-          <button onClick={() => setShowFoodLookup(true)} style={{ background: "none", border: "none", cursor: "pointer", color: C.primary, display: "flex", alignItems: "center", gap: 4, fontFamily: font.body, fontSize: 12, fontWeight: 600 }}>
-            <Search size={14} /> Lookup
+          <button onClick={() => setShowFoodLookup(true)} style={{ background: "none", border: "none", cursor: "pointer", color: C.primary, display: "flex", alignItems: "center", gap: 3, fontFamily: font.body, fontSize: 11, fontWeight: 600 }}>
+            <Search size={13} /> Lookup
           </button>
         </div>
       } />
@@ -1550,8 +1701,8 @@ function LearnPage({ user }) {
 
   const categories = [
     { name: "Understanding Your Body", modules: filteredEducation.filter(m => ["partnership", "ckd-healthy", "insulin", "bodyafter50", "mens-health", "symptoms", "sleep"].includes(m.id)) },
-    { name: "Nutrition & Meal Guidance", modules: filteredEducation.filter(m => ["know-produce", "mealorder", "hydration-fruits", "beverages", "water-safety", "smoothie-danger", "snacks", "sweets"].includes(m.id)) },
-    { name: "DIY Recipes", modules: filteredEducation.filter(m => ["diy-sausage", "diy-dressings", "diy-frozen", "diy-baked", "diy-blends"].includes(m.id)) },
+    { name: "Nutrition & Meal Guidance", modules: filteredEducation.filter(m => ["mealorder", "hydration-fruits", "beverages", "water-safety", "smoothie-danger", "snacks", "sweets", "constipation", "fluid-coping", "nuts-crunch", "dining-out"].includes(m.id)) },
+    { name: "DIY Recipes", modules: filteredEducation.filter(m => ["diy-creamer", "diy-sausage", "diy-pasta", "diy-dressings", "diy-frozen", "diy-baked", "diy-blends"].includes(m.id)) },
     { name: "Reading Labels & Food Safety", modules: filteredEducation.filter(m => ["seasonings", "hidden-dangers", "toxic-foods", "dangerous-combos", "detox-dangers", "supplements"].includes(m.id)) },
     { name: "Exercise & Medical", modules: filteredEducation.filter(m => ["accumulation", "exercise-safety", "sodium", "alkaline", "blood-pressure", "labs"].includes(m.id)) },
   ];
@@ -1849,6 +2000,66 @@ function PricingPage({ onSubscribe }) {
   );
 }
 
+function CommunityPage({ user }) {
+  return (
+    <div style={{ paddingBottom: 90 }}>
+      <TopBar title="Community" />
+      <div style={{ padding: "0 20px 20px" }}>
+        <div style={{ background: `linear-gradient(135deg, ${C.dark}, ${C.primary})`, borderRadius: 16, padding: 24, marginBottom: 20, textAlign: "center" }}>
+          <div style={{ fontSize: 36, marginBottom: 10 }}>🤝</div>
+          <p style={{ fontFamily: font.display, fontSize: 20, fontWeight: 600, color: "#FFF", marginBottom: 8 }}>You are not doing this alone</p>
+          <p style={{ fontSize: 13, color: "rgba(255,255,255,0.85)", lineHeight: 1.5, margin: 0 }}>
+            A private space for FitByChoice subscribers living with CKD — vent, ask questions, celebrate wins, meet people who actually get it.
+          </p>
+        </div>
+
+        <Card style={{ marginBottom: 16 }}>
+          <p style={{ fontFamily: font.display, fontSize: 16, fontWeight: 600, color: C.dark, marginBottom: 10 }}>How to join</p>
+          <div style={{ marginBottom: 12 }}>
+            <div style={{ display: "flex", gap: 10, marginBottom: 10 }}>
+              <span style={{ width: 22, height: 22, borderRadius: 11, background: C.primaryPale, color: C.primary, fontSize: 11, fontWeight: 700, display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>1</span>
+              <p style={{ fontSize: 13, color: C.darkMuted, margin: 0, lineHeight: 1.5 }}>Tap the button below to open the private Facebook group and request to join.</p>
+            </div>
+            <div style={{ display: "flex", gap: 10, marginBottom: 10 }}>
+              <span style={{ width: 22, height: 22, borderRadius: 11, background: C.primaryPale, color: C.primary, fontSize: 11, fontWeight: 700, display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>2</span>
+              <p style={{ fontSize: 13, color: C.darkMuted, margin: 0, lineHeight: 1.5 }}>When Facebook asks the membership question, enter the exact email you used to subscribe to FitByChoice.</p>
+            </div>
+            <div style={{ display: "flex", gap: 10 }}>
+              <span style={{ width: 22, height: 22, borderRadius: 11, background: C.primaryPale, color: C.primary, fontSize: 11, fontWeight: 700, display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>3</span>
+              <p style={{ fontSize: 13, color: C.darkMuted, margin: 0, lineHeight: 1.5 }}>Your request is verified against your subscription within 24-48 hours and approved.</p>
+            </div>
+          </div>
+          <a href="https://facebook.com/groups/fitbychoice" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}>
+            <Btn full>Request to Join the Group</Btn>
+          </a>
+        </Card>
+
+        <Card style={{ marginBottom: 16 }}>
+          <p style={{ fontFamily: font.display, fontSize: 15, fontWeight: 600, color: C.dark, marginBottom: 8 }}>What the community is for</p>
+          {[
+            "Vent about the hard days without judgment",
+            "Ask questions to people who live this too",
+            "Celebrate lab wins, workout milestones, and small victories",
+            "Share kidney-safe recipes and finds from your own kitchen",
+            "Connect with others in your area for meetups",
+          ].map((item, i) => (
+            <div key={i} style={{ display: "flex", gap: 8, marginBottom: 8, alignItems: "flex-start" }}>
+              <Check size={14} color={C.sage} style={{ flexShrink: 0, marginTop: 2 }} />
+              <p style={{ fontSize: 13, color: C.darkMuted, margin: 0, lineHeight: 1.4 }}>{item}</p>
+            </div>
+          ))}
+        </Card>
+
+        <div style={{ background: C.yellowPale, borderRadius: 10, padding: "12px 14px" }}>
+          <p style={{ fontSize: 11, color: C.darkMuted, margin: 0, lineHeight: 1.5 }}>
+            <strong>A note on privacy:</strong> The group is private — only approved members can see posts. Share only what you're comfortable with. This community supports you alongside your medical team, not in place of it.
+          </p>
+        </div>
+      </div>
+    </div>
+  );
+}
+
 function AboutPage() {
   return (
     <div style={{ paddingBottom: 90 }}>
@@ -1882,9 +2093,81 @@ function AboutPage() {
   );
 }
 
+function OnboardingTour({ onComplete }) {
+  const [step, setStep] = useState(0);
+
+  const slides = [
+    {
+      icon: "🏠",
+      title: "Welcome to FitByChoice",
+      body: "This is your home base. Every day you'll see today's workout, your meals, and quick shortcuts — all in one place.",
+    },
+    {
+      icon: "🏋️",
+      title: "Workouts",
+      body: "Follow your 3-phase program at your own pace. Tap any exercise to see form cues, breathing tips, and modifications made for CKD.",
+    },
+    {
+      icon: "🍽️",
+      title: "Meals",
+      body: "4 weeks of kidney-safe meals with real recipes. Tap the 🥬 ID button to identify look-alike produce, 🛒 Shop for your weekly grocery list, or 🔍 Lookup to check any food instantly.",
+    },
+    {
+      icon: "📚",
+      title: "Learn",
+      body: "Real answers on insulin, sodium, supplements, and more — organized by topic. Tap the ▶ next to any section to have it read aloud to you.",
+    },
+    {
+      icon: "📊",
+      title: "Track",
+      body: "Log your labs, blood pressure, and daily symptoms. Watch your trends over time and bring the data straight to your nephrologist.",
+    },
+  ];
+
+  const current = slides[step];
+  const isLast = step === slides.length - 1;
+
+  return (
+    <div style={{ minHeight: "100vh", background: `linear-gradient(160deg, ${C.dark} 0%, ${C.primary} 100%)`, display: "flex", flexDirection: "column", justifyContent: "space-between", padding: "40px 28px" }}>
+      <div style={{ textAlign: "right" }}>
+        {!isLast && (
+          <button onClick={onComplete} style={{ background: "none", border: "none", color: "rgba(255,255,255,0.6)", fontFamily: font.body, fontSize: 14, cursor: "pointer" }}>
+            Skip
+          </button>
+        )}
+      </div>
+
+      <div style={{ textAlign: "center", flex: 1, display: "flex", flexDirection: "column", justifyContent: "center" }}>
+        <div style={{ fontSize: 64, marginBottom: 24 }}>{current.icon}</div>
+        <h2 style={{ fontFamily: font.display, fontSize: 28, fontWeight: 700, color: "#FFF", marginBottom: 16, letterSpacing: "-0.02em" }}>
+          {current.title}
+        </h2>
+        <p style={{ fontFamily: font.body, fontSize: 16, color: "rgba(255,255,255,0.85)", lineHeight: 1.6, maxWidth: 320, margin: "0 auto" }}>
+          {current.body}
+        </p>
+      </div>
+
+      <div>
+        <div style={{ display: "flex", justifyContent: "center", gap: 8, marginBottom: 28 }}>
+          {slides.map((_, i) => (
+            <div key={i} style={{
+              width: i === step ? 24 : 8, height: 8, borderRadius: 4,
+              background: i === step ? C.secondary : "rgba(255,255,255,0.3)",
+              transition: "width 0.3s",
+            }} />
+          ))}
+        </div>
+        <Btn full onClick={() => { if (isLast) onComplete(); else setStep(step + 1); }} style={{ padding: "16px 28px", fontSize: 16 }}>
+          {isLast ? "Got It — Start My Free Week" : "Next"}
+        </Btn>
+      </div>
+    </div>
+  );
+}
+
 // ─── MAIN APP ───────────────────────────────────────────────────────
 export default function FitByChoice() {
-  const [appState, setAppState] = useState("welcome"); // welcome, quiz, app, pricing
+  const [appState, setAppState] = useState("welcome"); // welcome, quiz, onboarding, app, pricing
   const [page, setPage] = useState("home");
   const [subPage, setSubPage] = useState(null);
   const [user, setUser] = useState(null);
@@ -1892,7 +2175,7 @@ export default function FitByChoice() {
 
   const handleQuizComplete = (answers) => {
     setUser(answers);
-    setAppState("app");
+    setAppState("onboarding");
   };
 
   const handlePageChange = (newPage) => {
@@ -1902,6 +2185,7 @@ export default function FitByChoice() {
 
   if (appState === "welcome") return <WelcomePage onStart={() => setAppState("quiz")} />;
   if (appState === "quiz") return <QuizPage onComplete={handleQuizComplete} />;
+  if (appState === "onboarding") return <OnboardingTour onComplete={() => setAppState("app")} />;
   if (appState === "pricing") return <PricingPage onSubscribe={() => setAppState("app")} />;
 
   return (
@@ -1915,6 +2199,7 @@ export default function FitByChoice() {
           <div style={{ position: "absolute", right: 0, top: 0, bottom: 0, width: 260, background: C.card, padding: "60px 20px 20px" }}>
             <button onClick={() => setShowMenu(false)} style={{ position: "absolute", top: 16, right: 16, background: "none", border: "none", cursor: "pointer" }}><X size={20} color={C.textMid} /></button>
             {[
+              { label: "Community", action: () => { setPage("community"); setShowMenu(false); } },
               { label: "About FitByChoice", action: () => { setPage("about"); setShowMenu(false); } },
               { label: "Equipment Guide", action: () => setShowMenu(false) },
               { label: "Pricing", action: () => { setAppState("pricing"); setShowMenu(false); } },
@@ -1936,6 +2221,7 @@ export default function FitByChoice() {
       {page === "meals" && <MealsPage subPage={subPage} setSubPage={setSubPage} />}
       {page === "learn" && <LearnPage user={user} />}
       {page === "track" && <TrackPage subPage={subPage} />}
+      {page === "community" && <CommunityPage user={user} />}
       {page === "about" && <AboutPage />}
 
       <BottomNav page={page} setPage={handlePageChange} />
