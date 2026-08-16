@@ -1648,12 +1648,30 @@ function LearnPage({ user }) {
     return true;
   });
 
+  const categoryColorMap = {
+    partnership: C.primary, "ckd-healthy": C.primary, insulin: C.primary, bodyafter50: C.primary, "mens-health": C.primary, symptoms: C.primary, sleep: C.primary, nocturia: C.primary, "bone-joint": C.primary, "anxiety-ckd": C.primary, "taste-changes": C.primary,
+    mealorder: C.sage, "hydration-fruits": C.sage, beverages: C.sage, "water-safety": C.sage, "smoothie-danger": C.sage, snacks: C.sage, sweets: C.sage, constipation: C.sage, "fluid-coping": C.sage, "nuts-crunch": C.sage, "dining-out": C.sage,
+    "diy-creamer": C.secondary, "diy-sausage": C.secondary, "diy-pasta": C.secondary, "diy-dressings": C.secondary, "diy-frozen": C.secondary, "diy-baked": C.secondary, "diy-blends": C.secondary,
+    seasonings: C.red, "hidden-dangers": C.red, "toxic-foods": C.red, "dangerous-combos": C.red, "detox-dangers": C.red, supplements: C.red,
+    accumulation: "#5B7C99", "exercise-safety": "#5B7C99", sodium: "#5B7C99", alkaline: "#5B7C99", "blood-pressure": "#5B7C99", labs: "#5B7C99",
+  };
+
   if (selectedModule) {
     const mod = selectedModule;
+    const modColor = categoryColorMap[mod.id] || C.primary;
+    const ModIcon = iconMap[mod.icon] || BookOpen;
     return (
       <div style={{ paddingBottom: 90 }}>
-        <TopBar title={mod.title} onBack={() => { stopListening(); setSelectedModule(null); }} />
-        <div style={{ padding: "0 20px 20px" }}>
+        <div style={{ background: `linear-gradient(135deg, ${C.dark}, ${modColor})`, padding: "16px 20px 28px" }}>
+          <button onClick={() => { stopListening(); setSelectedModule(null); }} style={{ background: "rgba(255,255,255,0.15)", border: "none", borderRadius: 20, width: 36, height: 36, display: "flex", alignItems: "center", justifyContent: "center", cursor: "pointer", marginBottom: 16 }}>
+            <ChevronLeft size={20} color="#FFF" />
+          </button>
+          <div style={{ width: 52, height: 52, borderRadius: 14, background: "rgba(255,255,255,0.15)", display: "flex", alignItems: "center", justifyContent: "center", marginBottom: 12 }}>
+            <ModIcon size={26} color="#FFF" />
+          </div>
+          <p style={{ fontFamily: font.display, fontSize: 22, fontWeight: 700, color: "#FFF", margin: 0, letterSpacing: "-0.02em", lineHeight: 1.2 }}>{mod.title}</p>
+        </div>
+        <div style={{ padding: "20px 20px 20px" }}>
           {mod.headerImage && (
             <img src={mod.headerImage} alt={mod.title} style={{ width: "100%", height: 160, objectFit: "cover", borderRadius: 12, marginBottom: 16 }} />
           )}
@@ -1700,30 +1718,35 @@ function LearnPage({ user }) {
   }
 
   const categories = [
-    { name: "Understanding Your Body", modules: filteredEducation.filter(m => ["partnership", "ckd-healthy", "insulin", "bodyafter50", "mens-health", "symptoms", "sleep"].includes(m.id)) },
-    { name: "Nutrition & Meal Guidance", modules: filteredEducation.filter(m => ["mealorder", "hydration-fruits", "beverages", "water-safety", "smoothie-danger", "snacks", "sweets", "constipation", "fluid-coping", "nuts-crunch", "dining-out"].includes(m.id)) },
-    { name: "DIY Recipes", modules: filteredEducation.filter(m => ["diy-creamer", "diy-sausage", "diy-pasta", "diy-dressings", "diy-frozen", "diy-baked", "diy-blends"].includes(m.id)) },
-    { name: "Reading Labels & Food Safety", modules: filteredEducation.filter(m => ["seasonings", "hidden-dangers", "toxic-foods", "dangerous-combos", "detox-dangers", "supplements"].includes(m.id)) },
-    { name: "Exercise & Medical", modules: filteredEducation.filter(m => ["accumulation", "exercise-safety", "sodium", "alkaline", "blood-pressure", "labs"].includes(m.id)) },
+    { name: "Understanding Your Body", color: C.primary, colorPale: C.primaryPale, emoji: "🧠", modules: filteredEducation.filter(m => ["partnership", "ckd-healthy", "insulin", "bodyafter50", "mens-health", "symptoms", "sleep", "nocturia", "bone-joint", "anxiety-ckd", "taste-changes"].includes(m.id)) },
+    { name: "Nutrition & Meal Guidance", color: C.sage, colorPale: C.sagePale, emoji: "🥗", modules: filteredEducation.filter(m => ["mealorder", "hydration-fruits", "beverages", "water-safety", "smoothie-danger", "snacks", "sweets", "constipation", "fluid-coping", "nuts-crunch", "dining-out"].includes(m.id)) },
+    { name: "DIY Recipes", color: C.secondary, colorPale: C.secondaryPale, emoji: "👩‍🍳", modules: filteredEducation.filter(m => ["diy-creamer", "diy-sausage", "diy-pasta", "diy-dressings", "diy-frozen", "diy-baked", "diy-blends"].includes(m.id)) },
+    { name: "Reading Labels & Food Safety", color: C.red, colorPale: C.redPale, emoji: "🏷️", modules: filteredEducation.filter(m => ["seasonings", "hidden-dangers", "toxic-foods", "dangerous-combos", "detox-dangers", "supplements"].includes(m.id)) },
+    { name: "Exercise & Medical", color: "#5B7C99", colorPale: "#5B7C9918", emoji: "💪", modules: filteredEducation.filter(m => ["accumulation", "exercise-safety", "sodium", "alkaline", "blood-pressure", "labs"].includes(m.id)) },
   ];
 
   return (
     <div style={{ paddingBottom: 90 }}>
-      <TopBar title="Learn" />
-      <div style={{ padding: "0 20px 20px" }}>
-        <p style={{ fontSize: 14, color: C.textMid, marginBottom: 20, lineHeight: 1.5 }}>
-          Understanding why you're doing what you're doing changes everything. Tap any topic to learn more.
+      <div style={{ background: `linear-gradient(135deg, ${C.dark}, ${C.primary})`, padding: "20px 20px 24px" }}>
+        <p style={{ fontFamily: font.display, fontSize: 24, fontWeight: 700, color: "#FFF", margin: "0 0 6px", letterSpacing: "-0.02em" }}>Learn</p>
+        <p style={{ fontSize: 13, color: "rgba(255,255,255,0.8)", lineHeight: 1.5, margin: 0 }}>
+          Understanding why you're doing what you're doing changes everything.
         </p>
+      </div>
+      <div style={{ padding: "20px 20px 20px" }}>
         {categories.map((cat, ci) => (
-          <div key={ci} style={{ marginBottom: 24 }}>
-            <p style={{ fontSize: 12, fontWeight: 700, color: C.secondary, textTransform: "uppercase", letterSpacing: "0.12em", marginBottom: 10 }}>{cat.name}</p>
+          <div key={ci} style={{ marginBottom: 26 }}>
+            <div style={{ display: "flex", alignItems: "center", gap: 8, marginBottom: 12 }}>
+              <span style={{ fontSize: 18 }}>{cat.emoji}</span>
+              <p style={{ fontSize: 13, fontWeight: 700, color: cat.color, textTransform: "uppercase", letterSpacing: "0.1em", margin: 0 }}>{cat.name}</p>
+            </div>
             {cat.modules.map((mod, i) => {
               const Icon = iconMap[mod.icon] || BookOpen;
               return (
-                <Card key={i} onClick={() => setSelectedModule(mod)} style={{ marginBottom: 10 }}>
+                <Card key={i} onClick={() => setSelectedModule(mod)} style={{ marginBottom: 10, borderLeft: `4px solid ${cat.color}`, padding: "16px 18px" }}>
                   <div style={{ display: "flex", alignItems: "center", gap: 14 }}>
-                    <div style={{ width: 40, height: 40, borderRadius: 12, background: C.primaryPale, display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>
-                      <Icon size={20} color={C.primary} />
+                    <div style={{ width: 42, height: 42, borderRadius: 12, background: cat.colorPale, display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>
+                      <Icon size={20} color={cat.color} />
                     </div>
                     <div style={{ flex: 1 }}>
                       <p style={{ fontSize: 15, fontWeight: 600, color: C.dark, margin: 0 }}>{mod.title}</p>
