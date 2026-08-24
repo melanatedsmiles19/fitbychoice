@@ -105,7 +105,7 @@ const MEALS_CKD = [
     ]},
     { day: "Friday", meals: [
       { type: "Breakfast", name: "Cream Cheese Toast with Berries", recipe: ["Toast 2 slices white bread until golden.", "Spread each slice with a thin layer of Tillamook cream cheese.", "Top with ½ cup fresh blueberries.", "Boil 1 egg for 8-10 minutes for a hard-boiled egg, then peel.", "Eat the egg first, then the toast and berries."], items: "2 slices white bread with thin spread of cream cheese (Tillamook or Organic Valley — no gums, no additives). ½ cup fresh blueberries on the side. 1 hard-boiled egg.", order: "Eat the egg first, then toast and berries.", k: "low", p: "low", na: "low" },
-      { type: "Lunch", name: "Seasoned Turkey Burger with Roasted Vegetables", recipe: ["In a bowl, mix 1 lb ground turkey with garlic powder, onion powder, smoked paprika, cumin, black pepper, dried oregano, 1 tsp rice vinegar, and 2 tbsp Tillamook or Organic Valley cream cheese.", "If making a larger batch, mix in 1 beaten egg per 1-1.5 lbs of turkey as a binder. For a single patty, egg is optional.", "Form into patties (about 3 oz each).", "Heat 1 tsp olive oil in a skillet over medium heat, cook patties 5-6 minutes per side until 165°F internal.", "Toss 1 cup diced bell peppers and zucchini with olive oil, black pepper.", "Roast at 400°F for 20 minutes, or sauté 10 minutes until tender.", "Cook ½ cup couscous according to package directions.", "Plate patty and roasted vegetables first, couscous last."], items: "3 oz ground turkey patty seasoned with garlic powder, onion powder, smoked paprika, cumin, oregano, black pepper, rice vinegar, and cream cheese for moisture. 1 cup roasted bell peppers and zucchini. Side of orzo.", order: "Eat the patty and roasted veggies first, couscous last.", k: "low", p: "low", na: "low" },
+      { type: "Lunch", name: "Seasoned Turkey Burger with Roasted Vegetables", recipe: ["In a bowl, mix 1 lb ground turkey with garlic powder, onion powder, smoked paprika, cumin, black pepper, dried oregano, 1 tsp rice vinegar, and 2 tbsp Tillamook or Organic Valley cream cheese.", "If making a larger batch, mix in 1 beaten egg per 1-1.5 lbs of turkey as a binder. For a single patty, egg is optional.", "Form into patties (about 3 oz each).", "Heat 1 tsp olive oil in a skillet over medium heat, cook patties 5-6 minutes per side until 165°F internal.", "Toss 1 cup diced bell peppers and zucchini with olive oil, black pepper, dill weed, and dried thyme.", "Roast at 400°F for 20 minutes, or sauté 10 minutes until tender. Finish with a squeeze of fresh lemon.", "Cook ½ cup couscous according to package directions.", "Plate patty and roasted vegetables first, couscous last."], items: "3 oz ground turkey patty seasoned with garlic powder, onion powder, smoked paprika, cumin, oregano, black pepper, rice vinegar, and cream cheese for moisture. 1 cup roasted bell peppers and zucchini with dill weed and thyme. Side of orzo.", order: "Eat the patty and roasted veggies first, couscous last.", k: "low", p: "low", na: "low" },
       { type: "Dinner", name: "Baked Sole with Cucumber Dill Salad", recipe: ["Preheat oven to 400°F.", "Place 3 oz sole on a lined baking sheet, drizzle with lemon, sprinkle fresh dill.", "Bake 10-12 minutes until fish flakes easily.", "Thinly slice 1 cup cucumber.", "Toss cucumber with olive oil, dill, and apple cider vinegar.", "Steam ½ cup cabbage for 5 minutes until tender.", "Plate fish with cucumber salad and steamed cabbage."], items: "3 oz baked cod with lemon and dill. 1 cup cucumber slices with olive oil, dill, and apple cider vinegar. Steamed cabbage.", order: "All protein and vegetables.", k: "low", p: "low", na: "low" },
     ]},
     { day: "Saturday", meals: [
@@ -721,6 +721,17 @@ const EDUCATION = [
       { h: "When to seek professional support", p: "If anxiety is persistent, overwhelming, or affecting your daily functioning, professional support - a therapist, counselor, or your doctor - is a legitimate and valuable option, not a last resort. Many nephrology practices now have or can refer to mental health professionals who understand chronic illness specifically. There is no shame in needing support for the emotional weight of a real medical condition." },
     ],
   },
+  {
+    id: "diy-bacon", icon: "Star", title: "DIY Turkey Bacon", subtitle: "Crispy, smoky bacon substitute - no nitrates, no processed meat concerns",
+    content: [
+      { h: "Why bacon needs a real substitute", p: "Processed meats like bacon are classified by the WHO as a Group 1 carcinogen due to nitrates and nitrites used in curing. On top of that, for CKD: 350-400mg sodium per 2 slices, phosphate additives, and saturated fat. It is a problem on every front, not just kidneys. This DIY version uses smoked paprika to mimic that smoky, cured flavor without any curing chemicals." },
+      { h: "Turkey Bacon Strips", p: "Use thin-sliced turkey breast cutlets, not ground turkey - a solid piece of meat holds its shape and flips like real bacon. Cut cutlets into bacon-width strips with a knife. Mix a marinade: 1 tbsp olive oil, 1 tsp smoked paprika, ½ tsp black pepper, ½ tsp garlic powder, 1 tsp pure maple syrup. Toss strips in the marinade, let sit at least 15-20 minutes (longer in the fridge enhances flavor). Heat a skillet over medium heat, lay strips without crowding, cook 3-4 minutes per side until edges crisp and darken, flipping with tongs. Rest a minute before serving - they crisp slightly more as they cool." },
+      { h: "Mushroom Bacon (plant-based alternative)", p: "Thinly slice mushrooms, toss in olive oil, smoked paprika, and a touch of maple syrup. Bake at 375°F for 15-20 minutes, flipping halfway, until crispy and dark at the edges. Completely nitrate-free, very low potassium in these portions, and surprisingly close to real bacon in texture when done right." },
+      { h: "Why ground turkey does not work here", p: "Ground turkey does not naturally hold a strip shape - it needs to be treated like a thin patty rather than a flippable strip, and is too fragile to flip in a hot pan without falling apart. Thin-sliced turkey breast cutlets are the practical choice for a true bacon substitute. Save ground turkey for the sausage and burger recipes, where the shape does not need to hold as a thin strip." },
+    ],
+  },
+'''
+
   {
     id: "diy-creamer", icon: "Star", title: "DIY Coffee Creamer Flavors", subtitle: "Real flavor for your coffee - zero phosphorus additives, completely your control",
     content: [
@@ -1614,7 +1625,14 @@ function MealsPage({ subPage, setSubPage }) {
 function LearnPage({ user }) {
   const [selectedModule, setSelectedModule] = useState(null);
   const [playingSection, setPlayingSection] = useState(null);
+  const [readModules, setReadModules] = useState({});
   const iconMap = { Zap, UtensilsCrossed, Heart, Moon, Eye, Droplets, Shield, Activity, Star, AlertTriangle };
+
+  const getReadTime = (mod) => {
+    const wordCount = mod.content.reduce((acc, s) => acc + (s.h + " " + s.p).split(" ").length, 0);
+    const minutes = Math.max(1, Math.round(wordCount / 200));
+    return `${minutes} min read`;
+  };
 
   const handleListenSection = (text, sectionKey) => {
     if (playingSection === sectionKey) {
@@ -1651,7 +1669,7 @@ function LearnPage({ user }) {
   const categoryColorMap = {
     partnership: C.primary, "ckd-healthy": C.primary, insulin: C.primary, bodyafter50: C.primary, "mens-health": C.primary, symptoms: C.primary, sleep: C.primary, nocturia: C.primary, "bone-joint": C.primary, "anxiety-ckd": C.primary, "taste-changes": C.primary,
     mealorder: C.sage, "hydration-fruits": C.sage, beverages: C.sage, "water-safety": C.sage, "smoothie-danger": C.sage, snacks: C.sage, sweets: C.sage, constipation: C.sage, "fluid-coping": C.sage, "nuts-crunch": C.sage, "dining-out": C.sage,
-    "diy-creamer": C.secondary, "diy-sausage": C.secondary, "diy-pasta": C.secondary, "diy-dressings": C.secondary, "diy-frozen": C.secondary, "diy-baked": C.secondary, "diy-blends": C.secondary,
+    "diy-creamer": C.secondary, "diy-sausage": C.secondary, "diy-bacon": C.secondary, "diy-pasta": C.secondary, "diy-dressings": C.secondary, "diy-frozen": C.secondary, "diy-baked": C.secondary, "diy-blends": C.secondary,
     seasonings: C.red, "hidden-dangers": C.red, "toxic-foods": C.red, "dangerous-combos": C.red, "detox-dangers": C.red, supplements: C.red,
     accumulation: "#5B7C99", "exercise-safety": "#5B7C99", sodium: "#5B7C99", alkaline: "#5B7C99", "blood-pressure": "#5B7C99", labs: "#5B7C99",
   };
@@ -1675,7 +1693,12 @@ function LearnPage({ user }) {
           {mod.headerImage && (
             <img src={mod.headerImage} alt={mod.title} style={{ width: "100%", height: 160, objectFit: "cover", borderRadius: 12, marginBottom: 16 }} />
           )}
-          <p style={{ fontSize: 14, color: C.textMid, lineHeight: 1.5, marginBottom: 20 }}>{mod.subtitle}</p>
+          <p style={{ fontSize: 14, color: C.textMid, lineHeight: 1.5, marginBottom: 16 }}>{mod.subtitle}</p>
+          <div style={{ background: `${modColor}12`, borderLeft: `4px solid ${modColor}`, borderRadius: 10, padding: "16px 18px", marginBottom: 24 }}>
+            <p style={{ fontFamily: font.display, fontSize: 17, fontWeight: 600, color: C.dark, margin: 0, lineHeight: 1.4, fontStyle: "italic" }}>
+              "{mod.content[0].p.split(". ")[0]}."
+            </p>
+          </div>
           {mod.content.map((section, i) => {
             const sectionKey = `${mod.id}-${i}`;
             const isThisPlaying = playingSection === sectionKey;
@@ -1720,7 +1743,7 @@ function LearnPage({ user }) {
   const categories = [
     { name: "Understanding Your Body", color: C.primary, colorPale: C.primaryPale, emoji: "🧠", modules: filteredEducation.filter(m => ["partnership", "ckd-healthy", "insulin", "bodyafter50", "mens-health", "symptoms", "sleep", "nocturia", "bone-joint", "anxiety-ckd", "taste-changes"].includes(m.id)) },
     { name: "Nutrition & Meal Guidance", color: C.sage, colorPale: C.sagePale, emoji: "🥗", modules: filteredEducation.filter(m => ["mealorder", "hydration-fruits", "beverages", "water-safety", "smoothie-danger", "snacks", "sweets", "constipation", "fluid-coping", "nuts-crunch", "dining-out"].includes(m.id)) },
-    { name: "DIY Recipes", color: C.secondary, colorPale: C.secondaryPale, emoji: "👩‍🍳", modules: filteredEducation.filter(m => ["diy-creamer", "diy-sausage", "diy-pasta", "diy-dressings", "diy-frozen", "diy-baked", "diy-blends"].includes(m.id)) },
+    { name: "DIY Recipes", color: C.secondary, colorPale: C.secondaryPale, emoji: "👩‍🍳", modules: filteredEducation.filter(m => ["diy-creamer", "diy-sausage", "diy-bacon", "diy-pasta", "diy-dressings", "diy-frozen", "diy-baked", "diy-blends"].includes(m.id)) },
     { name: "Reading Labels & Food Safety", color: C.red, colorPale: C.redPale, emoji: "🏷️", modules: filteredEducation.filter(m => ["seasonings", "hidden-dangers", "toxic-foods", "dangerous-combos", "detox-dangers", "supplements"].includes(m.id)) },
     { name: "Exercise & Medical", color: "#5B7C99", colorPale: "#5B7C9918", emoji: "💪", modules: filteredEducation.filter(m => ["accumulation", "exercise-safety", "sodium", "alkaline", "blood-pressure", "labs"].includes(m.id)) },
   ];
@@ -1743,14 +1766,22 @@ function LearnPage({ user }) {
             {cat.modules.map((mod, i) => {
               const Icon = iconMap[mod.icon] || BookOpen;
               return (
-                <Card key={i} onClick={() => setSelectedModule(mod)} style={{ marginBottom: 10, borderLeft: `4px solid ${cat.color}`, padding: "16px 18px" }}>
+                <Card key={i} onClick={() => { setSelectedModule(mod); setReadModules(prev => ({ ...prev, [mod.id]: true })); }} style={{ marginBottom: 10, borderLeft: `4px solid ${cat.color}`, padding: "16px 18px" }}>
                   <div style={{ display: "flex", alignItems: "center", gap: 14 }}>
-                    <div style={{ width: 42, height: 42, borderRadius: 12, background: cat.colorPale, display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>
+                    <div style={{ width: 42, height: 42, borderRadius: 12, background: cat.colorPale, display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0, position: "relative" }}>
                       <Icon size={20} color={cat.color} />
+                      {readModules[mod.id] && (
+                        <div style={{ position: "absolute", top: -4, right: -4, width: 16, height: 16, borderRadius: 8, background: C.sage, display: "flex", alignItems: "center", justifyContent: "center", border: `2px solid ${C.card}` }}>
+                          <Check size={9} color="#FFF" strokeWidth={3} />
+                        </div>
+                      )}
                     </div>
                     <div style={{ flex: 1 }}>
                       <p style={{ fontSize: 15, fontWeight: 600, color: C.dark, margin: 0 }}>{mod.title}</p>
-                      <p style={{ fontSize: 12, color: C.textMid, margin: "2px 0 0" }}>{mod.subtitle}</p>
+                      <div style={{ display: "flex", alignItems: "center", gap: 6, marginTop: 2 }}>
+                        <p style={{ fontSize: 12, color: C.textMid, margin: 0 }}>{mod.subtitle}</p>
+                      </div>
+                      <p style={{ fontSize: 10, color: cat.color, margin: "3px 0 0", fontWeight: 600 }}>📖 {getReadTime(mod)}</p>
                     </div>
                     <ChevronRight size={18} color={C.textLight} />
                   </div>
