@@ -1295,6 +1295,11 @@ function WorkoutsPage({ subPage, setSubPage }) {
     <div style={{ paddingBottom: 90 }}>
       <TopBar title="Workouts" />
       <div style={{ padding: "0 20px 20px" }}>
+        <div style={{ background: `${C.primary}12`, borderLeft: `3px solid ${C.primary}`, borderRadius: 10, padding: "10px 14px", marginBottom: 16 }}>
+          <p style={{ fontSize: 12, color: C.primary, margin: 0, lineHeight: 1.5 }}>
+            💡 Follow your 3-phase program at your own pace. Tap any exercise to see form cues, breathing tips, and modifications made for CKD.
+          </p>
+        </div>
         {/* Phase indicator */}
         <div style={{ display: "flex", gap: 6, marginBottom: 20 }}>
           {["Foundation", "Build", "Maintain"].map((p, i) => (
@@ -1611,6 +1616,11 @@ function MealsPage({ subPage, setSubPage }) {
         </div>
       } />
       <div style={{ padding: "0 20px 20px" }}>
+        <div style={{ background: `${C.sage}18`, borderLeft: `3px solid ${C.sage}`, borderRadius: 10, padding: "10px 14px", marginBottom: 16 }}>
+          <p style={{ fontSize: 12, color: C.dark, margin: 0, lineHeight: 1.5 }}>
+            💡 4 weeks of kidney-safe meals with real recipes. Tap 🥬 ID to identify look-alike produce, 🛒 Shop for your weekly grocery list, or 🔍 Lookup to check any food instantly.
+          </p>
+        </div>
         {/* Week selector */}
         <div style={{ display: "flex", gap: 6, marginBottom: 12 }}>
           {["Week 1", "Week 2", "Week 3", "Week 4"].map((w, i) => (
@@ -1834,9 +1844,14 @@ function LearnPage({ user }) {
     <div style={{ paddingBottom: 90 }}>
       <div style={{ background: `linear-gradient(135deg, ${C.dark}, ${C.primary})`, padding: "20px 20px 24px" }}>
         <p style={{ fontFamily: font.display, fontSize: 24, fontWeight: 700, color: "#FFF", margin: "0 0 6px", letterSpacing: "-0.02em" }}>Learn</p>
-        <p style={{ fontSize: 13, color: "rgba(255,255,255,0.8)", lineHeight: 1.5, margin: 0 }}>
-          Understanding why you're doing what you're doing changes everything.
+        <p style={{ fontSize: 13, color: "rgba(255,255,255,0.8)", lineHeight: 1.5, margin: "0 0 12px" }}>
+          Real answers on insulin, sodium, supplements, and more — organized by topic.
         </p>
+        <div style={{ background: "rgba(255,255,255,0.12)", borderRadius: 10, padding: "10px 14px" }}>
+          <p style={{ fontSize: 12, color: "#FFF", margin: 0, lineHeight: 1.5 }}>
+            💡 Tap the ▶ next to any section to have it read aloud to you.
+          </p>
+        </div>
       </div>
       <div style={{ padding: "20px 20px 20px" }}>
         {categories.map((cat, ci) => (
@@ -1929,6 +1944,11 @@ function TrackPage({ subPage }) {
     <div style={{ paddingBottom: 90 }}>
       <TopBar title="Track" />
       <div style={{ padding: "0 20px 20px" }}>
+        <div style={{ background: `#5B7C9918`, borderLeft: `3px solid #5B7C99`, borderRadius: 10, padding: "10px 14px", marginBottom: 16 }}>
+          <p style={{ fontSize: 12, color: "#3D5468", margin: 0, lineHeight: 1.5 }}>
+            💡 Log your labs, blood pressure, and daily symptoms. Watch your trends over time and bring the data straight to your nephrologist.
+          </p>
+        </div>
         <div style={{ display: "flex", gap: 6, marginBottom: 20 }}>
           {[{ id: "labs", label: "Labs" }, { id: "bp", label: "Blood Pressure" }, { id: "symptoms", label: "Check-In" }].map(t => (
             <button key={t.id} onClick={() => setTab(t.id)} style={{
