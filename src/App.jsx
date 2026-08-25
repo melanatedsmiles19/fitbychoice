@@ -722,6 +722,64 @@ const EDUCATION = [
     ],
   },
   {
+    id: "diy-grits-shrimp", icon: "Star", title: "Umami Shrimp & Grits — 3 Ways", subtitle: "Garlic butter, mushroom umami, and Thai-inspired lemongrass versions",
+    content: [
+      { h: "The base technique for all 3 versions", p: "Real umami without soy sauce or miso (both too high sodium for CKD) comes from proper browning, not a single magic ingredient. Sear proteins until they actually caramelize rather than steam. Bloom aromatics low and slow in oil before adding liquid. Use a small amount of tomato paste (1 tsp per serving max, browned in the pan) as a savory backbone — tomato paste is more concentrated than fresh tomato, so keep it small and occasional, used for flavor building only, not volume." },
+      { h: "Shrimp size and searing time — do not overcook", p: "Use large shrimp (26-30 count per pound, sometimes labeled 21-25 count for jumbo) — about 5-6 shrimp per 4 oz serving. Larger shrimp are more forgiving and stay juicier than small shrimp, which overcook in seconds. Pat shrimp completely dry before searing — wet shrimp will steam instead of sear. Heat oil until shimmering over medium-high heat. Sear shrimp 60-90 seconds per side, no longer. You will see them turn pink and opaque with a slight golden-brown edge where they touched the pan — that is your cue to flip or remove. Total cook time should be under 3 minutes. Shrimp continue cooking slightly from residual heat after removing from the pan, so pull them just before they look fully done. Overcooked shrimp turn rubbery and tough within seconds past doneness, so timing here matters more than almost any other step in these recipes." },
+      { h: "Creamy Grits Base (all versions)", p: "1/2 cup grits cooked in water per package directions. Stir in 1-2 tbsp Tillamook or Organic Valley cream cheese for creaminess instead of traditional cheddar. Black pepper to taste." },
+      { h: "Version 1: Garlic Butter Shrimp & Grits", p: "Pat 4 oz shrimp dry, season with black pepper. Sear in olive oil over medium-high heat until browned and just cooked through, remove. In the same pan, add minced garlic, a splash of low-sodium chicken broth, and a squeeze of fresh lemon juice to deglaze. Swirl in a small pat of butter for richness. Stir in fresh parsley. Return shrimp to coat in the sauce. Spoon over the creamy grits." },
+      { h: "Version 2: Mushroom Umami Shrimp & Grits", p: "In olive oil, bloom minced garlic over low heat 1-2 minutes. Add sliced mushrooms, sauté until deeply browned. Push mushrooms aside, add 1 tsp tomato paste directly to the pan, brown for 1 minute. Deglaze with a splash of broth or dry white wine plus a small splash of balsamic vinegar. Stir in a pinch of nutritional yeast for extra savory depth. Add 4 oz shrimp, cook until just opaque. Finish with fresh thyme and black pepper. Spoon over the grits.", note: "Optional depth booster: bloom 1/2 tsp dried shiitake or porcini mushroom powder along with the garlic at the start for a more concentrated umami base. Skip this if you don't have dried mushroom powder on hand — the recipe works well without it." },
+      { h: "Version 3: Thai-Style Lemongrass Ginger Shrimp & Grits", p: "Finely mince fresh lemongrass (tender inner stalk), fresh ginger, and garlic. Bloom together in olive oil over low heat 2-3 minutes to release their aromatic oils. Sear 4 oz shrimp separately until well-browned, remove. In the same pan with the bloomed aromatics, add 1 tsp tomato paste, brown 1 minute. Add a squeeze of fresh lime juice, a small pinch of brown sugar, and red chili flakes to taste. Return shrimp to coat. Finish the grits with fresh cilantro and lime zest stirred in right before plating instead of butter, tying the whole dish into the Thai flavor direction." },
+      { h: "Fish substitutes for shrimp", p: "Scallops are the best direct substitute — same searing technique, same 60-90 seconds per side timing, and they pick up pan sauces beautifully. Cod or sole, cut into chunks, work well too but are flakier so sear a bit more gently. Sea bass, cubed, holds up especially well to the mushroom umami version since it has enough richness to stand up to that deeper sauce." },
+      { h: "Why these work without soy sauce or miso", p: "Browned aromatics (garlic, ginger, lemongrass) prevent low-sodium food from tasting empty. Toasting spices and blooming them in oil releases their aromatic compounds fully. Tomato paste, used sparingly and browned rather than added raw, deepens sauces the way soy sauce would, without the sodium load. This is the same technique professional kitchens use to build flavor complexity when sodium needs to stay controlled." },
+    ],
+  },
+  {
+    id: "diy-salmon-cakes", icon: "Star", title: "Herb & Lemon Salmon Cakes — A Complete Dinner", subtitle: "Pan-seared with a quick dill cream pan sauce, plated as a full meal",
+    content: [
+      { h: "The technique", p: "Real restaurant technique here: sear the salmon cakes to build a genuine golden crust, then use the browned bits left in the pan (the fond) as the foundation for a quick pan sauce, rather than making a sauce from scratch separately. This is the same browning-builds-flavor principle used in the Umami Shrimp and Grits recipes — a consistent technique thread across your kitchen skills." },
+      { h: "Salmon Cakes (makes 3-4 cakes)", p: "8 oz fresh salmon, flaked. Mix with 1 egg, 1 tbsp Tillamook or Organic Valley cream cheese, 2 tbsp breadcrumbs from clean white bread, fresh dill, 1/2 tsp garlic powder, lemon zest, black pepper. Form into patties. Chill 15 minutes before cooking — cold patties sear better and hold together more reliably. Sear in olive oil over medium heat, 3-4 minutes per side until deeply golden." },
+      { h: "Quick Dill Cream Pan Sauce", p: "Remove salmon cakes from the pan and set aside. Deglaze the same skillet with a splash of dry white wine or low-sodium broth, scraping up the browned bits. Add a squeeze of fresh lemon juice. Swirl in a small pat of butter off-heat until silky. Stir in fresh dill. Drizzle over the salmon cakes." },
+      { h: "Roasted Radishes and Green Beans (oven method)", p: "Toss quartered radishes and trimmed green beans with olive oil, minced garlic, and fresh thyme. Roast at 400°F for 18-20 minutes until the radishes are tender and slightly caramelized. Roasting mellows the radishes into something almost potato-like, which pairs beautifully with the richness of the salmon cake and sauce." },
+      { h: "Sautéed Radishes and Green Beans (stovetop option)", p: "For a faster weeknight version, heat olive oil in a skillet over medium heat. Add quartered radishes first, sauté 5-6 minutes to soften. Add trimmed green beans and minced garlic, continue cooking 6-8 minutes until both are tender-crisp. Finish with fresh thyme and black pepper. This stovetop method takes about half the time of roasting and works well when you are cooking the whole meal in one skillet rotation." },
+      { h: "Completing the Plate", p: "Cook 1/2 cup orzo or white rice according to package directions, toss with a little lemon zest and fresh parsley to echo the bright flavors in the cakes without competing with them. Plate the salmon cakes with dill cream sauce drizzled over, radishes and green beans alongside (roasted or sautéed, your choice), and the lemon-parsley orzo or rice completing the plate. A genuine dinner-worthy dish, not just a patty." },
+    ],
+  },
+  {
+    id: "cookbook-oxtail", icon: "Star", title: "Jamaican-Style Oxtail Dinner (Cookbook Exclusive)", subtitle: "Restaurant-quality braised oxtail, coconut-mushroom rice, and coconut-curry cabbage",
+    isLocked: true,
+    lockNote: "This complete recipe trio is available in the FitByChoice Cookbook.",
+    content: [
+      { h: "Total Time: 4-4.5 hours (Prep: 30 min | Braise: 3-3.5 hours | Rice & Cabbage: 30 min, made while oxtail braises)", p: "The oxtail itself requires patience - real low-and-slow braising cannot be rushed, that is where the collagen-to-gelatin transformation happens. However, the rice and cabbage cook in the last 30 minutes while the oxtail finishes, so your active hands-on time is much less than the total time suggests. This is a Sunday-dinner dish, not a weeknight one - plan for a lazy afternoon at home while it braises." },
+      { h: "The honest framing", p: "Oxtail is a fatty, connective-tissue-rich cut of red meat, so this falls into the special-occasion category - genuinely worth having, portion-controlled at 3-4 oz, maybe once every couple weeks rather than a regular rotation. The rich, sticky sauce comes from real technique - collagen breaking down during a slow braise - not from added sodium or heavy sauce, so we get to keep the authentic richness while rebuilding around it." },
+      { h: "Braised Oxtail - the technique", p: "Pat oxtail completely dry with paper towels - this is essential for real browning instead of steaming. Sear in a hot pot until deeply browned on all sides, working in batches so you don't crowd the pot. Remove the oxtail. In the same pot, using the rendered fat left behind, sauté diced onion, garlic, scallion, and fresh ginger until fragrant. Add a small amount of tomato paste and cook it down until it darkens - this technique is called pincé, it intensifies umami and adds subtle sweetness, the same principle used in the Umami Shrimp and Grits recipes." },
+      { h: "Building the braise", p: "Return the oxtail to the pot. Add your braising liquid (low-sodium broth combined with water) until it comes about two-thirds to three-quarters up the side of the meat - roughly 3 to 4 cups total for 2-2.5 lbs oxtail. Add fresh thyme, allspice, and a whole Scotch bonnet pepper (kept whole, not cut, so you control the heat and can remove it before serving). Braise low and slow, either in a 300°F oven or a controlled stovetop simmer, for 3 to 3.5 hours. Collagen converts to gelatin best at a sustained 160-180°F - not a hard boil. The meat is ready when it is fork-tender and pulling from the bone. If the liquid runs low before that point, add small amounts of hot water or broth rather than a large amount at once, to keep your seasoning concentration consistent." },
+      { h: "Finishing the sauce", p: "Once the oxtail is tender, remove it from the pot. The remaining braising liquid IS your sauce. If you want it thicker and glossier, let it reduce further on the stovetop, uncovered, for 10-15 minutes before serving over the meat and rice." },
+      { h: "Coconut-Mushroom Rice and Peas", p: "In a small amount of unsalted butter, sauté diced onion, garlic, and scallion until fragrant and softened, about 4-5 minutes - this is the authentic aromatic base of real rice and peas. Add diced cremini mushrooms (or shiitake for a more elevated, intensely savory version) along with diced red bell pepper. Continue sautéing until the mushrooms are browned and any released liquid has cooked off. Add a controlled amount of coconut milk combined with water as your cooking liquid (roughly 1/3 to 1/2 can coconut milk plus water, rather than using coconut milk as the full liquid amount), fresh thyme, allspice, and a small piece of fresh ginger. Bring to a simmer, add rinsed white rice, cover, and cook on low until the liquid is absorbed and the rice is tender. Let sit off-heat 10 minutes before fluffing. Never over-stir once the rice is added." },
+      { h: "Coconut-Curry Cabbage with Julienned Carrots", p: "Heat coconut oil plus a small pat of unsalted butter in a wide skillet or wok over medium-high to high heat until shimmering - using coconut oil instead of olive oil here means the coconut flavor infuses directly into the vegetables as they cook, so no separate coconut milk splash is needed. Add julienned carrots first, sauté 1-2 minutes for a head start since they are denser. Add thinly sliced cabbage, minced garlic, fresh ginger, and a small pinch of curry powder - toasting the curry powder in the hot oil intensifies its flavor, the same blooming principle used throughout these recipes. Toss constantly for about 3-4 minutes total - do not let it sit, or it will steam and go limp instead of staying crisp. The cabbage releases its own moisture as it cooks, which combines with the coconut oil to build the flavor without needing any added liquid. Finish with fresh lime juice and black pepper off-heat." },
+      { h: "A note on the fats used", p: "Unsalted butter, olive oil, and coconut oil are all essentially zero potassium, zero phosphorus, and zero sodium on their own - CKD dietary restrictions are specifically about those three minerals, not fat content in general. Always confirm you are using UNSALTED butter specifically, since salted butter adds sodium. The saturated fat in butter and coconut oil is a broader cardiovascular health consideration relevant across your whole diet, not a kidney-specific concern - which is exactly why this combination is fine for an occasional, special-occasion dish like this one, rather than a daily cooking fat." },
+      { h: "Plating the complete meal", p: "Oxtail with its reduced sauce spooned over, coconut-mushroom rice and peas alongside, coconut-curry cabbage and carrots completing the plate. Restaurant-quality, genuinely satisfying, built entirely around real technique rather than any single substitute ingredient doing all the work." },
+    ],
+  },
+  {
+    id: "cookbook-snapper", icon: "Star", title: "Moroccan Chermoula Snapper En Papillote (Cookbook Exclusive)", subtitle: "Restaurant-quality parchment-steamed fish with golden couscous and charred rainbow vegetables",
+    isLocked: true,
+    lockNote: "This complete recipe trio is available in the FitByChoice Cookbook.",
+    content: [
+      { h: "Total Time: 35-40 minutes (Prep: 20-25 min | Cook: 15-20 min)", p: "This entire plate, including the elegant parchment-wrapped fish, golden turmeric couscous, and charred rainbow vegetables, comes together in under 40 minutes total. All three components can cook simultaneously once you get the rhythm down, making this genuinely fast for a dish with this much visual polish and flavor complexity." },
+      { h: "The technique: en papillote (fish in paper)", p: "This is a completely different cooking philosophy than crispy pan-searing. The fish is sealed into a parchment packet with aromatics, and steams in its own juices as it cooks - meaning little to no added oil is needed at all. The parchment seal traps moisture and self-bastes the fish. The presentation moment is genuinely elegant: the sealed packet arrives at the table, and opening it releases a burst of aromatic steam right in front of whoever you are serving - real restaurant theater." },
+      { h: "How to wrap the fish packet", p: "Cut a large piece of parchment paper, roughly 15x15 inches. Lay your vegetable bed (thin zucchini or bell pepper slices) in the center. Place the seasoned fish fillet on top. Bring the two opposite sides of the parchment up and over the fish, folding the edges together in small, tight folds like you are sealing an envelope, working your way around the perimeter. The final fold should be tucked underneath or twisted to seal completely - you want a sealed pocket that traps steam, with no gaps for it to escape. If it is not sealing well, a small dab of water on the parchment edge before folding helps it stick to itself." },
+      { h: "The Chermoula Paste", p: "Fresh cilantro AND parsley together (using both creates a deeper, more vivid green than either herb alone), minced garlic, ground cumin, ground coriander, smoked paprika, a small pinch of cinnamon (unexpected but authentic to Moroccan cooking), fresh lemon zest and juice, olive oil. Finely mince everything together or pulse in a food processor into a vibrant, herbaceous paste. Spread generously over the fish before sealing the packet - as it steams, the chermoula fully infuses into the fish rather than just sitting on top the way a sauce would." },
+      { h: "Chermoula Snapper — Air Fryer Method", p: "Assemble the parchment packet as described. Place in the air fryer basket. Cook at 350°F for 15 minutes. The packet will puff slightly as it steams. Carefully open (steam will release) and check that the fish flakes easily before serving." },
+      { h: "Chermoula Snapper — Conventional Oven Method", p: "Preheat oven to 400°F. Assemble the parchment packet as described, place on a baking sheet. Bake for 15-18 minutes until the packet is puffed and the fish flakes easily when checked. The oven method gives slightly more even heat distribution if cooking multiple packets at once." },
+      { h: "Golden Turmeric Couscous", p: "Dry-toast 1/2 cup couscous in a pot for 1-2 minutes before adding liquid - this turns it a deeper golden-brown and adds a nutty aroma. Add water with a small pinch of turmeric (turns the dish a rich golden-yellow), bring to a boil, cover, remove from heat, and let sit 5 minutes. Fluff with fresh mint and parsley stirred through. Finish with a small scatter of pomegranate arils on top right before serving for a jewel-toned garnish - keep the portion small to control potassium." },
+      { h: "Charred Rainbow Vegetables — Air Fryer Method", p: "Toss red bell pepper, yellow bell pepper, zucchini, and thin red onion wedges in olive oil with a spoonful of the chermoula paste itself (ties the whole plate together). Air fry at 400°F for 10-12 minutes, shaking the basket halfway, until the edges genuinely char and blister." },
+      { h: "Charred Rainbow Vegetables — Conventional Oven Method", p: "Toss the same vegetables with olive oil and chermoula. Roast at 400°F for 15-18 minutes, tossing once halfway through, until the edges are charred and blistered. The extra time versus the air fryer allows for deeper caramelization if you have it." },
+      { h: "Workflow for one air fryer", p: "Start the vegetables first since they take the longest. Cook the fish packet in the last 15 minutes while the vegetables finish. Make the couscous on the stovetop simultaneously since it needs almost no attention. Everything lands on the plate hot and together in under 40 minutes total." },
+      { h: "Completing the Plate", p: "Open the chermoula snapper packet at the table for the reveal. Golden turmeric couscous with pomegranate alongside, charred rainbow vegetables completing the plate. Three distinct colors and textures, a genuine presentation moment, and a plate that looks like it belongs on a restaurant menu." },
+    ],
+  },
+  {
     id: "diy-bacon", icon: "Star", title: "DIY Turkey Bacon", subtitle: "Crispy, smoky bacon substitute - no nitrates, no processed meat concerns",
     content: [
       { h: "Why bacon needs a real substitute", p: "Processed meats like bacon are classified by the WHO as a Group 1 carcinogen due to nitrates and nitrites used in curing. On top of that, for CKD: 350-400mg sodium per 2 slices, phosphate additives, and saturated fat. It is a problem on every front, not just kidneys. This DIY version uses smoked paprika to mimic that smoky, cured flavor without any curing chemicals." },
@@ -1669,7 +1727,7 @@ function LearnPage({ user }) {
   const categoryColorMap = {
     partnership: C.primary, "ckd-healthy": C.primary, insulin: C.primary, bodyafter50: C.primary, "mens-health": C.primary, symptoms: C.primary, sleep: C.primary, nocturia: C.primary, "bone-joint": C.primary, "anxiety-ckd": C.primary, "taste-changes": C.primary,
     mealorder: C.sage, "hydration-fruits": C.sage, beverages: C.sage, "water-safety": C.sage, "smoothie-danger": C.sage, snacks: C.sage, sweets: C.sage, constipation: C.sage, "fluid-coping": C.sage, "nuts-crunch": C.sage, "dining-out": C.sage,
-    "diy-creamer": C.secondary, "diy-sausage": C.secondary, "diy-bacon": C.secondary, "diy-pasta": C.secondary, "diy-dressings": C.secondary, "diy-frozen": C.secondary, "diy-baked": C.secondary, "diy-blends": C.secondary,
+    "diy-creamer": C.secondary, "diy-sausage": C.secondary, "diy-bacon": C.secondary, "diy-grits-shrimp": C.secondary, "diy-salmon-cakes": C.secondary, "cookbook-oxtail": C.secondary, "cookbook-snapper": C.secondary, "diy-pasta": C.secondary, "diy-dressings": C.secondary, "diy-frozen": C.secondary, "diy-baked": C.secondary, "diy-blends": C.secondary,
     seasonings: C.red, "hidden-dangers": C.red, "toxic-foods": C.red, "dangerous-combos": C.red, "detox-dangers": C.red, supplements: C.red,
     accumulation: "#5B7C99", "exercise-safety": "#5B7C99", sodium: "#5B7C99", alkaline: "#5B7C99", "blood-pressure": "#5B7C99", labs: "#5B7C99",
   };
@@ -1694,6 +1752,28 @@ function LearnPage({ user }) {
             <img src={mod.headerImage} alt={mod.title} style={{ width: "100%", height: 160, objectFit: "cover", borderRadius: 12, marginBottom: 16 }} />
           )}
           <p style={{ fontSize: 14, color: C.textMid, lineHeight: 1.5, marginBottom: 16 }}>{mod.subtitle}</p>
+
+          {mod.isLocked ? (
+            <>
+              <div style={{ background: `${modColor}12`, borderLeft: `4px solid ${modColor}`, borderRadius: 10, padding: "16px 18px", marginBottom: 20 }}>
+                <p style={{ fontFamily: font.display, fontSize: 17, fontWeight: 600, color: C.dark, margin: 0, lineHeight: 1.4, fontStyle: "italic" }}>
+                  "{mod.content[0].p.split(". ")[0]}."
+                </p>
+              </div>
+              <Card style={{ textAlign: "center", padding: 32, background: `linear-gradient(135deg, ${C.dark}, ${modColor})` }}>
+                <div style={{ fontSize: 40, marginBottom: 12 }}>🔒</div>
+                <p style={{ fontFamily: font.display, fontSize: 18, fontWeight: 600, color: "#FFF", marginBottom: 8 }}>Cookbook Exclusive</p>
+                <p style={{ fontSize: 13, color: "rgba(255,255,255,0.85)", lineHeight: 1.5, marginBottom: 4 }}>
+                  {mod.lockNote || "This full recipe is available in the FitByChoice Cookbook."}
+                </p>
+                <p style={{ fontSize: 12, color: "rgba(255,255,255,0.65)", lineHeight: 1.5, marginBottom: 20 }}>
+                  {mod.content.length} sections · restaurant-quality technique · step-by-step measurements
+                </p>
+                <Btn full style={{ background: C.secondary, color: C.dark }}>Get the Cookbook</Btn>
+              </Card>
+            </>
+          ) : (
+          <>
           <div style={{ background: `${modColor}12`, borderLeft: `4px solid ${modColor}`, borderRadius: 10, padding: "16px 18px", marginBottom: 24 }}>
             <p style={{ fontFamily: font.display, fontSize: 17, fontWeight: 600, color: C.dark, margin: 0, lineHeight: 1.4, fontStyle: "italic" }}>
               "{mod.content[0].p.split(". ")[0]}."
@@ -1735,6 +1815,8 @@ function LearnPage({ user }) {
               <strong>Important:</strong> This information is educational only and does not replace medical advice. Always verify with your nephrologist, renal dietitian, or healthcare provider before making any changes. Your individual labs and medical history should guide every decision.
             </p>
           </div>
+          </>
+          )}
         </div>
       </div>
     );
@@ -1743,7 +1825,7 @@ function LearnPage({ user }) {
   const categories = [
     { name: "Understanding Your Body", color: C.primary, colorPale: C.primaryPale, emoji: "🧠", modules: filteredEducation.filter(m => ["partnership", "ckd-healthy", "insulin", "bodyafter50", "mens-health", "symptoms", "sleep", "nocturia", "bone-joint", "anxiety-ckd", "taste-changes"].includes(m.id)) },
     { name: "Nutrition & Meal Guidance", color: C.sage, colorPale: C.sagePale, emoji: "🥗", modules: filteredEducation.filter(m => ["mealorder", "hydration-fruits", "beverages", "water-safety", "smoothie-danger", "snacks", "sweets", "constipation", "fluid-coping", "nuts-crunch", "dining-out"].includes(m.id)) },
-    { name: "DIY Recipes", color: C.secondary, colorPale: C.secondaryPale, emoji: "👩‍🍳", modules: filteredEducation.filter(m => ["diy-creamer", "diy-sausage", "diy-bacon", "diy-pasta", "diy-dressings", "diy-frozen", "diy-baked", "diy-blends"].includes(m.id)) },
+    { name: "DIY Recipes", color: C.secondary, colorPale: C.secondaryPale, emoji: "👩‍🍳", modules: filteredEducation.filter(m => ["diy-creamer", "diy-sausage", "diy-bacon", "diy-grits-shrimp", "diy-salmon-cakes", "cookbook-oxtail", "cookbook-snapper", "diy-pasta", "diy-dressings", "diy-frozen", "diy-baked", "diy-blends"].includes(m.id)) },
     { name: "Reading Labels & Food Safety", color: C.red, colorPale: C.redPale, emoji: "🏷️", modules: filteredEducation.filter(m => ["seasonings", "hidden-dangers", "toxic-foods", "dangerous-combos", "detox-dangers", "supplements"].includes(m.id)) },
     { name: "Exercise & Medical", color: "#5B7C99", colorPale: "#5B7C9918", emoji: "💪", modules: filteredEducation.filter(m => ["accumulation", "exercise-safety", "sodium", "alkaline", "blood-pressure", "labs"].includes(m.id)) },
   ];
@@ -1766,22 +1848,27 @@ function LearnPage({ user }) {
             {cat.modules.map((mod, i) => {
               const Icon = iconMap[mod.icon] || BookOpen;
               return (
-                <Card key={i} onClick={() => { setSelectedModule(mod); setReadModules(prev => ({ ...prev, [mod.id]: true })); }} style={{ marginBottom: 10, borderLeft: `4px solid ${cat.color}`, padding: "16px 18px" }}>
+                <Card key={i} onClick={() => { setSelectedModule(mod); setReadModules(prev => ({ ...prev, [mod.id]: true })); }} style={{ marginBottom: 10, borderLeft: `4px solid ${mod.isLocked ? C.secondary : cat.color}`, padding: "16px 18px" }}>
                   <div style={{ display: "flex", alignItems: "center", gap: 14 }}>
-                    <div style={{ width: 42, height: 42, borderRadius: 12, background: cat.colorPale, display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0, position: "relative" }}>
-                      <Icon size={20} color={cat.color} />
-                      {readModules[mod.id] && (
+                    <div style={{ width: 42, height: 42, borderRadius: 12, background: mod.isLocked ? C.secondaryPale : cat.colorPale, display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0, position: "relative" }}>
+                      <Icon size={20} color={mod.isLocked ? C.secondary : cat.color} />
+                      {readModules[mod.id] && !mod.isLocked && (
                         <div style={{ position: "absolute", top: -4, right: -4, width: 16, height: 16, borderRadius: 8, background: C.sage, display: "flex", alignItems: "center", justifyContent: "center", border: `2px solid ${C.card}` }}>
                           <Check size={9} color="#FFF" strokeWidth={3} />
                         </div>
                       )}
                     </div>
                     <div style={{ flex: 1 }}>
-                      <p style={{ fontSize: 15, fontWeight: 600, color: C.dark, margin: 0 }}>{mod.title}</p>
+                      <div style={{ display: "flex", alignItems: "center", gap: 6 }}>
+                        <p style={{ fontSize: 15, fontWeight: 600, color: C.dark, margin: 0 }}>{mod.title}</p>
+                        {mod.isLocked && <span style={{ fontSize: 12 }}>🔒</span>}
+                      </div>
                       <div style={{ display: "flex", alignItems: "center", gap: 6, marginTop: 2 }}>
                         <p style={{ fontSize: 12, color: C.textMid, margin: 0 }}>{mod.subtitle}</p>
                       </div>
-                      <p style={{ fontSize: 10, color: cat.color, margin: "3px 0 0", fontWeight: 600 }}>📖 {getReadTime(mod)}</p>
+                      <p style={{ fontSize: 10, color: mod.isLocked ? C.secondary : cat.color, margin: "3px 0 0", fontWeight: 600 }}>
+                        {mod.isLocked ? "🔒 Cookbook Exclusive" : `📖 ${getReadTime(mod)}`}
+                      </p>
                     </div>
                     <ChevronRight size={18} color={C.textLight} />
                   </div>
