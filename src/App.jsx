@@ -788,7 +788,6 @@ const EDUCATION = [
       { h: "Why ground turkey does not work here", p: "Ground turkey does not naturally hold a strip shape - it needs to be treated like a thin patty rather than a flippable strip, and is too fragile to flip in a hot pan without falling apart. Thin-sliced turkey breast cutlets are the practical choice for a true bacon substitute. Save ground turkey for the sausage and burger recipes, where the shape does not need to hold as a thin strip." },
     ],
   },
-'''
 
   {
     id: "diy-creamer", icon: "Star", title: "DIY Coffee Creamer Flavors", subtitle: "Real flavor for your coffee - zero phosphorus additives, completely your control",
@@ -1163,6 +1162,7 @@ function WorkoutsPage({ subPage, setSubPage }) {
   const [showWarmup, setShowWarmup] = useState(false);
   const [showCooldown, setShowCooldown] = useState(false);
   const [activePhase, setActivePhase] = useState(0);
+  const [currentWeek, setCurrentWeek] = useState(1);
 
   if (selectedWorkout) {
     return (
@@ -1364,15 +1364,33 @@ function WorkoutsPage({ subPage, setSubPage }) {
           );
         })}
 
-        {/* What to Expect */}
-        {activePhase === 0 && <SectionTitle sub="Your week-by-week guide">What to Expect</SectionTitle>}
-        {activePhase !== 0 && null}
-        {activePhase === 0 && EXPECT.map((w, i) => (
-          <Card key={i} style={{ marginBottom: 8, borderLeft: `3px solid ${i === 0 ? C.secondary : C.primaryPale}` }}>
-            <p style={{ fontSize: 13, fontWeight: 600, color: i === 0 ? C.secondary : C.textMid, margin: 0 }}>Week {w.week}: {w.title}</p>
-            <p style={{ fontSize: 13, color: C.darkMuted, margin: "4px 0 0", lineHeight: 1.5 }}>{w.body}</p>
-          </Card>
-        ))}
+        {/* What to Expect - current week only */}
+        {activePhase === 0 && (
+          <>
+            <SectionTitle sub={`Week ${currentWeek} of 8`}>What to Expect This Week</SectionTitle>
+            {EXPECT.filter(w => w.week === currentWeek).map((w, i) => (
+              <Card key={i} style={{ marginBottom: 12, borderLeft: `3px solid ${C.secondary}` }}>
+                <p style={{ fontSize: 13, fontWeight: 600, color: C.secondary, margin: 0 }}>Week {w.week}: {w.title}</p>
+                <p style={{ fontSize: 13, color: C.darkMuted, margin: "4px 0 0", lineHeight: 1.5 }}>{w.body}</p>
+              </Card>
+            ))}
+            <div style={{ display: "flex", gap: 8, marginBottom: 8 }}>
+              <button onClick={() => setCurrentWeek(Math.max(1, currentWeek - 1))} disabled={currentWeek === 1} style={{
+                flex: 1, padding: "10px", borderRadius: 8, border: `1px solid ${C.primaryPale}`, background: C.card,
+                color: currentWeek === 1 ? C.textLight : C.primary, fontFamily: font.body, fontSize: 12, fontWeight: 600,
+                cursor: currentWeek === 1 ? "default" : "pointer", opacity: currentWeek === 1 ? 0.5 : 1,
+              }}>← Previous Week</button>
+              <button onClick={() => setCurrentWeek(Math.min(8, currentWeek + 1))} disabled={currentWeek === 8} style={{
+                flex: 1, padding: "10px", borderRadius: 8, border: "none", background: C.primary,
+                color: "#FFF", fontFamily: font.body, fontSize: 12, fontWeight: 600,
+                cursor: currentWeek === 8 ? "default" : "pointer", opacity: currentWeek === 8 ? 0.5 : 1,
+              }}>Next Week →</button>
+            </div>
+            <p style={{ fontSize: 10, color: C.textLight, textAlign: "center", marginBottom: 8 }}>
+              Advances automatically once account sign-in is added — for now, tap forward as you complete each week.
+            </p>
+          </>
+        )}
       </div>
     </div>
   );
@@ -2368,7 +2386,7 @@ export default function FitByChoice() {
             ].map((item, i) => (
               <button key={i} onClick={item.action} style={{
                 display: "block", width: "100%", textAlign: "left", padding: "14px 0",
-                borderBottom: `1px solid ${C.bg}`, background: "none", border: "none", borderBottom: `1px solid ${C.bg}`,
+                borderBottom: `1px solid ${C.bg}`, background: "none", border: "none",
                 cursor: "pointer", fontFamily: font.body, fontSize: 15, color: C.dark, fontWeight: 500,
               }}>{item.label}</button>
             ))}
